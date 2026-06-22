@@ -11,77 +11,110 @@
     
     <nav class="flex justify-between items-center px-8 py-5 border-b border-gray-800 bg-[#0b0f19]">
         <div class="text-2xl font-black text-white flex items-center gap-2">Noticias IA 🤖</div>
-        <div class="hidden md:flex gap-6 text-sm font-semibold text-gray-400">
-            <a href="#" class="hover:text-white transition">Noticias</a>
-            <a href="#" class="hover:text-white transition">Contacto</a>
-        </div>
     </nav>
     
     <header class="text-center mt-16 mb-12 px-4">
         <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
             La información al <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">instante</span>
         </h1>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Las noticias más relevantes de Argentina leídas, analizadas, categorizadas y resumidas por Inteligencia Artificial en tiempo real.</p>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Las noticias más relevantes de Argentina leídas, categorizadas y resumidas a fondo por Inteligencia Artificial.</p>
     </header>
 
     <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center gap-3 mb-12">
-        <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-orange-500/20">
-            Todas
-        </button>
-        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Política</button>
-        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Economía</button>
-        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Deportes</button>
-        <button class="bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Sociedad</button>
+        <button data-filter="TODAS" class="btn-filtro bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-orange-500/20 transition">Todas</button>
+        <button data-filter="POLÍTICA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Política</button>
+        <button data-filter="ECONOMÍA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Economía</button>
+        <button data-filter="DEPORTES" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Deportes</button>
+        <button data-filter="SOCIEDAD" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Sociedad</button>
+        <button data-filter="TECNOLOGÍA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition">Tecnología</button>
     </div>
 
     <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
-                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-                            <div class="flex gap-2">
-                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
-                                <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-                            </div>
-                            <span class="text-gray-500">Hace instantes</span>
+                <article data-categoria="POLÍTICA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-gray-800 text-white px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Selección Argentina: Scaloni ajusta el equipo con una incógnita para el amistoso ante Austria</h2>
-                        <p class="text-gray-400 text-sm mb-6 flex-grow">El entrenador Lionel Scaloni define la formación titular de la Selección Argentina para el encuentro en Dallas contra Austria, manteniendo una duda en un puesto clave.</p>
-                        <a href="https://www.ambito.com/deportes/seleccion-argentina-mundial-2026-en-vivo-kansas-lionel-scaloni-messi-austria-noticias-minuto-a-minuto-en-vivo-22-junio" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
-                            Leer nota original &rarr;
-                        </a>
-                    </article>
-                    
-                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
-                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-                            <div class="flex gap-2">
-                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
-                                <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-                            </div>
-                            <span class="text-gray-500">Hace instantes</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-white mb-3 leading-tight">LLA busca desactivar sesión en Diputados por "caso Adorni"</h2>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">La bancada de La Libertad Avanza (LLA) en la Cámara de Diputados ha convocado a una reunión de la comisión de Asuntos Constitucionales, una estrategia que busca impedir la sesión prevista para mañana. El objetivo de esta maniobra es frenar un proyecto impulsado por la oposición que busca que el vocero presidencial, Manuel Adorni, rinda cuentas ante el Congreso por presuntas irregularidades. Esta acción parlamentaria intenta desactivar el debate y la posible votación sobre la situación del funcionario, demostrando la tensión entre el oficialismo y la oposición en el ámbito legislativo.</p>
+                    <a href="https://tn.com.ar/politica/2026/06/22/diputados-lla-convoca-a-la-comision-de-asuntos-constitucionales-por-el-caso-adorni-para-desactivar-la-sesion-de-manana/" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
+                        Leer nota completa &rarr;
+                    </a>
+                </article>
+                
+                <article data-categoria="DEPORTES" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-gray-800 text-white px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+                            <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Bonos argentinos en dólares repuntan en Wall Street y el riesgo país alcanza su nivel más bajo en ocho años</h2>
-                        <p class="text-gray-400 text-sm mb-6 flex-grow">Los títulos de deuda de Argentina en dólares retoman la tendencia alcista en el mercado de Wall Street, llevando al riesgo país a marcar un nuevo mínimo histórico en ocho años.</p>
-                        <a href="https://www.ambito.com/finanzas/los-bonos-dolares-retoman-las-subas-wall-street-y-el-riesgo-pais-marca-un-nuevo-minimo-ocho-anos-n6291418" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
-                            Leer nota original &rarr;
-                        </a>
-                    </article>
-                    
-                    <article class="bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
-                        <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-                            <div class="flex gap-2">
-                                <span class="bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ÁMBITO</span>
-                                <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-                            </div>
-                            <span class="text-gray-500">Hace instantes</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-white mb-3 leading-tight">Selección Argentina llegó a Dallas con formación definida para enfrentar a Austria</h2>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">La Selección Argentina de fútbol arribó al Dallas Stadium, lista para disputar su próximo encuentro contra Austria en el marco de la Copa América. El director técnico, Lionel Scaloni, ya tiene confirmada la alineación titular que saltará al campo de juego en este importante partido. Este encuentro es crucial para las aspiraciones del equipo de avanzar en el torneo, y se espera un gran desempeño por parte de los jugadores. La expectativa es alta entre los aficionados ante este nuevo desafío en la competición.</p>
+                    <a href="https://www.ambito.com/deportes/seleccion-argentina-mundial-2026-en-vivo-kansas-lionel-scaloni-messi-austria-noticias-minuto-a-minuto-en-vivo-22-junio" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
+                        Leer nota completa &rarr;
+                    </a>
+                </article>
+                
+                <article data-categoria="POLÍTICA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-gray-800 text-white px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
                         </div>
-                        <h2 class="text-xl font-bold text-white mb-3 leading-tight">Argentina vs Austria: Un análisis que expone el favoritismo deportivo y la brecha socioeconómica</h2>
-                        <p class="text-gray-400 text-sm mb-6 flex-grow">El próximo enfrentamiento entre Argentina y Austria se analiza desde el favoritismo de los campeones del mundo, revelando también las profundas diferencias socioeconómicas entre ambas naciones.</p>
-                        <a href="https://www.ambito.com/deportes/argentina-vs-austria-datos-del-favoritismo-los-campeones-la-brecha-socioeconomica-que-refleja-dos-mundos-n6291027" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
-                            Leer nota original &rarr;
-                        </a>
-                    </article>
-                    
+                    </div>
+                    <h2 class="text-xl font-bold text-white mb-3 leading-tight">Javier Lanari renuncia a la Secretaría de Comunicación y Prensa</h2>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">En un nuevo ajuste dentro del Gabinete nacional, se ha confirmado la salida de Javier Lanari de su puesto como Secretario de Comunicación y Prensa. Esta dimisión representa otro cambio significativo en la estructura del gobierno, sumándose a una serie de movimientos recientes en diversas carteras. La renuncia de Lanari se produce en un momento de reestructuración interna, lo que podría implicar un nuevo rumbo en la estrategia comunicacional oficial. La decisión genera expectativas sobre quién será su sucesor y las implicaciones para la gestión gubernamental.</p>
+                    <a href="https://www.ambito.com/mas-cambios-el-gabinete-javier-lanari-deja-el-cargo-secretario-comunicacion-y-prensa-n6291462" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
+                        Leer nota completa &rarr;
+                    </a>
+                </article>
+                
+                <article data-categoria="DEPORTES" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-gray-800 text-white px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+                            <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-bold text-white mb-3 leading-tight">Scaloni confirma equipo de Argentina para Austria: Molina por Montiel, única variante</h2>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">El director técnico de la Selección Argentina, Lionel Scaloni, ha revelado la formación titular que utilizará su equipo para el crucial encuentro contra Austria. La única modificación anunciada será la inclusión de Nahuel Molina en lugar de Gonzalo Montiel en la defensa. Este ajuste estratégico busca consolidar el rendimiento del equipo en su camino hacia la clasificación a la siguiente ronda del torneo. La expectativa es alta para ver cómo se desenvuelve esta alineación en un partido clave para las aspiraciones argentinas.</p>
+                    <a href="https://tn.com.ar/deportes/mundial/2026/2026/06/22/la-seleccion-enfrenta-a-austria-en-dallas-y-va-por-la-clasificacion-a-la-siguiente-ronda/" target="_blank" class="text-white text-sm font-semibold hover:underline flex justify-start items-center gap-1 mt-auto">
+                        Leer nota completa &rarr;
+                    </a>
+                </article>
+                
     </main>
 
+    <script>
+        const botones = document.querySelectorAll('.btn-filtro');
+        const articulos = document.querySelectorAll('.tarjeta-noticia');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                // 1. Apagamos todos los botones
+                botones.forEach(b => {
+                    b.className = 'btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition';
+                });
+
+                // 2. Encendemos solo el botón clickeado
+                boton.className = 'btn-filtro bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-orange-500/20 transition';
+
+                // 3. Mostramos u ocultamos las tarjetas según la categoría
+                const categoriaElegida = boton.getAttribute('data-filter');
+                
+                articulos.forEach(art => {
+                    if (categoriaElegida === 'TODAS' || art.getAttribute('data-categoria') === categoriaElegida) {
+                        art.style.display = 'flex';
+                    } else {
+                        art.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
