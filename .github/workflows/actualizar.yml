@@ -1,0 +1,37 @@
+name: Automatizacion de Noticias
+
+on:
+  schedule:
+    - cron: '0 11 * * *' # Se ejecuta todos los días a las 8:00 AM hora Argentina
+  workflow_dispatch: # Nos permite tener un botón para probarlo ahora mismo a mano
+
+permissions:
+  contents: write # Le da permiso al bot para reescribir tu index.html
+
+jobs:
+  procesar-noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Traer el código
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Instalar librerías
+        run: pip install requests beautifulsoup4 google-genai
+
+      - name: Ejecutar la IA
+        env:
+          LLAVESECRETABRAI: ${{ secrets.LLAVESECRETABRAI }}
+        run: python recolector.py
+
+      - name: Guardar la nueva web en internet
+        run: |
+          git config --global user.name 'Bot de Finanzas'
+          git config --global user.email 'bot@mercadolocal.com'
+          git add index.html
+          git commit -m "Web actualizada automáticamente" || echo "Sin cambios"
+          git push
