@@ -32,7 +32,7 @@ for fuente in fuentes:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             contador = 0
             
-            # Buscamos etiquetas de artículos para ser precisos y evitar el pie de página
+            # Buscamos etiquetas de artículos para ser precisos
             articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
             
             for articulo in articulos:
@@ -111,14 +111,14 @@ texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
     texto_para_ia += f"Noticia {i+1} [{noticia['fuente']}]:\n- Título: {noticia['titulo']}\n- Link: {noticia['link']}\n\n"
 
-# --- 3. EL CEREBRO DE LA IA (Reglas estrictas añadidas) ---
+# --- 3. EL CEREBRO DE LA IA (Sin Sociedad) ---
 prompt = f"""
 Eres un editor experto de noticias. Aquí tienes {len(noticias_finales)} noticias de hoy:
 {texto_para_ia}
 
 REGLAS ESTRICTAS:
-1. Clasifica obligatoriamente cada noticia en: DEPORTES, SOCIEDAD, POLÍTICA, ECONOMÍA o MERCADOS. (MERCADOS es solo para bolsa, dólar, trading).
-2. Si la noticia es de "OLÉ" y su contenido NO es deportivo (por ejemplo, reclamos, defensa del consumidor, legales), DESCÁRTALA por completo y no la incluyas en la lista final.
+1. Clasifica obligatoriamente cada noticia en una de estas 4 categorías: DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS. (MERCADOS es solo para bolsa, dólar, trading). ESTÁ PROHIBIDO USAR LA CATEGORÍA "SOCIEDAD" O "TECNOLOGÍA".
+2. Si la noticia es de "OLÉ" y su contenido NO es deportivo (por ejemplo, reclamos, defensa del consumidor, legales), DESCÁRTALA por completo y no la incluyas.
 3. Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
 
 Devuelve la información en este formato por cada noticia, separando con el símbolo |:
@@ -167,16 +167,14 @@ if exito:
                     if dt_noticia.tzinfo is None:
                         dt_noticia = dt_noticia.replace(tzinfo=timezone.utc)
                     
-                    # Calcula cuántas horas pasaron
                     diferencia_horas = (datetime.now(timezone.utc) - dt_noticia).total_seconds() / 3600
                     
-                    # SI LA NOTICIA TIENE MÁS DE 24 HORAS, SE SALTEA Y NO SE PUBLICA
                     if diferencia_horas > 24:
                         continue 
                 except:
                     pass
                 
-                # Asignación de colores (Tecnología ya no existe)
+                # Asignación de colores limitados
                 if categoria == "MERCADOS":
                     borde, pill = "border-emerald-500", "bg-emerald-900/40 text-emerald-400"
                 elif categoria == "ECONOMÍA":
@@ -209,7 +207,7 @@ if exito:
                 </article>
                 """
     
-    # --- PURGA DE FANTASMAS EN EL HISTORIAL ---
+    # --- EXTERMINADOR TOTAL DE FANTASMAS Y CATEGORÍAS INDESEADAS ---
     historial_viejo_limpio = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
@@ -217,11 +215,19 @@ if exito:
             
         sopa_vieja = BeautifulSoup(contenido_previo, 'html.parser')
         for tarjeta in sopa_vieja.find_all('article'):
+            # Borrar diarios baneados
             span_diario = tarjeta.find('span', class_=lambda c: c and 'bg-[#1f2937]' in c)
             if span_diario:
                 nombre_diario = span_diario.text.strip().upper()
                 if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario:
-                    tarjeta.decompose() 
+                    tarjeta.decompose()
+                    continue 
+            
+            # Borrar categorías indeseadas (Elimina Sociedad y Tecnología del historial)
+            categoria_tarjeta = tarjeta.get('data-categoria', '').upper()
+            if categoria_tarjeta in ["SOCIEDAD", "TECNOLOGÍA", "TECNOLOGIA"]:
+                tarjeta.decompose()
+                
         historial_viejo_limpio = str(sopa_vieja)
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
@@ -252,7 +258,7 @@ if exito:
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML DEFINITIVA (Sin botón de Tecnología) ---
+    # --- PLANTILLA HTML DEFINITIVA (Solo las 4 categorías clave) ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -292,7 +298,6 @@ if exito:
         <button data-filter="ECONOMÍA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Economía</button>
         <button data-filter="POLÍTICA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Política</button>
         <button data-filter="DEPORTES" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Deportes</button>
-        <button data-filter="SOCIEDAD" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Sociedad</button>
     </div>
 
     <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20" id="contenedor-noticias">
