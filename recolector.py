@@ -4,7 +4,8 @@ from google import genai
 import os
 import time
 import random
-from datetime import datetime
+import json
+from datetime import datetime, timezone
 
 # --- 1. CONFIGURACIÓN DE LA IA ---
 API_KEY = os.environ.get("LLAVESECRETABRAI")
@@ -54,25 +55,47 @@ for fuente in fuentes:
 random.shuffle(noticias_extraidas)
 noticias_finales = noticias_extraidas[:15]
 
-# --- NUEVO: MOTOR DE EXTRACCIÓN DE HORA EXACTA ---
-print("Entrando a las notas para buscar la hora exacta...")
+# --- NUEVO: MOTOR FORENSE DE EXTRACCIÓN DE HORA ---
+print("Extrayendo metadatos de tiempo...")
 tiempos_reales = {}
+
+def extraer_fecha_exacta(sopa):
+    # 1. Etiquetas clásicas (Facebook/Twitter metadata)
+    metas = ['article:published_time', 'article:modified_time', 'datePublished', 'pubdate']
+    for m in metas:
+        tag = sopa.find('meta', property=m) or sopa.find('meta', itemprop=m) or sopa.find('meta', attrs={'name': m})
+        if tag and tag.get('content'):
+            return tag['content']
+    
+    # 2. Bloques de código ocultos JSON-LD (El estándar de Google News)
+    scripts = sopa.find_all('script', type='application/ld+json')
+    for script in scripts:
+        try:
+            if script.string:
+                data = json.loads(script.string)
+                if isinstance(data, dict):
+                    if 'datePublished' in data: return data['datePublished']
+                elif isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict) and 'datePublished' in item:
+                            return item['datePublished']
+        except:
+            pass
+    return None
+
 for noticia in noticias_finales:
     link_nota = noticia['link']
-    # Por defecto, ponemos la hora actual por si el diario esconde muy bien su fecha
-    tiempos_reales[link_nota] = datetime.now().isoformat() 
+    # Hora UTC absoluta por si el diario no tiene fecha (evita el bug de zona horaria)
+    hora_fallback = datetime.now(timezone.utc).isoformat()
+    tiempos_reales[link_nota] = hora_fallback 
+    
     try:
         resp_nota = requests.get(link_nota, headers=encabezados, timeout=5)
         if resp_nota.status_code == 200:
             sopa_nota = BeautifulSoup(resp_nota.text, 'html.parser')
-            # Buscamos la etiqueta estándar mundial de noticias
-            meta_time = sopa_nota.find('meta', property='article:published_time')
-            if not meta_time:
-                # Alternativa usada por algunos diarios
-                meta_time = sopa_nota.find('meta', itemprop='datePublished')
-                
-            if meta_time and meta_time.get('content'):
-                tiempos_reales[link_nota] = meta_time['content']
+            fecha_encontrada = extraer_fecha_exacta(sopa_nota)
+            if fecha_encontrada:
+                tiempos_reales[link_nota] = fecha_encontrada
     except:
         pass
 
@@ -142,8 +165,8 @@ if exito:
                 else: 
                     borde, pill = "border-teal-500", "bg-teal-900/40 text-teal-400"
                 
-                # Rescatamos la hora exacta que extrajimos al principio usando el link
-                timestamp_iso = tiempos_reales.get(link, datetime.now().isoformat())
+                # Rescatamos la hora exacta
+                timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
                 
                 tarjetas_html += f"""
                 <article data-categoria="{categoria}" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 {borde} hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
@@ -281,13 +304,18 @@ if exito:
                 const ahora = new Date();
                 const diffMinutos = Math.floor((ahora - fechaNoticia) / 60000);
                 
+                if (isNaN(diffMinutos)) return;
+
                 if (diffMinutos < 1) {{
                     el.textContent = "Hace instantes";
                 }} else if (diffMinutos < 60) {{
                     el.textContent = `hace ${{diffMinutos}} min`;
-                }} else {{
+                }} else if (diffMinutos < 1440) {{
                     const diffHoras = Math.floor(diffMinutos / 60);
                     el.textContent = `hace ${{diffHoras}} h`;
+                }} else {{
+                    const diffDias = Math.floor(diffMinutos / 1440);
+                    el.textContent = diffDias === 1 ? 'hace 1 día' : `hace ${{diffDias}} días`;
                 }}
             }});
         }}
