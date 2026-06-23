@@ -1,6 +1,22 @@
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:15:50.381Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/tiene-14-anos-es-de-mar-del-plata-y-cuenta-como-hizo-para-salir-a-la-cancha-con-la-seleccion-argentina/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Tiene 14 años, es de Mar del Plata y cuenta cómo hizo para salir a la cancha con la Selección argentina</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un joven de 14 años oriundo de Mar del Plata compartió su emocionante experiencia de acompañar a la Selección argentina en un partido. Su relato detalla los pasos y vivencias que le permitieron cumplir el sueño de pisar el campo junto a sus ídolos, ofreciendo una perspectiva personal sobre la cercanía a los futbolistas en un evento de gran magnitud.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
 <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">OLÉ</span>
 <span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
 </div>
@@ -30,6 +46,38 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Scaloneta, tras asegurar el primer lugar en el Grupo J, ahora espera la definición del Grupo H para conocer a su oponente en los dieciseisavos de final. Los cuatro equipos de ese grupo aún tienen chances de clasificarse como segundos, lo que añade incertidumbre y expectativa sobre el próximo desafío de Argentina.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:08:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/economia/los-salarios-registrados-subieron-35-abril-y-le-ganaron-la-inflacion-siete-caidas-al-hilo-n6291996" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>ALERTA Los salarios registrados subieron 3,5% en abril y le ganaron a la inflación, tras siete caídas al hilo</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los salarios registrados experimentaron un aumento del 3,5% en abril, superando por primera vez en siete meses a la inflación. Este dato representa un alivio para los trabajadores y podría indicar un incipiente cambio de tendencia en el poder adquisitivo, tras un prolongado período de deterioro. Sin embargo, analistas advierten que es necesario observar la sostenibilidad de esta recuperación.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:56:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Incertidumbre global Los ADRs caen hasta 4,4% y el riesgo país sube a 434 puntos</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">En un contexto de incertidumbre global, los ADRs argentinos experimentaron caídas significativas de hasta el 4,4%, reflejando la cautela de los inversores. Paralelamente, el riesgo país se elevó, superando los 434 puntos básicos, lo que indica una mayor percepción de riesgo sobre la deuda soberana. Este escenario impacta directamente en las valoraciones de activos y el acceso al financiamiento.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -40,11 +88,11 @@
 </div>
 <a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/seleccion-argentina-en-vivo-mundial-2026-entrenamiento-en-kansas-posibles-rivales-en-16avos-y-ultimas-noticias/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cuti Romero arrancó su recuperación y Scaloni analiza los cambios para el último partido de Argentina por el Grupo J</span>
+<span>Minuto a minuto Cuti Romero arrancó su recuperación y Scaloni analiza los cambios para el último partido de Argentina por el Grupo J</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Cuti Romero inició su proceso de recuperación, mientras el director técnico Scaloni evalúa posibles modificaciones en la alineación de la Selección Argentina para el último encuentro del Grupo J. La gestión de la plantilla y la condición física de los jugadores son clave, buscando optimizar el rendimiento de cara a los decisivos octavos de final.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Cuti Romero inició su proceso de recuperación, generando expectativas sobre su retorno al campo. Paralelamente, el director técnico Scaloni está evaluando posibles modificaciones tácticas y de jugadores para el próximo y decisivo encuentro de Argentina en la fase de grupos del Mundial. Estas decisiones serán clave para asegurar una mejor posición y encarar con solidez los dieciseisavos de final.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -76,7 +124,23 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La plataforma de análisis Glassnode ha identificado una potencial "altseason" en el mercado de criptomonedas, impulsada por la reciente y significativa caída del precio de Bitcoin. Este fenómeno sugiere una posible rotación de capital hacia las altcoins, indicando una fase donde estas criptomonedas alternativas podrían experimentar un fuerte crecimiento y rentabilidad.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Glassnode, una firma de análisis de datos blockchain, ha identificado indicios de una posible "altseason", un período de crecimiento significativo para las criptomonedas alternativas, impulsado por una reciente y marcada caída en el precio de Bitcoin. Este fenómeno sugiere una rotación de capital de Bitcoin hacia otras altcoins, creando nuevas oportunidades para inversores en el volátil mercado cripto.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T17:58:58.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/fen%C3%B3meno-ni%C3%B1o-incrementar-ventas-gas-175858291.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Fenómeno El Niño podría incrementar ventas de gas de Argentina a Brasil: OLACDE</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Según OLACDE, el fenómeno El Niño podría provocar un aumento significativo en las ventas de gas natural de Argentina a Brasil. Este pronóstico se basa en las posibles condiciones climáticas que podrían incrementar la demanda energética brasileña, ofreciendo una oportunidad para Argentina de potenciar sus exportaciones de gas y mejorar su balanza comercial en el sector energético regional.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -94,6 +158,22 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Ante la profunda depresión del consumo, los industriales argentinos están en conversaciones con el Gobierno para reintroducir los populares planes de financiación en 12 cuotas. La medida busca reactivar la demanda interna y ofrecer un respiro a los consumidores, que llevan un año sin estos programas, vitales para ciertos sectores comerciales.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T17:56:30.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/d%C3%B3lar-marca-m%C3%A1ximo-noviembre-expectativas-175630901.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>El dólar marca un máximo desde noviembre por expectativas de tasas más altas en EE.UU.</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar alcanzó su valor máximo desde noviembre, impulsado por las crecientes expectativas de que la Reserva Federal de Estados Unidos mantenga o eleve las tasas de interés. Esta perspectiva fortalece al dólar frente a otras divisas, atrayendo inversiones y repercutiendo en los mercados globales, especialmente en las economías emergentes que podrían enfrentar una mayor presión de capitales.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -108,7 +188,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">En un giro político, los bloques de PRO, UCR y partidos provinciales no lograron conformar el quórum necesario en la Cámara de Diputados. Esta ausencia frustró la sesión convocada por la oposición para interpelar al vocero presidencial Manuel Adorni, significando un alivio para el oficialismo y evidenciando el respaldo de bloques aliados.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La oposición no logró el quorum necesario para interpelar a Manuel Adorni en Diputados, gracias a la ausencia estratégica de legisladores del Pro, la UCR y bloques provinciales que honraron un acuerdo con Martín Menem. Este revés otorgó un respiro al oficialismo, que gana tiempo, mientras la oposición planifica nuevas tácticas para mantener viva su ofensiva contra el vocero presidencial.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -124,23 +204,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">En la Cámara de Diputados, La Libertad Avanza (LLA) consiguió frustrar la sesión impulsada por la oposición para interpelar al vocero presidencial, Manuel Adorni. Ello fue posible gracias al apoyo de bloques aliados que no dieron quórum, impidiendo que el debate crítico sobre la gestión de Adorni se llevara a cabo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T17:31:46.769Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/diputados-con-el-apoyo-de-bloques-aliados-lla-logro-frenar-la-sesion-en-la-que-la-oposicion-buscaba-interpelar-a-adorni/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Tensión política en Diputados: LLA frenó la sesión de interpelación a Adorni con apoyo de aliados</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una sesión en la Cámara de Diputados para interpelar a Manuel Adorni fue frustrada por La Libertad Avanza (LLA), gracias al respaldo de bloques aliados como el PRO y la UCR. Estos partidos acordaron no dar quórum, evitando así la ofensiva opositora. Este episodio subraya la tensión política y las alianzas clave en el Congreso.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Libertad Avanza (LLA), con el respaldo de bloques aliados en la Cámara de Diputados, consiguió frustrar la sesión impulsada por la oposición para interpelar al vocero presidencial Manuel Adorni. Esta acción estratégica del oficialismo demuestra su capacidad para articular apoyos parlamentarios y posponer el escrutinio sobre la gestión del gobierno, en un intento de controlar la agenda legislativa.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -156,55 +220,23 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">A pesar de que el riesgo país de Argentina ha alcanzado mínimos históricos en ocho años, el ministro de Economía, Luis Caputo, se enfrenta a una economía que no logra despegar. En este contexto, Caputo redobla su apuesta por implementar un "shock" económico, buscando impulsar un crecimiento y superar el estancamiento actual.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El gobierno de Caputo mantiene la expectativa de que un riesgo país en mínimos históricos durante ocho años generará un "shock" de inversiones privadas, especialmente en obra pública, a pesar de la estancada economía e industria. La estrategia busca que la reducción del costo de financiamiento impulse el crecimiento, aunque el sector productivo sigue enfrentando grandes desafíos y muestra signos de debilidad persistente.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">OLÉ</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
 </div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:24:42.956414+00:00">Reciente</span>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:57:26.892Z">Reciente</span>
 </div>
-<a class="group block mb-3" href="https://www.ole.com.ar/autor/redaccion-ole" target="_blank">
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/citaron-a-indagatoria-a-jose-luis-espert-por-los-200000-dolares-que-recibio-de-fred-machado-nid23062026/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Messi se aseguró ser local en 16avos: vuelve a Miami</span>
+<span>Lavado de dinero. Citaron a indagatoria a José Luis Espert por los 200.000 dólares que recibió de Fred Machado</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Lionel Messi y la Selección Argentina aseguraron su pase a los 16avos de final del Mundial 2026, garantizando jugar esa instancia como local en Miami. A falta de una jornada para concluir la fase de grupos, el equipo ya tiene su boleto, brindando una ventaja estratégica y comodidad logística a la Albiceleste en el certamen.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">OLÉ</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:24:42.956414+00:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ole.com.ar/autor/redaccion-ole" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>A qué hora juega hoy Portugal y Uzbekistán y por dónde se puede ver EN VIVO el Mundial 2026</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Portugal se enfrenta hoy a Uzbekistán en un partido crucial del Mundial 2026, buscando un triunfo que les permita avanzar de ronda tras el inesperado empate contra RD Congo. Los aficionados podrán seguir en vivo este encuentro determinante. La presión recae sobre los lusos para asegurar su clasificación y continuar su camino en el torneo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">OLÉ</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:24:42.956414+00:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ole.com.ar/autor/redaccion-ole" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Mundial 2026, EN VIVO: Selección Argentina, partidos y últimas noticias de hoy martes 23 de junio</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Mundial 2026 continúa con una intensa jornada, destacando el seguimiento de la Selección Argentina tras su victoria ante Austria. Hoy se cierra la segunda fecha de la fase de grupos con varios partidos emocionantes, manteniendo a los aficionados expectantes sobre los resultados y las implicaciones para la clasificación. Las últimas noticias se actualizan en vivo.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">José Luis Espert, figura política, fue citado a indagatoria judicial en una causa por presunto lavado de dinero, relacionada con la recepción de 200.000 dólares de Fred Machado. Esta citación implica un avance en la investigación sobre el origen y destino de esos fondos, poniendo bajo escrutinio las transacciones financieras del legislador y generando un impacto significativo en el ámbito político y judicial.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -252,7 +284,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El secretario de Estado, Marco Rubio, anunció la ampliación de sanciones por parte de Estados Unidos contra Cuba. Estas nuevas medidas impactan a cinco entidades cubanas, incluyendo tres vinculadas al conglomerado GAESA, que son cruciales para generar ingresos al régimen de La Habana. La acción busca presionar financieramente a la dictadura cubana.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Estados Unidos ha intensificado sus sanciones contra Cuba, enfocándose en desmantelar la red financiera que sustenta a la dictadura. Esta medida busca aumentar la presión económica sobre el régimen cubano, limitando sus fuentes de ingresos y apoyo. La acción refleja la continuidad de la política estadounidense de promover un cambio democrático en la isla a través de instrumentos de fuerza económica.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -286,22 +318,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Los activos argentinos experimentan una jornada de fuerte declive, con el riesgo país en ascenso y una significativa caída de los ADRs en Wall Street, reflejando la falta de resistencia del mercado local. Esta situación genera preocupación entre los inversores, quienes observan con atención la volatilidad y la depreciación de bonos y acciones argentinas en el contexto global.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:38:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458061-como-cotizan-hoy-23-de-junio-el-merval-adrs-bonos-y-riesgo-pais" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los activos argentinos no resisten: sube el riesgo país y se desploman los ADRs en Wall Street</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los activos argentinos muestran una clara fragilidad, con un marcado ascenso del riesgo país y una significativa caída de los ADRs en Wall Street. Esta tendencia refleja una pérdida de confianza de los inversores y un deterioro generalizado del mercado, complicando la situación económica nacional.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -316,7 +332,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un violento tiroteo en una favela de Río de Janeiro resultó en al menos cuatro fallecidos y dejó a 50 turistas, incluyendo argentinos y chilenos, atrapados en la zona. El incidente subraya la grave situación de seguridad pública en ciertas áreas de la ciudad y la exposición de visitantes a estos conflictos, generando preocupación internacional.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un violento tiroteo en una favela de Río de Janeiro resultó en la muerte de al menos cuatro personas y dejó a medio centenar de turistas, incluyendo argentinos y chilenos, en una situación de peligro. El incidente expone la crítica situación de seguridad pública en la región, generando preocupación sobre la protección de ciudadanos y visitantes, y demandando una respuesta urgente de las autoridades locales.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -334,38 +350,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera se tiñe de rojo para Argentina, con un aumento significativo del riesgo país y una caída pronunciada de las acciones argentinas cotizadas en Wall Street. Este panorama negativo se enmarca en un día desfavorable para los mercados globales, exacerbando la vulnerabilidad de los activos locales y reflejando la incertidumbre económica.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:26:36.455Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/economia/2026/06/23/sube-el-riesgo-pais-y-bajan-las-acciones-argentinas-en-wall-street-en-un-dia-negativo-para-los-mercados-globales/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Sube el riesgo país y bajan las acciones argentinas en Wall Street en un día negativo para los mercados globales</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El riesgo país argentino experimentó una subida notable, mientras que las acciones locales en Wall Street registraron descensos significativos. Este panorama se enmarca en un día generalmente adverso para los mercados globales, reflejando la vulnerabilidad de los activos argentinos frente a las tendencias económicas internacionales y la incertidumbre financiera.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:23:53.221Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/economia/2026/06/23/sube-el-riesgo-pais-y-bajan-las-acciones-argentinas-en-wall-street-en-un-dia-negativo-para-los-mercados-globales/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Sube el riesgo país y bajan las acciones argentinas en Wall Street en un día negativo para los mercados globales</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada bursátil culminó con una tendencia negativa para los activos argentinos, reflejando el nerviosismo global. El riesgo país experimentó un ascenso notable, mientras que las acciones de empresas nacionales listadas en Wall Street sufrieron caídas significativas. Este panorama se enmarca en un día adverso para los mercados internacionales, impactando la confianza de los inversores.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -382,38 +366,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Temperaturas récord en Francia están poniendo en grave riesgo la cosecha de granos de este año. La ola de calor extrema amenaza con reducir drásticamente la producción agrícola, generando preocupación por la seguridad alimentaria y potenciales impactos económicos en el sector primario y los mercados globales.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:05:34.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/temperaturas-r%C3%A9cord-ponen-peligro-cosecha-150534879.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Temperaturas récord ponen en peligro la cosecha de granos en Francia</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Francia enfrenta una grave amenaza a su cosecha de granos debido a las temperaturas récord, que ponen en peligro el rendimiento y la calidad de los cultivos. Este fenómeno climático extremo podría tener serias repercusiones económicas para el país, afectando la producción agrícola, los precios de los alimentos y la balanza comercial, generando preocupación en el sector.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:59:02.167Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/economia/2026/06/23/sube-el-riesgo-pais-y-bajan-las-acciones-argentinas-en-wall-street-en-un-dia-negativo-para-los-mercados-globales/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Sube el riesgo país y bajan las acciones argentinas en Wall Street en un día negativo para los mercados globales</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera global se mostró adversa, impactando directamente en los activos argentinos. El riesgo país experimentó un ascenso, reflejando una mayor percepción de incertidumbre, mientras que las acciones de empresas argentinas listadas en Wall Street registraron caídas significativas. Este panorama se enmarca en una tendencia negativa generalizada que afectó a los mercados internacionales.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -429,22 +381,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Corte Suprema de Estados Unidos ha dado un importante respaldo a la demanda de Exxon Mobil contra Cuba, permitiendo a la compañía petrolera buscar una indemnización por la nacionalización de sus propiedades tras la revolución cubana. Esta decisión podría sentar un precedente significativo para otras empresas afectadas y tensar aún más las relaciones económicas entre ambos países.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:54:55.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/corte-suprema-eeuu-impulso-demanda-145455527.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Corte Suprema EEUU da impulso a demanda de Exxon para obtener una indemnización de Cuba</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Corte Suprema de Estados Unidos ha dado un importante impulso a la demanda de Exxon Mobil contra Cuba, buscando una millonaria indemnización por la expropiación de sus bienes tras la revolución. Este fallo revigoriza un conflicto legal de décadas y podría sentar un precedente para otras empresas afectadas, impactando las relaciones bilaterales y la política exterior.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -494,38 +430,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar continúa su tendencia alcista, llevando a los operadores del mercado a reajustar sus proyecciones sobre los valores techo y piso de la divisa. Esta volatilidad genera incertidumbre, con análisis técnicos y fundamentales que buscan prever los movimientos futuros y las implicaciones para la economía y los inversores ante un escenario de presión cambiaria.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T11:30:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458001-el-dolar-no-afloja-el-nuevo-precio-techo-y-piso-que-preven-operadores-para-la-divisa" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El dólar no afloja: cuál es el nuevo precio techo y piso que prevén operadores para la divisa</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar mantiene su tendencia alcista, y los operadores del mercado ya proyectan nuevos rangos de precios, estableciendo un techo y un piso esperados para la divisa. Esta previsión refleja la persistente presión sobre la moneda local y las expectativas de volatilidad en el tipo de cambio.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T11:30:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458001-el-dolar-no-afloja-el-nuevo-precio-techo-y-piso-que-preven-operadores-para-la-divisa" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El dólar no afloja: cuál es el nuevo precio techo y piso que prevén operadores para la divisa</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado cambiario argentino sigue mostrando la fortaleza del dólar, llevando a operadores financieros a recalcular sus proyecciones. El artículo detalla las nuevas estimaciones de "precio techo" y "precio piso" para la divisa estadounidense, reflejando la incertidumbre económica y las expectativas sobre las políticas monetarias que podrían influir en su cotización a corto y mediano plazo.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -541,22 +445,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Eurocámara ha dado su respaldo al proyecto del euro digital, un paso crucial para fortalecer la autonomía de Europa en sus sistemas de pagos. Esta iniciativa busca modernizar la infraestructura financiera, reducir la dependencia de plataformas externas y consolidar la soberanía económica de la Unión Europea.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:21:52.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/parlamento-europeo-respalda-esperado-euro-130730654.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La Eurocámara apoya el euro digital para reforzar la autonomía europea en los sistemas de pagos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Parlamento Europeo ha expresado un amplio apoyo a la creación de un euro digital, con el objetivo primordial de fortalecer la autonomía de Europa en sus sistemas de pagos. Esta iniciativa busca modernizar la infraestructura financiera, reducir la dependencia de proveedores externos y asegurar la soberanía monetaria de la Unión Europea en la era digital.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -574,102 +462,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Se analiza si la presión de venta sobre Bitcoin está disminuyendo, identificando tres señales clave que podrían indicar un cambio de tendencia en el mercado de criptomonedas. Los analistas observan movimientos en los volúmenes de transacción, el comportamiento de las grandes ballenas y los indicadores técnicos para prever si la criptomoneda recuperará impulso alcista.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Incertidumbre global Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La incertidumbre global impacta negativamente en los mercados, con los ADRs bancarios sufriendo caídas de hasta el 3%. Simultáneamente, el riesgo país argentino experimenta un incremento significativo, alcanzando los 435 puntos básicos. Este escenario refleja una mayor aversión al riesgo por parte de los inversores, afectando la valuación de activos y la confianza financiera.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera muestra una marcada caída en los ADRs de bancos argentinos, que registran descensos de hasta el 3%, evidenciando la preocupación de los inversores. Paralelamente, el riesgo país experimenta un incremento, superando los 435 puntos, lo que refleja una creciente percepción de inestabilidad económica en Argentina y un impacto negativo en los bonos.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los ADRs de bancos argentinos sufrieron caídas de hasta el 3%, evidenciando un deterioro en el sentimiento inversor. Simultáneamente, el riesgo país se disparó hasta los 435 puntos, señalando una creciente percepción de inestabilidad económica y financiera, impactando negativamente los bonos y la confianza en el mercado local.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los ADRs de los principales bancos argentinos registraron una caída de hasta el 3% en las últimas operaciones, reflejando nerviosismo en los mercados. Simultáneamente, el riesgo país experimentó un ascenso significativo, superando los 435 puntos básicos. Esta tendencia bajista en bonos y ADRs indica preocupación de los inversores ante la situación económica y financiera local.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los ADRs de los principales bancos argentinos registraron caídas de hasta el 3% en una jornada bursátil negativa. Paralelamente, el riesgo país experimentó un ascenso significativo, situándose en los 435 puntos básicos. Este movimiento refleja la incertidumbre de los inversores ante el panorama económico local y global, impactando directamente en la valuación de los activos financieros.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera evidenció una marcada caída en los ADRs de bancos argentinos, con descensos de hasta el 3%, señal de nerviosismo inversor. Paralelamente, el riesgo país experimentó un ascenso considerable, superando los 435 puntos básicos. Este escenario refleja la cautela y preocupación de los inversores ante la situación económica y las perspectivas del mercado local.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -685,54 +477,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Plata experimenta cortes en el suministro de GNC, generando interrogantes sobre la falta de gas a pesar del creciente volumen de producción de Vaca Muerta. Esta situación destaca desafíos críticos en la infraestructura de transporte y distribución, afectando directamente a los consumidores y la industria local.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:52:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/energia/cortes-gnc-la-plata-que-falta-gas-si-vaca-muerta-produce-cada-vez-mas-n6291799" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cortes de GNC en La Plata: por qué falta gas si Vaca Muerta produce cada vez más</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los cortes de suministro de GNC en La Plata generan desconcierto y preocupación, dado que la producción de gas en Vaca Muerta ha aumentado significativamente. La situación plantea interrogantes sobre la infraestructura de transporte y distribución, la capacidad de procesamiento o la gestión de la demanda, afectando directamente a los consumidores y al sector automotor.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:52:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/energia/cortes-gnc-la-plata-que-falta-gas-si-vaca-muerta-produce-cada-vez-mas-n6291799" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cortes de GNC en La Plata: por qué falta gas si Vaca Muerta produce cada vez más</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La ciudad de La Plata sufre cortes de GNC, generando interrogantes sobre la escasez de gas a pesar del aumento constante en la producción de Vaca Muerta. Expertos analizan las causas de esta paradoja, señalando problemas en la infraestructura de transporte y distribución, así como la falta de inversiones clave para llevar el gas desde los yacimientos hasta los centros de consumo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:52:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/energia/cortes-gnc-la-plata-que-falta-gas-si-vaca-muerta-produce-cada-vez-mas-n6291799" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cortes de GNC en La Plata: por qué falta gas si Vaca Muerta produce cada vez más</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La ciudad de La Plata experimenta cortes en el suministro de GNC, generando preocupación a pesar del aumento en la producción de Vaca Muerta. La noticia investiga las causas de esta paradoja, señalando posibles problemas en la infraestructura de transporte y distribución, así como desfasajes entre la oferta y la demanda estacional, afectando a usuarios y comercios.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -750,37 +494,21 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado financiero argentino se mantiene en vilo a la espera de la decisión de MSCI, que definirá la calificación del país. Esta revisión es crucial para la atracción de inversiones y el posicionamiento de Argentina en los índices globales. Una mejora en la categoría podría inyectar confianza y capital, mientras que un mantenimiento o descenso impactaría negativamente.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">OLÉ</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
 </div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:48:00-03:00">Reciente</span>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:40:00-03:00">Reciente</span>
 </div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/msci-define-el-futuro-la-argentina-expectativa-el-mercado-la-mejora-la-categoria-n6291785" target="_blank">
+<a class="group block mb-3" href="https://www.ole.com.ar/seleccion/messi-estadio-miami-argentina-dieciseisavos-mundial_0_XKyEyG0PUk.html" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El mercado, atento a MSCI: expectativa por la calificación clave para la Argentina</span>
+<span>Argentina clasificada: cuándo juega los 16vos de final</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los mercados financieros están expectantes ante la próxima decisión de MSCI, que podría recalificar la categoría de Argentina. Esta calificación es crucial para atraer inversiones y determinar la visibilidad del país para fondos globales. Una mejora en la categoría impulsaría el interés de los inversores, mientras que un mantenimiento o baja podría generar un impacto negativo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:48:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/msci-define-el-futuro-la-argentina-expectativa-el-mercado-la-mejora-la-categoria-n6291785" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El mercado, atento a MSCI: expectativa por la calificación clave para la Argentina</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado financiero argentino aguarda con gran expectación la decisión de MSCI sobre la calificación del país, un factor crucial para atraer inversiones. Una mejora en la categoría de mercado emergente podría inyectar confianza y capital, mientras que un mantenimiento o descenso impactaría negativamente en los flujos de inversión y el posicionamiento global de Argentina.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina ha asegurado su clasificación a los dieciseisavos de final del Mundial, generando expectación sobre su próximo partido. La noticia detalla la fecha y posibles rivales para este encuentro crucial, donde el equipo buscará avanzar en el torneo. Los aficionados esperan con ansias ver a Messi y al equipo disputar las siguientes etapas de la competición.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -797,70 +525,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich ha decidido ausentarse de la reunión convocada por Manuel Adorni con los senadores oficialistas, marcando un "desplante" político. Este encuentro buscaba consolidar el apoyo legislativo al jefe de Gabinete, quien enfrenta un pedido de interpelación en el Senado. La ausencia de Bullrich genera interrogantes sobre la cohesión dentro del bloque libertario y las dinámicas internas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Otro desplante. Bullrich no irá a la reunión convocada por Manuel Adorni con los senadores oficialistas</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich, Ministra de Seguridad, ha decidido no asistir a la reunión organizada por el vocero presidencial Manuel Adorni con los senadores oficialistas, marcando un nuevo desplante interno. Esta ausencia subraya las tensiones y posibles disidencias dentro del propio bloque de gobierno, generando interrogantes sobre la cohesión y coordinación en la administración actual y futuras estrategias parlamentarias.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La jefa del bloque libertario no estará en el programado apoyo de los legisladores libertarios al jefe de Gabinete, que enfrenta un pedido de interpelación en la Cámara alta</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La líder del bloque libertario se ausentará de la reunión de apoyo a Manuel Adorni, quien enfrenta un pedido de interpelación en el Senado. Esta decisión evidencia posibles fracturas internas o una falta de consenso estratégico dentro de la bancada oficialista, complicando el panorama político del Gobierno.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La jefa del bloque libertario no estará en el programado apoyo de los legisladores libertarios al jefe de Gabinete, que enfrenta un pedido de interpelación en la Cámara alta</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La jefa del bloque libertario, Patricia Bullrich, ha confirmado su ausencia en la crucial reunión de apoyo al jefe de Gabinete, Manuel Adorni, con los senadores oficialistas. Esta falta es significativa, dado que Adorni enfrenta un pedido de interpelación en la Cámara alta, lo que subraya una posible falta de unidad o respaldo dentro de las filas del partido.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Otro desplante. Bullrich no irá a la reunión convocada por Manuel Adorni con los senadores oficialistas</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich ha decidido no asistir a la reunión convocada por Manuel Adorni con los senadores oficialistas, calificándose como "otro desplante". Esta ausencia es notable, especialmente porque Adorni busca fortalecer su posición y el respaldo legislativo en medio de un pedido de interpelación, evidenciando posibles divisiones o estrategias políticas divergentes.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -893,54 +557,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich, jefa del bloque libertario, se ausentará de la reunión clave convocada por el jefe de Gabinete, Manuel Adorni, con los senadores de LLA. Este hecho se interpreta como un nuevo gesto de diferenciación, ya que Adorni busca apoyo legislativo ante un pedido de interpelación en la Cámara alta, marcando tensiones internas en el oficialismo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:10:09.110Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni-2/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>En un nuevo gesto de diferenciación, Patricia Bullrich faltará a la reunión de los senadores de LLA con Adorni</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich marcó nuevamente distancia con el gobierno al ausentarse de una reunión clave entre los senadores de La Libertad Avanza y el vocero presidencial, Manuel Adorni. Este gesto subraya las diferencias internas y tensiones políticas dentro de la coalición gobernante, generando especulaciones sobre la estabilidad de las alianzas y el futuro de ciertas figuras.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:10:09.110Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni-2/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>En un nuevo gesto de diferenciación, Patricia Bullrich faltará a la reunión de los senadores de LLA con Adorni</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich ha decidido ausentarse de la próxima reunión entre los senadores de La Libertad Avanza y el vocero presidencial Manuel Adorni. Este gesto marca una clara diferenciación estratégica por parte de la ministra de Seguridad, evidenciando posibles tensiones o una búsqueda de mayor autonomía política dentro de la coalición gobernante, generando repercusiones internas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:10:09.110Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni-2/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>En un nuevo gesto de diferenciación, Patricia Bullrich faltará a la reunión de los senadores de LLA con Adorni</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich ha optado por ausentarse de la reunión entre los senadores de La Libertad Avanza (LLA) y Manuel Adorni, marcando una clara diferenciación política. Este gesto subraya las tensiones internas o la búsqueda de un perfil propio dentro de la coalición gobernante, evidenciando matices en la estrategia y cohesión del espacio oficialista.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
