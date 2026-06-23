@@ -1,4 +1,290 @@
 
+                <article data-categoria="DEPORTES" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+                            <span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T11:57:31.846Z">Reciente</span>
+                    </div>
+                    
+                    <a href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/el-record-que-messi-busca-romper-en-el-mundial-2026-y-que-la-fifa-no-reconoce-oficialmente/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>El récord que Messi busca romper y que la FIFA no reconoce oficialmente</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Messi busca batir un récord no oficial reconocido por la FIFA en el Mundial 2026. Se refiere a la cantidad de goles en partidos no oficiales o amistosos, donde el astro argentino supera a Pelé, aunque la entidad rectora del fútbol solo contabiliza los encuentros válidos. Este logro subraya su legendaria carrera.</p>
+                </article>
+                
+                <article data-categoria="MERCADOS" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
+                            <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:01.880705">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.baenegocios.com/finanzas/el-riesgo-pais-cayo-a-minimos-de-ocho-anos-mientras-las-acciones-argentinas-sintieron-la-cautela-global-8018/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>El riesgo país cayó a mínimos de ocho años mientras las acciones argentinas sintieron la cautela global</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">El riesgo país argentino alcanzó mínimos de ocho años, reflejando optimismo en los mercados locales. Sin embargo, las acciones argentinas experimentaron una desaceleración debido a la cautela global, impulsada por las expectativas sobre la política monetaria de la Reserva Federal. Este contraste muestra la dualidad entre la mejora interna y la influencia de factores externos en la economía nacional.</p>
+                </article>
+                
+                <article data-categoria="TECNOLOGÍA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-violet-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+                            <span class="bg-violet-900/40 text-violet-400 px-2.5 py-1 rounded-md">TECNOLOGÍA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-22T17:22:00-03:00">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.iprofesional.com/autos/456420-cuanto-cuesta-y-que-ofrece-el-nuevo-autos-suv-compacto-chevrolet-sonic" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Chevrolet apuesta al segmento de los SUV compactos con el nuevo Sonic: cuánto cuesta y qué ofrece</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Chevrolet lanza el nuevo Sonic, un SUV compacto que busca competir fuertemente en el segmento. La nota detalla sus características, innovaciones tecnológicas y el precio de lanzamiento, posicionándolo como una opción atractiva para los consumidores. Se espera que impulse las ventas de la marca en un mercado cada vez más competitivo.</p>
+                </article>
+                
+                <article data-categoria="SOCIEDAD" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-teal-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">FORBES</span>
+                            <span class="bg-teal-900/40 text-teal-400 px-2.5 py-1 rounded-md">SOCIEDAD</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:03.516809">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.forbesargentina.com/liderazgo/la-brecha-invisible-sueldo-ya-explica-proxima-gran-desigualdad-n92821" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>La brecha invisible: por qué el sueldo ya no explica la próxima gran desigualdad</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Este artículo de Forbes explora una "brecha invisible" que sugiere que el sueldo ya no es el único factor determinante de la desigualdad moderna. Propone que elementos como el acceso a la tecnología, la calidad de la educación o la estabilidad laboral emergen como nuevas fuentes de disparidad, redefiniendo la comprensión de la estratificación social y económica en el siglo XXI.</p>
+                </article>
+                
+                <article data-categoria="ECONOMÍA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">CRONISTA</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-20T18:53:27.262Z">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.cronista.com/usa/economia-y-finanzas/creditos-y-deducciones-fiscales-del-irs-cuales-existen-quienes-califican-y-como-reclamarlos/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Impuestos EE.UU. Créditos y deducciones fiscales del IRS: cuáles existen, quiénes califican y cómo reclamarlos</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">La noticia detalla los créditos y deducciones fiscales disponibles a través del IRS en Estados Unidos, explicando quiénes califican y cómo los ciudadanos pueden reclamarlos. Esta información es crucial para contribuyentes que buscan optimizar sus finanzas personales, aprovechando los beneficios ofrecidos por el sistema fiscal estadounidense para reducir su carga impositiva.</p>
+                </article>
+                
+                <article data-categoria="ECONOMÍA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:04.050556">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.baenegocios.com/columnistas/la-economia-al-servicio-del-bien-comun/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>La economía al servicio del bien común</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Este artículo de opinión explora el concepto de la economía al servicio del bien común, cuestionando los modelos tradicionales centrados únicamente en el crecimiento. Propone una visión donde las políticas económicas prioricen el bienestar social, la equidad y la sostenibilidad, sugiriendo un cambio de paradigma hacia sistemas más inclusivos y éticos para el desarrollo de la sociedad.</p>
+                </article>
+                
+                <article data-categoria="DEPORTES" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+                            <span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:04.927319">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.ambito.com/deportes/seleccion-argentina-mundial-2026-en-vivo-kansas-lionel-scaloni-messi-noticias-minuto-a-minuto-en-vivo-23-junio" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Argentina aseguró el primer puesto de su zona y ya piensa en los posibles rivales de 16vos</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina ha asegurado el primer puesto en su grupo, garantizando una posición favorable en la fase eliminatoria. El equipo técnico ya evalúa a los posibles rivales para los octavos de final, delineando estrategias para avanzar en el torneo. Este logro refuerza la moral del equipo y sus aspiraciones al título.</p>
+                </article>
+                
+                <article data-categoria="MERCADOS" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+                            <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:05.112505">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.ambito.com/finanzas/deuda-el-riesgo-un-giro-la-fed-la-city-ve-margen-que-argentina-vuelva-al-mercado-internacional-n6291592" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Deuda: antes de un posible giro de la Fed, la city ve margen para que la Argentina vuelva al mercado internacional</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Antes de un posible cambio en la política de la Reserva Federal, analistas de la "city" ven una ventana de oportunidad para que Argentina retorne al mercado internacional de deuda. La expectativa de tasas de interés más bajas y un contexto global más favorable podrían facilitar la emisión de nuevos bonos, brindando un respiro financiero crucial para el país y su economía.</p>
+                </article>
+                
+                <article data-categoria="SOCIEDAD" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-teal-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
+                            <span class="bg-teal-900/40 text-teal-400 px-2.5 py-1 rounded-md">SOCIEDAD</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:05.237111">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.baenegocios.com/columnistas/entre-el-pasado-y-el-futuro-perdemos-el-presente-6656/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Entre el pasado y el futuro, perdemos el presente</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Este artículo de opinión reflexiona sobre cómo la constante oscilación entre la nostalgia del pasado y la ansiedad por el futuro nos impide vivir plenamente el presente. Aborda la importancia de la atención plena y la gestión del tiempo para encontrar equilibrio y bienestar en una sociedad cada vez más acelerada y demandante, priorizando la calidad de vida.</p>
+                </article>
+                
+                <article data-categoria="ECONOMÍA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">CRONISTA</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-22T12:50:10.926Z">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.cronista.com/usa/trending/murio-alan-greenspan-expresidente-de-la-reserva-federal-a-los-100-anos-que-hizo-y-por-que-fue-tan-importante/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Último minuto. Murió Alan Greenspan, expresidente de la Reserva Federal, a los 100 años: qué hizo y por qué fue tan importante</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Alan Greenspan, expresidente de la Reserva Federal de Estados Unidos, falleció a los 100 años. La noticia repasa su influyente trayectoria, destacando sus decisiones clave que marcaron la política monetaria global durante décadas. Su liderazgo fue fundamental en momentos económicos cruciales, dejando un legado profundo en la historia financiera y macroeconómica mundial.</p>
+                </article>
+                
+                <article data-categoria="POLÍTICA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+                            <span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:47.779931">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.ambito.com/politica/maratonica-jornada-del-gobierno-retomar-el-control-la-agenda-legislativa-y-sellar-forma-definitiva-el-caso-manuel-adorni-n6291750/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Maratónica jornada del Gobierno para retomar el control de la agenda legislativa y sellar de forma definitiva el caso Adorni</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">El Gobierno argentino llevó a cabo una maratónica jornada para recuperar el control de la agenda legislativa, buscando avanzar con proyectos clave. Simultáneamente, se enfocó en resolver de forma definitiva el "caso Adorni", un asunto que generó controversia política. Estas acciones buscan consolidar la gobernabilidad y la imagen del oficialismo ante la opinión pública.</p>
+                </article>
+                
+                <article data-categoria="MERCADOS" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+                            <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T07:00:00-03:00">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.iprofesional.com/finanzas/457985-para-el-gobierno-sobran-dolares-pero-el-mercado-cree-que-se-frena-el-viento-de-cola" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Caputo insiste con que "sobran dólares" pero en el mercado alertan que está frenando el viento de cola</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">El ministro Caputo reafirma que "sobran dólares" en la economía, transmitiendo un mensaje de estabilidad. Sin embargo, analistas del mercado advierten que las políticas actuales podrían estar frenando el "viento de cola" favorable, generando preocupación sobre la sostenibilidad del superávit. La tensión entre el discurso oficial y las percepciones del mercado financiero persiste, afectando las expectativas.</p>
+                </article>
+                
+                <article data-categoria="POLÍTICA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">FORBES</span>
+                            <span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:07.255856">Reciente</span>
+                    </div>
+                    
+                    <a href="https://www.forbesargentina.com/negocios/el-plan-milei-colombiano-desarrollar-su-propia-vaca-muerta-como-le-pega-argentina-n92819" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>El plan del “Milei colombiano” para desarrollar su propia Vaca Muerta: cómo le pega a la Argentina</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Un líder colombiano, apodado "Milei colombiano", impulsa un ambicioso plan para desarrollar una "Vaca Muerta" propia, buscando explotar recursos energéticos no convencionales. Esta iniciativa podría impactar significativamente a Argentina, modificando el panorama energético regional y la competitividad en la exportación de hidrocarburos. El análisis explora las posibles consecuencias geopolíticas y económicas.</p>
+                </article>
+                
+                <article data-categoria="DEPORTES" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+                            <span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:02:15.591Z">Reciente</span>
+                    </div>
+                    
+                    <a href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/seleccion-argentina-en-vivo-mundial-2026-entrenamiento-en-kansas-posibles-rivales-en-16avos-y-ultimas-noticias/" target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>La Selección se entrenará hoy y Scaloni delinea una formación alternativa para el partido contra Jordania</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina realizará su entrenamiento hoy, con Lionel Scaloni preparando una formación alternativa para el próximo partido contra Jordania. Se busca dar descanso a jugadores clave y probar nuevas estrategias, manteniendo el nivel competitivo del equipo. Esta rotación es fundamental para la gestión del plantel en un torneo exigente, optimizando el rendimiento.</p>
+                </article>
+                
+                <article data-categoria="ECONOMÍA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
+                    <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+                        <div class="flex gap-2">
+                            <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">CRONISTA</span>
+                            <span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+                        </div>
+                        <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:47.779964">Reciente</span>
+                    </div>
+                    
+                    <a href="Estados Unidos ha anunciado nuevos reembolsos financieros para personas y familias que cumplan con un requisito específico. Esta medida oficial busca brindar ayuda económica directa, impactando positivamente en el poder adquisitivo de miles de hogares. La iniciativa forma parte de un paquete de estímulo para la recuperación económica y el bienestar social de los ciudadanos." target="_blank" class="group block mb-3">
+                        <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+                            <span>Ayuda financiera. Medida oficial</span>
+                            <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </h2>
+                    </a>
+                    
+                    <p class="text-gray-400 text-sm flex-grow leading-relaxed">Estados Unidos deposita nuevos reembolsos a todas las personas y familias que cumplan con este único requisito</p>
+                </article>
+                
+
                 <article data-categoria="POLÍTICA" class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50">
                     <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
                         <div class="flex gap-2">
