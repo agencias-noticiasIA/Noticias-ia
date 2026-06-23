@@ -24,10 +24,10 @@ fuentes = [
 
 encabezados = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 noticias_extraidas = []
-urls_vistas_ronda_actual = set() # Evita duplicados en la misma ronda
+urls_vistas_ronda_actual = set()
 
-# Filtros para evitar links basura o de autores
-palabras_prohibidas = ["javascript", "mailto", "defensa-del-consumidor", "/autor/", "/tema/", "/edicion-impresa/"]
+# Filtros inflexibles para evitar basura y enlaces de autores
+palabras_prohibidas = ["javascript", "mailto", "defensa-del-consumidor", "/autor/", "/tema/", "/tags/", "redaccion"]
 
 for fuente in fuentes:
     try:
@@ -36,53 +36,35 @@ for fuente in fuentes:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             contador = 0
             
-            # --- TÁCTICA PARA OLÉ ---
-            if fuente["nombre"] == "OLÉ":
-                enlaces = sopa.find_all('a')
-                for enlace in enlaces:
-                    texto_limpio = enlace.text.strip()
-                    if len(texto_limpio) > 35:
-                        link = enlace.get('href', '')
-                        if link:
-                            if not link.startswith('http'):
-                                link = fuente["base"] + link
-                            
-                            # Filtro estricto anti-basura y anti-autores
-                            if not any(prohibido in link.lower() for prohibido in palabras_prohibidas):
-                                if link not in urls_vistas_ronda_actual:
-                                    urls_vistas_ronda_actual.add(link)
-                                    noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                                    contador += 1
-                                    if contador >= 4:
-                                        break
+            # EL FRANCOTIRADOR: Escanea solo los enlaces directamente
+            enlaces = sopa.find_all('a')
             
-            # --- TÁCTICA PARA EL RESTO ---
-            else:
-                articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
-                for articulo in articulos:
-                    texto_limpio = articulo.text.strip()
-                    
-                    if len(texto_limpio) < 20:
-                        continue
-                    
-                    enlace_tag = articulo.find('a')
-                    if not enlace_tag:
-                        padres = articulo.find_parents('a')
-                        if padres:
-                            enlace_tag = padres[0]
-                    
-                    if enlace_tag and 'href' in enlace_tag.attrs:
-                        link = enlace_tag['href']
-                        if not link.startswith('http'):
-                            link = fuente["base"] + link
+            for enlace in enlaces:
+                # Limpiamos el texto para que no haya espacios en blanco engañosos
+                texto_limpio = " ".join(enlace.text.split())
+                
+                # Un titular real tiene al menos 35 caracteres. Esto ignora los enlaces de "Redacción Olé"
+                if len(texto_limpio) > 35:
+                    if 'href' in enlace.attrs:
+                        link = enlace['href'].strip()
                         
-                        if not any(prohibido in link.lower() for prohibido in palabras_prohibidas):
-                            if link not in urls_vistas_ronda_actual:
-                                urls_vistas_ronda_actual.add(link)
-                                noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                                contador += 1
-                                if contador >= 4: 
-                                    break
+                        # Pasamos el link por el escáner de basura
+                        if any(prohibido in link.lower() for prohibido in palabras_prohibidas):
+                            continue
+                            
+                        # Arreglamos los links incompletos
+                        if not link.startswith('http'):
+                            if not link.startswith('/'):
+                                link = '/' + link
+                            link = fuente["base"] + link
+                            
+                        # Evitamos duplicados en la misma ronda
+                        if link not in urls_vistas_ronda_actual:
+                            urls_vistas_ronda_actual.add(link)
+                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                            contador += 1
+                            if contador >= 4: 
+                                break
     except Exception as e:
         pass
 
@@ -252,7 +234,7 @@ if exito:
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
     
-    # --- ORDENAMIENTO CRONOLÓGICO Y FILTRO ANTI-DUPLICADOS TOTAL ---
+    # --- ORDENAMIENTO CRONOLÓGICO Y FILTRO ANTI-DUPLICADOS ---
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
@@ -269,10 +251,8 @@ if exito:
                 pass
         return datetime.min.replace(tzinfo=timezone.utc)
 
-    # 1. Ordenamos todo por fecha primero
     articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha_segura, reverse=True)
     
-    # 2. Filtramos para que no haya ni una sola tarjeta repetida (basado en el link de la noticia)
     urls_historial = set()
     articulos_unicos = []
     
@@ -280,7 +260,6 @@ if exito:
         enlace = articulo.find('a', target="_blank")
         if enlace and 'href' in enlace.attrs:
             link_articulo = enlace['href']
-            # Si este enlace no lo vimos antes, lo guardamos. Si ya existe, lo ignoramos por completo.
             if link_articulo not in urls_historial:
                 urls_historial.add(link_articulo)
                 articulos_unicos.append(articulo)
@@ -294,7 +273,7 @@ if exito:
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML ---
+    # --- PLANTILLA HTML (Solo las 4 categorías clave) ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
