@@ -24,6 +24,10 @@ fuentes = [
 
 encabezados = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 noticias_extraidas = []
+urls_vistas_ronda_actual = set() # Evita duplicados en la misma ronda
+
+# Filtros para evitar links basura o de autores
+palabras_prohibidas = ["javascript", "mailto", "defensa-del-consumidor", "/autor/", "/tema/", "/edicion-impresa/"]
 
 for fuente in fuentes:
     try:
@@ -32,34 +36,53 @@ for fuente in fuentes:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             contador = 0
             
-            # Buscamos etiquetas de artículos para ser precisos
-            articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
+            # --- TÁCTICA PARA OLÉ ---
+            if fuente["nombre"] == "OLÉ":
+                enlaces = sopa.find_all('a')
+                for enlace in enlaces:
+                    texto_limpio = enlace.text.strip()
+                    if len(texto_limpio) > 35:
+                        link = enlace.get('href', '')
+                        if link:
+                            if not link.startswith('http'):
+                                link = fuente["base"] + link
+                            
+                            # Filtro estricto anti-basura y anti-autores
+                            if not any(prohibido in link.lower() for prohibido in palabras_prohibidas):
+                                if link not in urls_vistas_ronda_actual:
+                                    urls_vistas_ronda_actual.add(link)
+                                    noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                                    contador += 1
+                                    if contador >= 4:
+                                        break
             
-            for articulo in articulos:
-                texto_limpio = articulo.text.strip()
-                
-                if len(texto_limpio) < 20:
-                    continue
-                
-                enlace_tag = articulo.find('a')
-                if not enlace_tag:
-                    padres = articulo.find_parents('a')
-                    if padres:
-                        enlace_tag = padres[0]
-                
-                if enlace_tag and 'href' in enlace_tag.attrs:
-                    link = enlace_tag['href']
-                    if not link.startswith('http'):
-                        link = fuente["base"] + link
+            # --- TÁCTICA PARA EL RESTO ---
+            else:
+                articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
+                for articulo in articulos:
+                    texto_limpio = articulo.text.strip()
                     
-                    # Filtros de exclusión directos para evitar basura
-                    if "javascript" in link or "mailto" in link or "defensa-del-consumidor" in link.lower():
+                    if len(texto_limpio) < 20:
                         continue
+                    
+                    enlace_tag = articulo.find('a')
+                    if not enlace_tag:
+                        padres = articulo.find_parents('a')
+                        if padres:
+                            enlace_tag = padres[0]
+                    
+                    if enlace_tag and 'href' in enlace_tag.attrs:
+                        link = enlace_tag['href']
+                        if not link.startswith('http'):
+                            link = fuente["base"] + link
                         
-                    noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                    contador += 1
-                    if contador >= 4: 
-                        break
+                        if not any(prohibido in link.lower() for prohibido in palabras_prohibidas):
+                            if link not in urls_vistas_ronda_actual:
+                                urls_vistas_ronda_actual.add(link)
+                                noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                                contador += 1
+                                if contador >= 4: 
+                                    break
     except Exception as e:
         pass
 
@@ -111,14 +134,14 @@ texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
     texto_para_ia += f"Noticia {i+1} [{noticia['fuente']}]:\n- Título: {noticia['titulo']}\n- Link: {noticia['link']}\n\n"
 
-# --- 3. EL CEREBRO DE LA IA (Sin Sociedad) ---
+# --- 3. EL CEREBRO DE LA IA ---
 prompt = f"""
 Eres un editor experto de noticias. Aquí tienes {len(noticias_finales)} noticias de hoy:
 {texto_para_ia}
 
 REGLAS ESTRICTAS:
 1. Clasifica obligatoriamente cada noticia en una de estas 4 categorías: DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS. (MERCADOS es solo para bolsa, dólar, trading). ESTÁ PROHIBIDO USAR LA CATEGORÍA "SOCIEDAD" O "TECNOLOGÍA".
-2. Si la noticia es de "OLÉ" y su contenido NO es deportivo (por ejemplo, reclamos, defensa del consumidor, legales), DESCÁRTALA por completo y no la incluyas.
+2. Si la noticia es de "OLÉ" y su contenido NO es deportivo, DESCÁRTALA.
 3. Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
 
 Devuelve la información en este formato por cada noticia, separando con el símbolo |:
@@ -160,7 +183,7 @@ if exito:
                 resumen = partes[3].strip()
                 link = partes[4].strip()
                 
-                # LA GUILLOTINA DE TIEMPO: Destruye noticias viejas
+                # GUILLOTINA DE TIEMPO
                 timestamp_iso = tiempos_reales.get(link, datetime.now(timezone.utc).isoformat())
                 try:
                     dt_noticia = datetime.fromisoformat(timestamp_iso.replace('Z', '+00:00'))
@@ -174,7 +197,6 @@ if exito:
                 except:
                     pass
                 
-                # Asignación de colores limitados
                 if categoria == "MERCADOS":
                     borde, pill = "border-emerald-500", "bg-emerald-900/40 text-emerald-400"
                 elif categoria == "ECONOMÍA":
@@ -207,7 +229,7 @@ if exito:
                 </article>
                 """
     
-    # --- EXTERMINADOR TOTAL DE FANTASMAS Y CATEGORÍAS INDESEADAS ---
+    # --- PURGA DE FANTASMAS ---
     historial_viejo_limpio = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
@@ -215,15 +237,13 @@ if exito:
             
         sopa_vieja = BeautifulSoup(contenido_previo, 'html.parser')
         for tarjeta in sopa_vieja.find_all('article'):
-            # Borrar diarios baneados
             span_diario = tarjeta.find('span', class_=lambda c: c and 'bg-[#1f2937]' in c)
             if span_diario:
                 nombre_diario = span_diario.text.strip().upper()
                 if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario:
                     tarjeta.decompose()
-                    continue 
+                    continue
             
-            # Borrar categorías indeseadas (Elimina Sociedad y Tecnología del historial)
             categoria_tarjeta = tarjeta.get('data-categoria', '').upper()
             if categoria_tarjeta in ["SOCIEDAD", "TECNOLOGÍA", "TECNOLOGIA"]:
                 tarjeta.decompose()
@@ -232,7 +252,7 @@ if exito:
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
     
-    # --- ORDENAMIENTO CRONOLÓGICO ---
+    # --- ORDENAMIENTO CRONOLÓGICO Y FILTRO ANTI-DUPLICADOS TOTAL ---
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
@@ -249,16 +269,32 @@ if exito:
                 pass
         return datetime.min.replace(tzinfo=timezone.utc)
 
+    # 1. Ordenamos todo por fecha primero
     articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha_segura, reverse=True)
     
+    # 2. Filtramos para que no haya ni una sola tarjeta repetida (basado en el link de la noticia)
+    urls_historial = set()
+    articulos_unicos = []
+    
+    for articulo in articulos_ordenados:
+        enlace = articulo.find('a', target="_blank")
+        if enlace and 'href' in enlace.attrs:
+            link_articulo = enlace['href']
+            # Si este enlace no lo vimos antes, lo guardamos. Si ya existe, lo ignoramos por completo.
+            if link_articulo not in urls_historial:
+                urls_historial.add(link_articulo)
+                articulos_unicos.append(articulo)
+        else:
+            articulos_unicos.append(articulo)
+    
     max_noticias = 60
-    articulos_finales = articulos_ordenados[:max_noticias]
+    articulos_finales = articulos_unicos[:max_noticias]
     historial_recortado = "\n".join([str(art) for art in articulos_finales])
     
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML DEFINITIVA (Solo las 4 categorías clave) ---
+    # --- PLANTILLA HTML ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
