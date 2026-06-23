@@ -183,29 +183,42 @@ if exito:
                 </article>
                 """
     
-    # --- LA MAGIA DEL HISTORIAL CON LIMPIEZA AUTOMÁTICA ---
+    # --- LA MAGIA DEL HISTORIAL ORDENADO Y LIMPIO ---
     historial_viejo = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
             historial_viejo = f.read()
             
-    # Unimos las noticias nuevas con el historial viejo
-    historial_completo = tarjetas_html + "\n" + historial_viejo
+    # Unimos todo
+    historial_completo_str = tarjetas_html + "\n" + historial_viejo
     
-    # Cortamos el historial usando la etiqueta de cierre del artículo
-    articulos = historial_completo.split('</article>')
-    articulos_validos = [art for art in articulos if '<article' in art]
+    # Usamos BeautifulSoup para analizar y ordenar cronológicamente
+    sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
+    todos_los_articulos = sopa_historial.find_all('article')
     
-    # AQUÍ DEFINES EL LÍMITE DE NOTICIAS (Ahora está en 36)
+    def obtener_fecha(articulo):
+        etiqueta_tiempo = articulo.find('span', class_='tiempo-noticia')
+        if etiqueta_tiempo and etiqueta_tiempo.has_attr('data-timestamp'):
+            fecha_str = etiqueta_tiempo['data-timestamp']
+            try:
+                # Reemplazamos la Z de formato UTC para que Python lo lea perfecto
+                return datetime.fromisoformat(fecha_str.replace('Z', '+00:00'))
+            except:
+                pass
+        # Si algo falla, asume que es viejísima para mandarla al fondo
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+    # El gran ordenamiento: de mayor (reciente) a menor (antigua)
+    articulos_ordenados = sorted(todos_los_articulos, key=obtener_fecha, reverse=True)
+    
+    # Aplicamos la guillotina: dejamos las 36 más recientes
     max_noticias = 36
+    articulos_finales = articulos_ordenados[:max_noticias]
     
-    # Nos quedamos solo con las tarjetas más recientes
-    if articulos_validos:
-        historial_recortado = '</article>\n'.join(articulos_validos[:max_noticias]) + '</article>\n'
-    else:
-        historial_recortado = ""
+    # Reconvertimos las tarjetas a texto HTML
+    historial_recortado = "\n".join([str(art) for art in articulos_finales])
     
-    # Guardamos el archivo ya limpio y recortado
+    # Guardamos
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
