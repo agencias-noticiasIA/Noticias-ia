@@ -2,11 +2,11 @@ name: Automatizacion de Noticias
 
 on:
   schedule:
-    - cron: '0 11 * * *' # Se ejecuta todos los días a las 8:00 AM hora Argentina
-  workflow_dispatch: # Nos permite tener un botón para probarlo ahora mismo a mano
+    - cron: '0 */4 * * *' # El robot se ejecutará automáticamente cada 4 horas
+  workflow_dispatch: # Mantiene tu botón manual de emergencia
 
 permissions:
-  contents: write # Le da permiso al bot para reescribir tu index.html
+  contents: write
 
 jobs:
   procesar-noticias:
