@@ -1,6 +1,38 @@
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:38:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458061-como-cotizan-hoy-23-de-junio-el-merval-adrs-bonos-y-riesgo-pais" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Los activos argentinos no resisten: sube el riesgo país y se desploman los ADRs en Wall Street</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los activos argentinos muestran una clara fragilidad, con un marcado ascenso del riesgo país y una significativa caída de los ADRs en Wall Street. Esta tendencia refleja una pérdida de confianza de los inversores y un deterioro generalizado del mercado, complicando la situación económica nacional.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:26:36.455Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/economia/2026/06/23/sube-el-riesgo-pais-y-bajan-las-acciones-argentinas-en-wall-street-en-un-dia-negativo-para-los-mercados-globales/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Sube el riesgo país y bajan las acciones argentinas en Wall Street en un día negativo para los mercados globales</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El riesgo país argentino experimentó una subida notable, mientras que las acciones locales en Wall Street registraron descensos significativos. Este panorama se enmarca en un día generalmente adverso para los mercados globales, reflejando la vulnerabilidad de los activos argentinos frente a las tendencias económicas internacionales y la incertidumbre financiera.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
 <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
 <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
 </div>
@@ -13,6 +45,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada bursátil culminó con una tendencia negativa para los activos argentinos, reflejando el nerviosismo global. El riesgo país experimentó un ascenso notable, mientras que las acciones de empresas nacionales listadas en Wall Street sufrieron caídas significativas. Este panorama se enmarca en un día adverso para los mercados internacionales, impactando la confianza de los inversores.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:05:34.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/temperaturas-r%C3%A9cord-ponen-peligro-cosecha-150534879.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Temperaturas récord ponen en peligro la cosecha de granos en Francia</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Temperaturas récord en Francia están poniendo en grave riesgo la cosecha de granos de este año. La ola de calor extrema amenaza con reducir drásticamente la producción agrícola, generando preocupación por la seguridad alimentaria y potenciales impactos económicos en el sector primario y los mercados globales.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -45,22 +93,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera global se mostró adversa, impactando directamente en los activos argentinos. El riesgo país experimentó un ascenso, reflejando una mayor percepción de incertidumbre, mientras que las acciones de empresas argentinas listadas en Wall Street registraron caídas significativas. Este panorama se enmarca en una tendencia negativa generalizada que afectó a los mercados internacionales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T11:58:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.baenegocios.com/finanzas/el-dolar-blue-llega-a-los-1-500-y-alcanza-su-valor-mas-alto-desde-enero/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El dólar blue llega a los $1.500 y alcanza su valor más alto desde enero</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar blue alcanzó hoy la cotización de $1.500, marcando su valor más elevado desde el mes de enero. Este importante salto en el mercado paralelo genera preocupación por la volatilidad cambiaria y su impacto en la inflación. La escalada del billete informal se produce en un contexto de incertidumbre económica y presiones sobre las reservas.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -108,7 +140,39 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar mantiene su tendencia alcista, y los operadores del mercado ya proyectan nuevos rangos de precios, estableciendo un techo y un piso esperados para la divisa. Esta previsión refleja la persistente presión sobre la moneda local y las expectativas de volatilidad en el tipo de cambio.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T11:30:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458001-el-dolar-no-afloja-el-nuevo-precio-techo-y-piso-que-preven-operadores-para-la-divisa" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>El dólar no afloja: cuál es el nuevo precio techo y piso que prevén operadores para la divisa</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado cambiario argentino sigue mostrando la fortaleza del dólar, llevando a operadores financieros a recalcular sus proyecciones. El artículo detalla las nuevas estimaciones de "precio techo" y "precio piso" para la divisa estadounidense, reflejando la incertidumbre económica y las expectativas sobre las políticas monetarias que podrían influir en su cotización a corto y mediano plazo.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:21:52.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/parlamento-europeo-respalda-esperado-euro-130730654.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>La Eurocámara apoya el euro digital para reforzar la autonomía europea en los sistemas de pagos</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Eurocámara ha dado su respaldo al proyecto del euro digital, un paso crucial para fortalecer la autonomía de Europa en sus sistemas de pagos. Esta iniciativa busca modernizar la infraestructura financiera, reducir la dependencia de plataformas externas y consolidar la soberanía económica de la Unión Europea.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -141,6 +205,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Se analiza si la presión de venta sobre Bitcoin está disminuyendo, identificando tres señales clave que podrían indicar un cambio de tendencia en el mercado de criptomonedas. Los analistas observan movimientos en los volúmenes de transacción, el comportamiento de las grandes ballenas y los indicadores técnicos para prever si la criptomoneda recuperará impulso alcista.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:54:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Los ADRs de bancos se hunden hasta 3% mientras que el riesgo país sube a 435 puntos</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los ADRs de bancos argentinos sufrieron caídas de hasta el 3%, evidenciando un deterioro en el sentimiento inversor. Simultáneamente, el riesgo país se disparó hasta los 435 puntos, señalando una creciente percepción de inestabilidad económica y financiera, impactando negativamente los bonos y la confianza en el mercado local.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -189,6 +269,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La jornada financiera evidenció una marcada caída en los ADRs de bancos argentinos, con descensos de hasta el 3%, señal de nerviosismo inversor. Paralelamente, el riesgo país experimentó un ascenso considerable, superando los 435 puntos básicos. Este escenario refleja la cautela y preocupación de los inversores ante la situación económica y las perspectivas del mercado local.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:52:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/energia/cortes-gnc-la-plata-que-falta-gas-si-vaca-muerta-produce-cada-vez-mas-n6291799" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Cortes de GNC en La Plata: por qué falta gas si Vaca Muerta produce cada vez más</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Plata experimenta cortes en el suministro de GNC, generando interrogantes sobre la falta de gas a pesar del creciente volumen de producción de Vaca Muerta. Esta situación destaca desafíos críticos en la infraestructura de transporte y distribución, afectando directamente a los consumidores y la industria local.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -285,6 +381,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado financiero argentino aguarda con gran expectación la decisión de MSCI sobre la calificación del país, un factor crucial para atraer inversiones. Una mejora en la categoría de mercado emergente podría inyectar confianza y capital, mientras que un mantenimiento o descenso impactaría negativamente en los flujos de inversión y el posicionamiento global de Argentina.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>La jefa del bloque libertario no estará en el programado apoyo de los legisladores libertarios al jefe de Gabinete, que enfrenta un pedido de interpelación en la Cámara alta</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La líder del bloque libertario se ausentará de la reunión de apoyo a Manuel Adorni, quien enfrenta un pedido de interpelación en el Senado. Esta decisión evidencia posibles fracturas internas o una falta de consenso estratégico dentro de la bancada oficialista, complicando el panorama político del Gobierno.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -412,7 +524,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La OTAN ha intensificado sus preparativos militares en Letonia, ante la creciente preocupación por un posible conflicto en la región del mar Báltico. Este despliegue acelerado de fuerzas y ejercicios busca reforzar la disuasión y la defensa colectiva, enviando un claro mensaje ante las tensiones geopolíticas y la seguridad en la frontera oriental de la Alianza.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La OTAN ha intensificado sus preparativos militares en Letonia, anticipándose a un posible conflicto en la estratégica región del mar Báltico. Este despliegue subraya la creciente preocupación por la seguridad en Europa del Este y la determinación de la Alianza para reforzar su postura defensiva en la zona.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -478,6 +590,22 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Tras asegurar su clasificación, la Selección argentina ya conoce su posible hoja de ruta hacia una hipotética final del Mundial 2026. Este análisis detalla los cruces potenciales y los desafíos que enfrentaría el equipo en cada etapa, brindando una visión anticipada de los rivales y escenarios que definirán su camino en el torneo.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-teal-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="SOCIEDAD">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-teal-900/40 text-teal-400 px-2.5 py-1 rounded-md">SOCIEDAD</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:02:43.341Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/el-abogado-de-jesica-cirio-se-presento-en-tribunales-y-entrego-el-telefono-de-ella-nid23062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Investigan a Insaurralde. El abogado de Cirio entregó en tribunales el celular de ella: lo peritarán en busca de los videos</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">En el marco de la investigación contra Insaurralde, el abogado de Jesica Cirio ha entregado su teléfono celular en los tribunales para ser peritado. Las autoridades judiciales buscarán evidencias cruciales, como videos, en el dispositivo, profundizando la causa que involucra al ex funcionario.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -509,22 +637,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El gobierno argentino ha actualizado el régimen de inversiones mineras, buscando impulsar el sector mediante la simplificación de trámites burocráticos para las empresas. Esta medida tiene como objetivo atraer capital extranjero y nacional, fomentar la producción y el empleo en la minería, y posicionar al país como un destino más competitivo para inversiones energéticas y de recursos naturales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-teal-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="SOCIEDAD">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
-<span class="bg-teal-900/40 text-teal-400 px-2.5 py-1 rounded-md">SOCIEDAD</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:05.237111">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.baenegocios.com/columnistas/entre-el-pasado-y-el-futuro-perdemos-el-presente-6656/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Entre el pasado y el futuro, perdemos el presente</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Este artículo de opinión reflexiona sobre cómo la constante oscilación entre la nostalgia del pasado y la ansiedad por el futuro nos impide vivir plenamente el presente. Aborda la importancia de la atención plena y la gestión del tiempo para encontrar equilibrio y bienestar en una sociedad cada vez más acelerada y demandante, priorizando la calidad de vida.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -558,19 +670,67 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina ha asegurado el primer puesto en su grupo, garantizando una posición favorable en la fase eliminatoria. El equipo técnico ya evalúa a los posibles rivales para los octavos de final, delineando estrategias para avanzar en el torneo. Este logro refuerza la moral del equipo y sus aspiraciones al título.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">BAE NEGOCIOS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
 </div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:00:04.050556">Reciente</span>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:47:08.185Z">Reciente</span>
 </div>
-<a class="group block mb-3" href="https://www.baenegocios.com/columnistas/la-economia-al-servicio-del-bien-comun/" target="_blank">
+<a class="group block mb-3" href="https://www.infobae.com/america/mundo/2026/06/23/china-y-la-guerra-por-la-opinion-publica-el-plan-quinquenal-las-tacticas-rusas-y-la-operacion-glass-onion/" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La economía al servicio del bien común</span>
+<span>China y la guerra por la opinión pública: el plan quinquenal, las tácticas rusas y la operación “Glass Onion”</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Este artículo de opinión explora el concepto de la economía al servicio del bien común, cuestionando los modelos tradicionales centrados únicamente en el crecimiento. Propone una visión donde las políticas económicas prioricen el bienestar social, la equidad y la sostenibilidad, sugiriendo un cambio de paradigma hacia sistemas más inclusivos y éticos para el desarrollo de la sociedad.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">China está librando una compleja "guerra por la opinión pública", implementando su plan quinquenal y adoptando tácticas rusas, incluyendo la enigmática "Operación Glass Onion". Esta estrategia global busca moldear narrativas y consolidar la influencia internacional del gigante asiático en un contexto de creciente competencia geopolítica.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:22:08.543Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/america/mundo/2026/06/23/trump-dijo-que-iran-tendra-inspecciones-nucleares-y-advirtio-que-eeuu-volvera-a-bloquear-el-estrecho-de-ormuz-si-lo-cree-necesario/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Trump dijo que Irán tendrá inspecciones nucleares y advirtió que EEUU volverá a bloquear Ormuz si lo cree necesario</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El expresidente estadounidense Donald Trump ha declarado que las inspecciones nucleares son una condición básica para cualquier negociación con Irán. Además, advirtió que Estados Unidos no dudará en bloquear nuevamente el Estrecho de Ormuz si lo considera necesario para proteger sus intereses, elevando las tensiones geopolíticas.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T12:22:08.543Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/america/mundo/2026/06/23/trump-dijo-que-iran-tendra-inspecciones-nucleares-y-advirtio-que-eeuu-volvera-a-bloquear-el-estrecho-de-ormuz-si-lo-cree-necesario/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>El presidente de Estados Unidos aseguró que el control atómico al régimen de Teherán es una condición básica para que haya negociaciones. Agregó que los barcos norteamericanos no se fueron de la zona y volverán a intervenir si lo cree necesario</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El presidente estadounidense reafirmó que el control atómico sobre Teherán es una exigencia fundamental para cualquier proceso de negociación. Subrayó que la flota norteamericana permanece en la región, lista para intervenir si la situación lo requiere, marcando una postura firme ante las ambiciones nucleares iraníes.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T03:01:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/ni-los-goles-ni-la-porno-corrupcion-logran-salvar-a-adorni-nid23062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Análisis. Ni los goles, ni la porno-corrupción, logran salvar a Adorni</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un análisis político profundiza en la difícil situación de Adorni, sugiriendo que ni los éxitos populares ni las controversias de "porno-corrupción" logran mejorar su imagen pública. El artículo examina la erosión de su apoyo y los desafíos persistentes que enfrenta en su gestión, destacando su precario posicionamiento.</p>
 </article>
