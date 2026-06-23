@@ -30,35 +30,49 @@ for fuente in fuentes:
         respuesta = requests.get(fuente["url"], headers=encabezados, timeout=10)
         if respuesta.status_code == 200:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
-            
-            # Ampliamos a h4 y h5 por si algún diario (como Olé o Yahoo) usa letras más chicas
-            articulos = sopa.find_all(['h1', 'h2', 'h3', 'h4', 'h5']) 
             contador = 0
             
-            for articulo in articulos:
-                texto_limpio = articulo.text.strip()
-                
-                # Ignorar títulos muy cortos (Ej: "Leer más", "Opinión")
-                if len(texto_limpio) < 25:
-                    continue
-                
-                # ESCÁNER PROFUNDO PARA ENLACES (Solución definitiva para Olé)
-                enlace_tag = articulo.find('a')
-                if not enlace_tag:
-                    padres = articulo.find_parents('a') # Busca en todas las cajas envolventes
-                    if padres:
-                        enlace_tag = padres[0]
-                
-                if enlace_tag and 'href' in enlace_tag.attrs:
-                    link = enlace_tag['href']
-                    if not link.startswith('http'):
-                        link = fuente["base"] + link
+            # --- TÁCTICA ESPECIAL EXCLUSIVA PARA OLÉ ---
+            if fuente["nombre"] == "OLÉ":
+                enlaces = sopa.find_all('a')
+                for enlace in enlaces:
+                    texto_limpio = enlace.text.strip()
+                    # Si el enlace tiene mucho texto, es casi seguro un titular
+                    if len(texto_limpio) > 35:
+                        link = enlace.get('href')
+                        if link and "javascript" not in link and "mailto" not in link:
+                            if not link.startswith('http'):
+                                link = fuente["base"] + link
+                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                            contador += 1
+                            if contador >= 4:
+                                break
+            
+            # --- TÁCTICA NORMAL PARA EL RESTO DE LOS DIARIOS ---
+            else:
+                articulos = sopa.find_all(['h1', 'h2', 'h3', 'h4', 'h5']) 
+                for articulo in articulos:
+                    texto_limpio = articulo.text.strip()
                     
-                    if "javascript" not in link and "mailto" not in link:
-                        noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                        contador += 1
-                        if contador >= 4: 
-                            break
+                    if len(texto_limpio) < 25:
+                        continue
+                    
+                    enlace_tag = articulo.find('a')
+                    if not enlace_tag:
+                        padres = articulo.find_parents('a')
+                        if padres:
+                            enlace_tag = padres[0]
+                    
+                    if enlace_tag and 'href' in enlace_tag.attrs:
+                        link = enlace_tag['href']
+                        if not link.startswith('http'):
+                            link = fuente["base"] + link
+                        
+                        if "javascript" not in link and "mailto" not in link:
+                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
+                            contador += 1
+                            if contador >= 4: 
+                                break
     except Exception as e:
         pass
 
@@ -110,13 +124,13 @@ texto_para_ia = ""
 for i, noticia in enumerate(noticias_finales):
     texto_para_ia += f"Noticia {i+1} [{noticia['fuente']}]:\n- Título: {noticia['titulo']}\n- Link: {noticia['link']}\n\n"
 
-# --- 3. EL CEREBRO ---
+# --- 3. EL CEREBRO (Sin categoría Tecnología) ---
 prompt = f"""
 Eres un editor experto de noticias. Aquí tienes {len(noticias_finales)} noticias de hoy:
 {texto_para_ia}
 
 Devuelve la información en este formato por cada noticia, separando con el símbolo |.
-Clasifica obligatoriamente cada noticia en: DEPORTES, SOCIEDAD, POLÍTICA, ECONOMÍA, MERCADOS o TECNOLOGÍA. 
+Clasifica obligatoriamente cada noticia en: DEPORTES, SOCIEDAD, POLÍTICA, ECONOMÍA o MERCADOS. 
 (Usa MERCADOS exclusivamente para bolsa, trading, bonos, acciones, CEDEARs, dólar y Wall Street).
 Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
 
@@ -159,6 +173,7 @@ if exito:
                 resumen = partes[3].strip()
                 link = partes[4].strip()
                 
+                # Tecnología eliminado de los colores
                 if categoria == "MERCADOS":
                     borde, pill = "border-emerald-500", "bg-emerald-900/40 text-emerald-400"
                 elif categoria == "ECONOMÍA":
@@ -167,8 +182,6 @@ if exito:
                     borde, pill = "border-orange-500", "bg-orange-900/40 text-orange-400"
                 elif categoria == "POLÍTICA":
                     borde, pill = "border-indigo-500", "bg-indigo-900/40 text-indigo-400"
-                elif categoria == "TECNOLOGÍA":
-                    borde, pill = "border-violet-500", "bg-violet-900/40 text-violet-400"
                 else: 
                     borde, pill = "border-teal-500", "bg-teal-900/40 text-teal-400"
                 
@@ -195,7 +208,7 @@ if exito:
                 </article>
                 """
     
-    # --- PURGA DE FANTASMAS (Borra Cronista, Forbes y Bae Negocios del historial viejo) ---
+    # --- PURGA DE FANTASMAS ---
     historial_viejo_limpio = ""
     if os.path.exists("historial.txt"):
         with open("historial.txt", "r", encoding="utf-8") as f:
@@ -207,7 +220,7 @@ if exito:
             if span_diario:
                 nombre_diario = span_diario.text.strip().upper()
                 if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario:
-                    tarjeta.decompose() # Destruye la tarjeta
+                    tarjeta.decompose() 
         historial_viejo_limpio = str(sopa_vieja)
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
@@ -238,7 +251,7 @@ if exito:
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
         
-    # --- PLANTILLA HTML ---
+    # --- PLANTILLA HTML (Sin Tecnología) ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -279,7 +292,6 @@ if exito:
         <button data-filter="POLÍTICA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Política</button>
         <button data-filter="DEPORTES" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Deportes</button>
         <button data-filter="SOCIEDAD" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Sociedad</button>
-        <button data-filter="TECNOLOGÍA" class="btn-filtro bg-[#1f2937] text-gray-300 px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition border border-gray-700 hover:border-cyan-500/50">Tecnología</button>
     </div>
 
     <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20" id="contenedor-noticias">
