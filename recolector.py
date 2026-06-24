@@ -11,12 +11,11 @@ from datetime import datetime, timezone
 API_KEY = os.environ.get("LLAVESECRETABRAI")
 client = genai.Client(api_key=API_KEY)
 
-# --- 2. EL RECOLECTOR MULTI-FUENTE (Tus 7 fuentes) ---
+# --- 2. EL RECOLECTOR MULTI-FUENTE (6 Fuentes Sólidas) ---
 fuentes = [
     {"nombre": "ÁMBITO", "url": "https://www.ambito.com/", "base": "https://www.ambito.com"},
     {"nombre": "INFOBAE", "url": "https://www.infobae.com/", "base": "https://www.infobae.com"},
     {"nombre": "TN", "url": "https://tn.com.ar/", "base": "https://tn.com.ar"},
-    {"nombre": "OLÉ", "url": "https://www.ole.com.ar/", "base": "https://www.ole.com.ar"},
     {"nombre": "IPROFESIONAL", "url": "https://www.iprofesional.com/", "base": "https://www.iprofesional.com"},
     {"nombre": "YAHOO FINANZAS", "url": "https://es.finance.yahoo.com/", "base": "https://es.finance.yahoo.com"},
     {"nombre": "LA NACION", "url": "https://www.lanacion.com.ar/", "base": "https://www.lanacion.com.ar"}
@@ -35,69 +34,36 @@ for fuente in fuentes:
             sopa = BeautifulSoup(respuesta.text, 'html.parser')
             contador = 0
             
-            # --- TÁCTICA CAJA FUERTE PARA OLÉ ---
-            if fuente["nombre"] == "OLÉ":
-                cajas_articulo = sopa.find_all('article')
-                for caja in cajas_articulo:
-                    titulo_tag = caja.find(['h1', 'h2', 'h3', 'h4', 'h5'])
-                    if not titulo_tag:
-                        continue
-                        
-                    texto_limpio = " ".join(titulo_tag.text.split())
-                    if len(texto_limpio) < 20:
-                        continue
-                        
-                    enlace_tag = caja.find('a')
-                    if not enlace_tag:
-                        continue
-                        
-                    link = enlace_tag.get('href', '')
+            articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
+            for articulo in articulos:
+                texto_limpio = " ".join(articulo.text.split())
+                
+                if len(texto_limpio) < 20:
+                    continue
+                
+                enlace_tag = articulo.find('a')
+                if not enlace_tag:
+                    padres = articulo.find_parents('a')
+                    if padres:
+                        enlace_tag = padres[0]
+                
+                if enlace_tag and 'href' in enlace_tag.attrs:
+                    link = enlace_tag['href']
                     
-                    if not link or any(prohibido in link.lower() for prohibido in palabras_prohibidas):
+                    if any(prohibido in link.lower() for prohibido in palabras_prohibidas):
                         continue
                         
                     if not link.startswith('http'):
                         if not link.startswith('/'):
                             link = '/' + link
                         link = fuente["base"] + link
-                        
+                    
                     if link not in urls_vistas_ronda_actual:
                         urls_vistas_ronda_actual.add(link)
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 4:
+                        if contador >= 4: 
                             break
-                            
-            # --- TÁCTICA PARA EL RESTO DE LOS DIARIOS ---
-            else:
-                articulos = sopa.find_all(['article', 'h1', 'h2', 'h3', 'h4']) 
-                for articulo in articulos:
-                    texto_limpio = " ".join(articulo.text.split())
-                    
-                    if len(texto_limpio) < 20:
-                        continue
-                    
-                    enlace_tag = articulo.find('a')
-                    if not enlace_tag:
-                        padres = articulo.find_parents('a')
-                        if padres:
-                            enlace_tag = padres[0]
-                    
-                    if enlace_tag and 'href' in enlace_tag.attrs:
-                        link = enlace_tag['href']
-                        
-                        if any(prohibido in link.lower() for prohibido in palabras_prohibidas):
-                            continue
-                            
-                        if not link.startswith('http'):
-                            link = fuente["base"] + link
-                        
-                        if link not in urls_vistas_ronda_actual:
-                            urls_vistas_ronda_actual.add(link)
-                            noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
-                            contador += 1
-                            if contador >= 4: 
-                                break
     except Exception as e:
         pass
 
@@ -156,8 +122,7 @@ Eres un editor experto de noticias. Aquí tienes {len(noticias_finales)} noticia
 
 REGLAS ESTRICTAS:
 1. Clasifica obligatoriamente cada noticia en una de estas 4 categorías: DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS. (MERCADOS es solo para bolsa, dólar, trading). ESTÁ PROHIBIDO USAR LA CATEGORÍA "SOCIEDAD" O "TECNOLOGÍA".
-2. Si la noticia es de "OLÉ" y su contenido NO es deportivo, DESCÁRTALA.
-3. Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
+2. Escribe un RESUMEN EXTENDIDO de entre 40 y 60 palabras, brindando detalles profundos.
 
 Devuelve la información en este formato por cada noticia, separando con el símbolo |:
 DIARIO|CATEGORIA|TÍTULO|RESUMEN EXTENDIDO|LINK
@@ -255,19 +220,19 @@ if exito:
             span_diario = tarjeta.find('span', class_=lambda c: c and 'bg-[#1f2937]' in c)
             if span_diario:
                 nombre_diario = span_diario.text.strip().upper()
-                if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario:
+                if "CRONISTA" in nombre_diario or "FORBES" in nombre_diario or "BAE" in nombre_diario or "OLÉ" in nombre_diario:
                     tarjeta.decompose()
                     continue
             
             categoria_tarjeta = tarjeta.get('data-categoria', '').upper()
-            if categoria_tarjeta in ["SOCIEDAD", "TECNOLOGÍA", "TECNOLOGIA"]:
+            if categoria_tarjeta not in ["DEPORTES", "POLÍTICA", "ECONOMÍA", "MERCADOS"]:
                 tarjeta.decompose()
                 
         historial_viejo_limpio = str(sopa_vieja)
             
     historial_completo_str = tarjetas_html + "\n" + historial_viejo_limpio
     
-    # --- ORDENAMIENTO CRONOLÓGICO Y FILTRO ANTI-DUPLICADOS ---
+    # --- ORDENAMIENTO Y ANTI-DUPLICADOS ---
     sopa_historial = BeautifulSoup(historial_completo_str, 'html.parser')
     todos_los_articulos = sopa_historial.find_all('article')
     
@@ -305,8 +270,41 @@ if exito:
     
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
+
+    # --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL (NUEVO) ---
+    print("Obteniendo cotizaciones del mercado...")
+    cotizaciones_html = ""
+    try:
+        req_api = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
+        if req_api.status_code == 200:
+            datos_dolar = req_api.json()
+            casas_clave = {"oficial": "DÓLAR OFICIAL", "blue": "DÓLAR BLUE", "bolsa": "DÓLAR MEP", "contadoconliqui": "DÓLAR CCL"}
+            
+            for casa, nombre_mostrar in casas_clave.items():
+                for dolar in datos_dolar:
+                    if dolar["casa"] == casa:
+                        venta = dolar["venta"]
+                        compra = dolar.get("compra", venta)
+                        cotizaciones_html += f"""
+                        <div class="bg-[#1f2937] border border-gray-700 rounded-xl p-4 flex-1 min-w-[140px] text-center shadow-lg hover:border-emerald-500/50 transition">
+                            <h3 class="text-gray-400 text-xs font-bold tracking-widest mb-1">{nombre_mostrar}</h3>
+                            <div class="text-2xl font-black text-emerald-400">${venta}</div>
+                            <div class="text-[10px] text-gray-500 mt-1">Compra: ${compra}</div>
+                        </div>
+                        """
+                        break
+    except Exception as e:
+        cotizaciones_html = "<div class='text-gray-500 text-sm text-center w-full'>Cotizaciones del mercado no disponibles temporalmente.</div>"
+
+    panel_financiero = f"""
+    <div class="max-w-4xl mx-auto px-4 mb-8">
+        <div class="flex flex-wrap gap-4 justify-between">
+            {cotizaciones_html}
+        </div>
+    </div>
+    """
         
-    # --- PLANTILLA HTML (Solo las 4 categorías clave) ---
+    # --- PLANTILLA HTML DEFINITIVA CON EL PANEL BURSÁTIL ---
     html_completo = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -326,14 +324,16 @@ if exito:
         </div>
     </nav>
     
-    <header class="text-center mt-16 mb-12 px-4">
+    <header class="text-center mt-16 mb-10 px-4">
         <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
             La información al <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">instante</span>
         </h1>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Noticias y Mercados en tiempo real, analizadas a fondo por Inteligencia Artificial.</p>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-8">Noticias y Mercados en tiempo real, analizadas a fondo por Inteligencia Artificial.</p>
     </header>
 
-    <div class="max-w-2xl mx-auto px-4 mb-8">
+    {panel_financiero}
+
+    <div class="max-w-2xl mx-auto px-4 mb-8 mt-4">
         <div class="relative">
             <input type="text" id="buscador" placeholder="Buscar por palabra clave, acción o dólar..." class="w-full bg-[#111827] border border-[#1f2937] rounded-full px-6 py-4 text-white focus:outline-none focus:border-cyan-500 transition shadow-lg pl-14 placeholder-gray-500">
             <svg class="w-6 h-6 text-gray-500 absolute left-5 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
