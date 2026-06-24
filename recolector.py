@@ -271,35 +271,82 @@ if exito:
     with open("historial.txt", "w", encoding="utf-8") as f:
         f.write(historial_recortado)
 
-    # --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL ---
+    # --- 4. EXTRACCIÓN DEL MERCADO BURSÁTIL (DÓLAR, RIESGO PAÍS Y YAHOO) ---
     print("Obteniendo cotizaciones del mercado...")
-    cotizaciones_html = ""
+    widgets_html = ""
+    
+    # 4.1 Extracción de Dólares
     try:
-        req_api = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
-        if req_api.status_code == 200:
-            datos_dolar = req_api.json()
-            casas_clave = {"oficial": "DÓLAR OFICIAL", "blue": "DÓLAR BLUE", "bolsa": "DÓLAR MEP", "contadoconliqui": "DÓLAR CCL"}
-            
-            for casa, nombre_mostrar in casas_clave.items():
-                for dolar in datos_dolar:
-                    if dolar["casa"] == casa:
-                        venta = dolar["venta"]
-                        compra = dolar.get("compra", venta)
-                        cotizaciones_html += f"""
-                        <div class="bg-[#1f2937] border border-gray-700 rounded-xl p-4 flex-1 min-w-[140px] text-center shadow-lg hover:border-emerald-500/50 transition">
-                            <h3 class="text-gray-400 text-xs font-bold tracking-widest mb-1">{nombre_mostrar}</h3>
-                            <div class="text-2xl font-black text-emerald-400">${venta}</div>
-                            <div class="text-[10px] text-gray-500 mt-1">Compra: ${compra}</div>
-                        </div>
-                        """
-                        break
-    except Exception as e:
-        cotizaciones_html = "<div class='text-gray-500 text-sm text-center w-full'>Cotizaciones del mercado no disponibles temporalmente.</div>"
+        req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
+        if req_dolar.status_code == 200:
+            dolares = req_dolar.json()
+            casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
+            for casa, nombre in casas_clave.items():
+                d_info = next((d for d in dolares if d["casa"] == casa), None)
+                if d_info:
+                    widgets_html += f"""
+                    <div class="bg-[#1f2937] border border-gray-700 rounded-xl p-4 flex-1 min-w-[130px] text-center shadow-lg hover:border-emerald-500/50 transition">
+                        <span class="text-gray-400 text-[10px] font-black tracking-wider uppercase">DÓLAR {nombre}</span>
+                        <div class="text-2xl font-black text-emerald-400 mt-1">${d_info["venta"]}</div>
+                        <span class="text-[9px] text-gray-500">Compra: ${d_info.get("compra", d_info["venta"])}</span>
+                    </div>
+                    """
+    except:
+        pass
+
+    # 4.2 Extracción Riesgo País (Argentina Datos API)
+    try:
+        req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
+        if req_rp.status_code == 200:
+            datos_rp = req_rp.json()
+            if datos_rp:
+                ultimo_rp = datos_rp[-1]["valor"] # Toma el último valor registrado
+                widgets_html += f"""
+                <div class="bg-[#1f2937] border border-gray-700 rounded-xl p-4 flex-1 min-w-[130px] text-center shadow-lg hover:border-red-500/50 transition">
+                    <span class="text-red-400 text-[10px] font-black tracking-wider uppercase">RIESGO PAÍS</span>
+                    <div class="text-2xl font-black text-white mt-1">{int(ultimo_rp)}</div>
+                    <span class="text-[9px] text-gray-500">Puntos Básicos</span>
+                </div>
+                """
+    except:
+        pass
+
+    # 4.3 Extracción de Acciones e Índices (Yahoo Finance)
+    headers_yahoo = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+    activos = [
+        {"ticker": "YPF", "nombre": "YPF (ADR)"},
+        {"ticker": "GGAL", "nombre": "GALICIA (ADR)"},
+        {"ticker": "^GSPC", "nombre": "S&P 500"}
+    ]
+
+    for activo in activos:
+        try:
+            url_yahoo = f"https://query1.finance.yahoo.com/v8/finance/chart/{activo['ticker']}?region=US&lang=en-US"
+            req_yahoo = requests.get(url_yahoo, headers=headers_yahoo, timeout=5)
+            if req_yahoo.status_code == 200:
+                data = req_yahoo.json()
+                precio = data['chart']['result'][0]['meta']['regularMarketPrice']
+                
+                # Formateo visual (US$ para acciones, números sin coma para índices)
+                if "^" in activo['ticker']:
+                    precio_form = f"{int(precio):,}".replace(",", ".")
+                else:
+                    precio_form = f"US$ {precio:.2f}"
+                
+                widgets_html += f"""
+                <div class="bg-[#1f2937] border border-gray-700 rounded-xl p-4 flex-1 min-w-[130px] text-center shadow-lg hover:border-blue-500/50 transition">
+                    <span class="text-blue-400 text-[10px] font-black tracking-wider uppercase">{activo['nombre']}</span>
+                    <div class="text-2xl font-black text-white mt-1">{precio_form}</div>
+                    <span class="text-[9px] text-gray-500">Wall Street</span>
+                </div>
+                """
+        except:
+            pass
 
     panel_financiero = f"""
-    <div class="max-w-4xl mx-auto px-4 mb-8">
-        <div class="flex flex-wrap gap-4 justify-between">
-            {cotizaciones_html}
+    <div class="max-w-6xl mx-auto px-4 mb-8 mt-6">
+        <div class="flex flex-wrap gap-3 justify-center">
+            {widgets_html}
         </div>
     </div>
     """
@@ -315,7 +362,8 @@ if exito:
     <meta name="description" content="Portal de noticias financieras, mercado de capitales y actualidad argentina en tiempo real, analizadas a fondo por Inteligencia Artificial.">
     <meta property="og:title" content="Noticias IA | Mercados & Actualidad">
     <meta property="og:description" content="Portal de noticias financieras y actualidad en tiempo real, analizadas a fondo por Inteligencia Artificial.">
-    <meta property="og:image" content="https://itu.uncuyo.edu.ar/cache/16c63c321040ab4da2010172ba336d67_732_1296.jpg"> <meta property="og:url" content="https://noticiasia.github.io/">
+    <meta property="og:image" content="https://itu.uncuyo.edu.ar/cache/16c63c321040ab4da2010172ba336d67_732_1296.jpg"> 
+    <meta property="og:url" content="https://noticiasia.github.io/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     
@@ -328,11 +376,11 @@ if exito:
         <div class="text-2xl font-black text-white flex items-center gap-2">Noticias IA 🤖</div>
     </nav>
     
-    <header class="text-center mt-16 mb-10 px-4">
+    <header class="text-center mt-16 mb-6 px-4">
         <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
             La información al <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">instante</span>
         </h1>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg mb-8">Noticias y Mercados en tiempo real, analizadas a fondo por Inteligencia Artificial.</p>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Noticias y Mercados en tiempo real, analizadas a fondo por Inteligencia Artificial.</p>
     </header>
 
     {panel_financiero}
