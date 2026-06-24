@@ -1,3 +1,179 @@
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T10:37:40.435097+00:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/negocios/457746-renuncio-a-multinacionales-aposto-por-su-idea-y-lidera-un-negocio-que-factura-1-millon-de-dolares" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Renunció a las multinacionales para apostar por su idea y hoy factura u$s1 millón con su negocioNegocios / EmprenderPor Laura Andahazi Kasnya</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una historia inspiradora de emprendimiento destaca a una persona que dejó su carrera en multinacionales para desarrollar su propia idea de negocio. Esta arriesgada apuesta ha rendido frutos, con su empresa alcanzando una facturación anual de un millón de dólares, demostrando el éxito potencial de la visión y determinación empresarial.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T10:17:01.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/venezuela-prepara-reestructuraci%C3%B3n-deuda-historia-094346495.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Venezuela prepara la mayor reestructuración de deuda de la historia tras la caída de Maduro</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Venezuela se prepara para la reestructuración de deuda más grande de su historia, un proceso financiero masivo esperado tras un cambio político (la caída de Maduro). Esta iniciativa busca reorganizar miles de millones en obligaciones, con el objetivo de estabilizar la economía nacional y reabrir las puertas a la financiación y relaciones financieras internacionales.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T07:00:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458121-que-pasara-con-acciones-tras-decision-de-msci-de-mantener-a-argentina-en-la-peor-categoria" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Qué pasará con acciones locales tras decisión de MSCI de dejar a la Argentina en la categoría más bajaLos analistas anticipan cómo seguirán las acciones de las empresas locales, luego de que MSCI confirmó que no mejorará la categoría de ArgentinaFinanzas/ MSCI castiga a ArgentinaPor José Carmona</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La decisión de MSCI de mantener a Argentina en la categoría más baja del mercado ha generado preocupación entre los analistas, quienes anticipan un impacto en las acciones locales. Esta confirmación, que refleja la falta de mejoras en el entorno de inversión, influirá en la confianza de los inversores y el rendimiento bursátil argentino.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T09:25:51.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/santander-baraja-3-000-jubilaciones-092551270.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Santander baraja hasta 3.000 jubilaciones anticipadas en España, según Expansión</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Banco Santander está evaluando un plan que contempla hasta 3.000 jubilaciones anticipadas en España, según reporta Expansión. Esta medida estratégica busca optimizar la plantilla y la eficiencia operativa de la entidad bancaria, lo que podría tener implicaciones significativas en la estructura laboral del sector financiero español en los próximos meses.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T08:05:00.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/el-gobierno-baja-la-tension-con-bullrich-pese-a-su-faltazo-y-prepara-para-esta-semana-el-debut-de-ravier-como-vocero/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>La estrategia del oficialismoEl Gobierno baja la tensión con Bullrich pese a los cortocircuitos con Adorni y prepara el debut de Ravier como voceroEn la Casa Rosada evitan escalar el conflicto con la jefa del bloque libertario en el Senado y reconocen que deberán convivir con sus diferenciaciones públicas. En paralelo, trabajan en la primera conferencia de prensa del nuevo portavoz para enfocar la agenda en la gestión económica.Por Ignacio Salerno</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Gobierno busca reducir la tensión con Patricia Bullrich, pese a los cortocircuitos con Adorni, aceptando la coexistencia de diferencias públicas. Simultáneamente, prepara el debut del nuevo vocero, Ravier, para reorientar la agenda hacia la gestión económica, proyectando una imagen de estabilidad gubernamental a pesar de las fricciones internas.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T07:00:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/america/mundo/2026/06/24/qatar-afirmo-que-la-comunicacion-directa-entre-iran-y-estados-unidos-es-esencial-para-evitar-incidentes-en-el-estrecho-de-ormuz/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Qatar afirmó que la comunicación directa entre Irán y Estados Unidos es esencial para evitar incidentes en el estrecho de Ormuz</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Qatar ha subrayado la necesidad crítica de una comunicación directa entre Irán y Estados Unidos para prevenir incidentes en el estratégico estrecho de Ormuz. Este llamado diplomático resalta la fragilidad geopolítica de la región y la importancia de establecer canales de diálogo para la desescalada, garantizando la seguridad marítima y la estabilidad internacional.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-la-situacion-judicial-de-adorni-y-un-nuevo-embate-de-patricia-nid24062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Medidas de MileiHace 18 min</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Este informe detalla las recientes medidas implementadas por el gobierno de Javier Milei. Aborda la situación judicial del portavoz Manuel Adorni y los nuevos embates políticos de Patricia (presumiblemente Bullrich), evidenciando las dinámicas y tensiones internas que marcan la agenda política del país y los desafíos de la administración actual.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-los-cambios-en-la-formacion-a-la-espera-de-jordania-y-el-cumpleanos-39-de-nid24062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Mundial 2026Hace 3 min</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los preparativos para el Mundial 2026 se intensifican, con las selecciones ajustando sus formaciones y estrategias de cara a encuentros cruciales, como el próximo partido contra Jordania. El evento también coincide con el 39º cumpleaños de un destacado futbolista, añadiendo un hito personal a la anticipación y emoción del fútbol global.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/tendencias/2026/06/24/lionel-messi-cumple-anos-los-detalles-que-repite-en-sus-looks-y-explican-su-naturalidad/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Lionel Messi cumple años: los detalles que repite en sus looks y explican su naturalidad</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Con motivo del cumpleaños de Lionel Messi, un análisis profundiza en su distintivo estilo personal, destacando las elecciones de moda recurrentes que definen su imagen pública natural. Esta exploración revela cómo elementos sutiles en sus atuendos contribuyen a su auténtica personalidad, ofreciendo una visión de la faceta fuera de la cancha del legendario futbolista.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T03:02:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/economia/el-guardarropas-de-el-chacal-que-esconden-los-cajones-con-millones-de-dolares-en-la-casa-de-nid24062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>A FondoEl guardarropas de "El Chacal”. Qué esconden los cajones con millones de dólares en la casa de Insaurralde y CirioPor Diego Cabot</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una investigación a fondo revela el escandaloso hallazgo de millones de dólares ocultos en la residencia de Insaurralde y Cirio. El reportaje, titulado "El guardarropas de El Chacal", busca desentrañar el origen de estos fondos ilícitos, exponiendo un presunto caso de corrupción que genera gran escrutinio público sobre figuras políticas.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T03:00:00.000Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/24/el-cumpleanos-de-messi-su-primer-entrenador-revelo-el-recuerdo-que-guarda-del-nino-que-brillaba-en-newells/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>El cumpleaños de Messi: su primer entrenador reveló el recuerdo que guarda del niño que brillaba en Newell’sPor Nicolás Campolongo</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">En el cumpleaños de Lionel Messi, su primer entrenador compartió emotivos recuerdos del prodigio del fútbol durante su etapa en Newell’s. Las anécdotas del técnico ilustran el talento y la dedicación tempranos del joven Messi, ofreciendo una mirada nostálgica y reveladora a los años formativos que moldearon a uno de los más grandes íconos del fútbol.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -44,7 +220,7 @@
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich, jefa del bloque de LLA, canceló el informe de Adorni en el Senado, buscando evitar su exposición a la oposición. Sin embargo, Adorni afirmó estar "a disposición" para presentarse. Este episodio subraya las tensiones internas y estrategias políticas dentro del oficialismo, de cara a una sesión clave.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich intentó cancelar el informe de Manuel Adorni en el Senado para protegerlo de la oposición, generando fricciones internas. Sin embargo, Adorni afirmó públicamente su disposición a comparecer, lo que revela una pulseada política dentro del gobierno. La sesión del jueves será clave para definir el equilibrio de poder.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -164,6 +340,22 @@
 <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
 <span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
 </div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:26:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/golpe-las-expectativas-del-mercado-msci-mantuvo-argentina-standalone-y-la-excluyo-una-revision-categoria-n6292058" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Qué falta para una mejora Golpe para las expectativas del mercado: MSCI mantuvo a Argentina en Standalone y la excluyó de una revisión de categoría Por Tomás Alejandro Giancola</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">MSCI asestó un golpe a las expectativas del mercado al mantener la clasificación de Argentina en la categoría "Standalone" y excluirla de una revisión para una posible mejora. Esta decisión frena el optimismo de los inversores y subraya las continuas preocupaciones sobre el entorno económico y regulatorio del país, afectando el atractivo de sus activos.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
 <span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:09:00-03:00">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
@@ -216,11 +408,11 @@
 </div>
 <a class="group block mb-3" href="https://www.ambito.com/politica/manuel-adorni-esquiva-el-senado-avanza-acuerdo-posponer-informe-gestion-n6292070" target="_blank">
 <h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Contradicción entre él y Bullrich ¿Adorni esquiva el Senado? Avanza acuerdo para posponer informe de gestión Por Fernando Brovelli</span>
+<span>Informe de gestión Desconcierto interno: Bullrich confirmó que Adorni eludiría el Senado, pero él la desmintió Por Fernando Brovelli</span>
 <svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Se profundiza la contradicción entre Manuel Adorni y Bullrich respecto a la comparecencia del ministro en el Senado. Mientras un acuerdo para posponer el informe de gestión parece avanzar, las declaraciones cruzadas alimentan la especulación sobre si Adorni intenta "esquivar" al Congreso, evidenciando las tensiones internas y la estrategia gubernamental frente al escrutinio legislativo.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Se ha desatado un notable desconcierto interno en el gobierno, ya que Patricia Bullrich anunció que Adorni no comparecería ante el Senado, pero él la desmintió públicamente. Este choque evidencia una profunda falla de comunicación y una lucha de poder dentro de la administración, intensificando la incertidumbre política y los desafíos de la rendición de cuentas.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -765,196 +957,4 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar continúa su tendencia alcista, llevando a los operadores del mercado a reajustar sus proyecciones sobre los valores techo y piso de la divisa. Esta volatilidad genera incertidumbre, con análisis técnicos y fundamentales que buscan prever los movimientos futuros y las implicaciones para la economía y los inversores ante un escenario de presión cambiaria.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:21:52.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/parlamento-europeo-respalda-esperado-euro-130730654.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>La Eurocámara apoya el euro digital para reforzar la autonomía europea en los sistemas de pagos</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Eurocámara ha dado su respaldo al proyecto del euro digital, un paso crucial para fortalecer la autonomía de Europa en sus sistemas de pagos. Esta iniciativa busca modernizar la infraestructura financiera, reducir la dependencia de plataformas externas y consolidar la soberanía económica de la Unión Europea.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T14:14:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/presi%C3%B3n-venta-bitcoin-perdiendo-fuerza-141400588.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>¿La presión de venta de Bitcoin está perdiendo fuerza? Top 3 señales clave</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Se analiza si la presión de venta sobre Bitcoin está disminuyendo, identificando tres señales clave que podrían indicar un cambio de tendencia en el mercado de criptomonedas. Los analistas observan movimientos en los volúmenes de transacción, el comportamiento de las grandes ballenas y los indicadores técnicos para prever si la criptomoneda recuperará impulso alcista.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:52:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/energia/cortes-gnc-la-plata-que-falta-gas-si-vaca-muerta-produce-cada-vez-mas-n6291799" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cortes de GNC en La Plata: por qué falta gas si Vaca Muerta produce cada vez más</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Plata experimenta cortes en el suministro de GNC, generando interrogantes sobre la falta de gas a pesar del creciente volumen de producción de Vaca Muerta. Esta situación destaca desafíos críticos en la infraestructura de transporte y distribución, afectando directamente a los consumidores y la industria local.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T10:48:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/msci-define-el-futuro-la-argentina-expectativa-el-mercado-la-mejora-la-categoria-n6291785" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El mercado, atento a MSCI: expectativa por la calificación clave para la Argentina</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado financiero argentino se mantiene en vilo a la espera de la decisión de MSCI, que definirá la calificación del país. Esta revisión es crucial para la atracción de inversiones y el posicionamiento de Argentina en los índices globales. Una mejora en la categoría podría inyectar confianza y capital, mientras que un mantenimiento o descenso impactaría negativamente.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:39:20.566Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/patricia-bullrich-no-ira-a-la-reunion-convocada-por-manuel-adorni-con-los-senadores-oficialistas-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Otro desplante. Bullrich no irá a la reunión convocada por Manuel Adorni con los senadores oficialistas</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich ha decidido ausentarse de la reunión convocada por Manuel Adorni con los senadores oficialistas, marcando un "desplante" político. Este encuentro buscaba consolidar el apoyo legislativo al jefe de Gabinete, quien enfrenta un pedido de interpelación en el Senado. La ausencia de Bullrich genera interrogantes sobre la cohesión dentro del bloque libertario y las dinámicas internas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:12:49.850Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/jesica-cirio-le-entrego-su-celular-a-la-justicia-tras-la-difusion-del-video-de-los-dolares-cual-es-la-estrategia-de-su-abogado/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Jesica Cirio le entregó su celular a la Justicia tras la difusión de los videos de los dólares: cuál es la estrategia de su abogado</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Jesica Cirio ha entregado su teléfono móvil a la Justicia en el marco de la investigación por la difusión de videos que la vinculan a sumas de dólares. La estrategia de su abogado busca desvincularla de cualquier irregularidad, colaborando con la causa para esclarecer el origen y contexto de los fondos, un tema de alta sensibilidad pública.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:10:09.110Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni-2/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>En un nuevo gesto de diferenciación, Patricia Bullrich faltará a la reunión de los senadores de LLA con Adorni</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich, jefa del bloque libertario, se ausentará de la reunión clave convocada por el jefe de Gabinete, Manuel Adorni, con los senadores de LLA. Este hecho se interpreta como un nuevo gesto de diferenciación, ya que Adorni busca apoyo legislativo ante un pedido de interpelación en la Cámara alta, marcando tensiones internas en el oficialismo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T13:06:40.176Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/argentina-ya-conoce-su-recorrido-rumbo-a-una-hipotetica-final-del-mundial-2026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Argentina ya conoce su recorrido rumbo a una hipotética final del Mundial 2026</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina ha sido informada sobre el posible camino que enfrentaría en el Mundial 2026 hasta alcanzar una hipotética final. Se revelaron los emparejamientos y potenciales rivales en cada instancia eliminatoria, permitiendo al cuerpo técnico analizar la ruta más desafiante y preparar estrategias para superar cada fase del torneo internacional.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T09:01:47.421Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.infobae.com/mexico/2026/06/23/panama-vs-croacia-en-vivo-sigue-las-acciones-en-directo-del-partido-de-la-jornada-2-en-el-grupo-l-del-mundial-2026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Panamá y Croacia completan la fecha dos del Grupo L</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Panamá y Croacia se enfrentan en la segunda fecha del Grupo L del Mundial 2026, en un partido crucial para definir sus aspiraciones en el torneo. Ambos equipos buscarán sumar puntos importantes que les permitan avanzar en la competición y mejorar su posición dentro de uno de los grupos más disputados.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T09:00:34.719Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.infobae.com/colombia/deportes/2026/06/23/seleccion-colombia-vs-rd-congo-en-vivo-siga-el-minuto-a-minuto-del-debut-en-el-grupo-k-del-mundial-2026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Colombia enfrenta a RD Congo en la segunda fecha del Grupo K del Mundial 2026</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección de Colombia se prepara para su segundo compromiso en el Grupo K del Mundial 2026, enfrentando a la República Democrática del Congo. Este encuentro es crucial para las aspiraciones de ambos equipos en la fase de grupos, y se espera un partido disputado en la búsqueda de la clasificación.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T05:58:24.791Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/futbol/mundial-2026-en-vivo-la-argentina-se-aseguro-el-liderazgo-del-grupo-j-y-espera-a-posibles-rivales-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Mundial 2026Hace 5 min</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Selección Argentina ha asegurado su liderazgo en el Grupo J del Mundial 2026, consolidando su posición en la fase de grupos. Ahora, el equipo se encuentra a la espera de conocer a sus posibles rivales en las próximas instancias, mientras avanza con confianza en el torneo mundialista.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T04:49:12.153Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-cambios-en-el-gobierno-y-el-blindaje-a-adorni-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Medidas de MileiHace 7 min</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La noticia aborda en vivo las últimas medidas impulsadas por el gobierno de Javier Milei, incluyendo posibles cambios en el gabinete y la estrategia para "blindar" al ministro coordinador ante cuestionamientos. Esto refleja la dinámica interna del poder ejecutivo y las tensiones políticas actuales en Argentina.</p>
 </article>
