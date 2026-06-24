@@ -1,3 +1,179 @@
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T23:45:03.332Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/internacional/2026/06/24/un-fuerte-terremoto-de-71-grados-sacudio-venezuela-se-reportaron-escenas-de-panico-en-caracas/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Dos fuertes terremotos sacudieron Venezuela: hubo colapsos de edificios y evacuaciones masivas</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Dos potentes terremotos azotaron Venezuela, provocando el colapso de edificios y masivas evacuaciones, especialmente en Caracas. La magnitud de la catástrofe subraya la urgencia de la respuesta gubernamental y la necesidad de coordinación para la ayuda humanitaria y la reconstrucción. Las autoridades están evaluando daños.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T20:27:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/las-tres-razones-las-que-se-desperto-el-dolar-blue-y-ya-escalo-100-junio-n6292441" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Está arriba del oficial y el MEP Las tres razones por las que se despertó el dólar blue y ya escaló $100 en junio Por Juan Carlos Cáceres</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar blue ha experimentado un notable "despertar" en junio, escalando $100 y superando significativamente las cotizaciones del dólar oficial y MEP. Expertos atribuyen este ascenso a tres razones clave, que reflejan la creciente demanda y la incertidumbre en el mercado cambiario paralelo, afectando las expectativas económicas.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T23:06:44.247Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/tras-haber-renunciado-a-su-banca-como-diputado-ravier-confirmo-su-primera-conferencia-como-vocero-presidencial/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>La estrategia del oficialismoTras haber renunciado a su banca de diputado, Ravier confirmó su primera conferencia como vocero presidencialEl nuevo portavoz tendrá su presentación oficial este viernes en Casa Rosada y el martes debutará en su nueva función. En el Gobierno buscan que su nombramiento sirva para relanzar la comunicación con foco en economía, gestión y reformas.</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Tras renunciar a su banca, Ravier fue confirmado como vocero presidencial, con su presentación oficial este viernes y debut el martes. El gobierno busca relanzar su comunicación, enfocándose en la economía, gestión y reformas. Esta estrategia busca mejorar la difusión de la agenda oficial y consolidar el mensaje gubernamental.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T19:48:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/politica/el-gobierno-conserva-aliados-y-es-optimista-aprobar-el-super-rigi-diputados-n6292493" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Búsqueda de inversiones El Gobierno conserva aliados y es optimista de aprobar el Súper RIGI en Diputados Por Fernando Brovelli</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Gobierno mantiene el optimismo sobre la aprobación del "Súper RIGI" en la Cámara de Diputados, conservando aliados clave para impulsar esta legislación de inversiones. Este avance es crucial para atraer capital extranjero y fortalecer la economía, marcando un hito en la agenda legislativa y económica oficialista.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T22:34:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/modelo-bitcoin-indica-pr%C3%B3xima-se%C3%B1al-223400466.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Modelo de Bitcoin indica la próxima señal de compra en noviembre de 2026</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un modelo predictivo de Bitcoin ha proyectado una nueva "señal de compra" para la criptomoneda, apuntando a noviembre de 2026. Esta anticipación busca guiar a los inversores sobre futuros puntos de entrada en el mercado de activos digitales, influyendo potencialmente en las estrategias de trading a largo plazo.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T19:17:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-mercados-ensayan-un-rebote-el-desplome-y-el-petroleo-se-acerca-al-nivel-previo-la-guerra-n6292176" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Subió el Dow Jones y cayó el S&amp;P 500 Wall Street: las acciones tecnológicas del S&amp;P 500 perdieron 0,9% en la previa a los resultados de Micrón Por Beatriz Dinovitzer</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Wall Street mostró un comportamiento mixto; el Dow Jones subió, pero el S&amp;P 500 cayó, especialmente por una pérdida del 0,9% en las acciones tecnológicas. Esta volatilidad se da en la antesala de los importantes resultados de Micron, generando cautela entre los inversores y un ensayado rebote tras un desplome.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T18:48:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/economia/dolar-colchon-un-ano-los-argentinos-incrementaron-sus-ahorros-fuera-del-sistema-us16438-millones-n6292445" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Dato del INDEC Dólar colchón: cuántos dólares salieron del sistema en el último año Por Carlos Lamiral</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Según datos del INDEC, los argentinos han incrementado sus ahorros en "dólar colchón", retirando 16.438 millones de dólares del sistema formal en el último año. Este fenómeno refleja una búsqueda de resguardo ante la incertidumbre económica y la desconfianza en el sistema bancario, impactando la liquidez nacional.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T21:42:31Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/anthropic-alibaba-extrajo-forma-il%C3%ADcita-214231401.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Anthropic dice que Alibaba extrajo de forma ilícita capacidades del modelo de IA Claude</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Anthropic acusó a Alibaba de extraer ilegalmente capacidades de su modelo de inteligencia artificial Claude, lo que constituye una grave disputa sobre propiedad intelectual. Este incidente resalta las crecientes tensiones y desafíos legales en el competitivo sector de la IA, con implicaciones significativas para el desarrollo tecnológico y la protección de innovaciones empresariales.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
+<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T21:19:39Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/actualizaci%C3%B3n-%C3%ADndices-burs%C3%A1tiles-estadounidenses-presentan-211939685.html" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Actualización: Los índices bursátiles estadounidenses presentan resultados mixtos: el sector tecnológico cede sus ganancias intradía y el petróleo crudo cae.</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los índices bursátiles de EE.UU. mostraron resultados mixtos hoy, con el sector tecnológico cediendo sus ganancias iniciales durante la jornada. Paralelamente, el precio del petróleo crudo experimentó una caída, reflejando una volatilidad generalizada en los mercados financieros globales y la cautela de los inversores.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
+<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T16:02:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/realestate/458087-nuevas-casas-prefabricadas-de-madera-baratas-confortables-y-se-construyen-en-9-dias" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Cuánto cuestan las casas prefabricadas de madera: son confortables y se construyen en solo 9 díasReal Estate / Solución rápidaPor Nicolás Bal</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Las casas prefabricadas de madera emergen como una solución inmobiliaria rápida y accesible, prometiendo confort con una construcción de tan solo nueve días. Este innovador modelo de Real Estate ofrece alternativas eficientes para quienes buscan vivienda a precios competitivos, impactando el mercado con su propuesta de valor.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T18:55:00.141Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/entretenimiento/2026/06/24/christina-ricci-llamo-basura-humana-a-conor-mcgregor-y-critico-a-jimmy-fallon-por-recibirlo-en-su-programa/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Christina Ricci llamó “basura humana” a Conor McGregor y criticó a Jimmy Fallon por recibirlo en su programa</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">La actriz Christina Ricci calificó a Conor McGregor de "basura humana" y criticó a Jimmy Fallon por invitarlo a su show. Este incidente generó controversia en el entretenimiento, suscitando un debate sobre la responsabilidad de figuras públicas y la exposición mediática de personalidades deportivas polémicas.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -13,6 +189,22 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Una repostera argentina, residente en Kansas desde hace más de dos décadas, tuvo el privilegio de preparar la torta de cumpleaños de Lionel Messi. Describió la experiencia como "increíble" y "emoción pura", destacando el impacto personal y la alegría de contribuir a la celebración de la estrella del fútbol mundial.</p>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T17:55:08.657Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/america/america-latina/2026/06/24/estados-unidos-exigio-en-la-oea-un-respaldo-firme-al-gobierno-de-bolivia-y-llamo-a-cuba-estado-fallido/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Estados Unidos respaldó en la OEA al Gobierno de Bolivia y llamó a la dictadura de Cuba a emprender reformas inmediatas</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Estados Unidos respaldó firmemente al Gobierno de Bolivia en la OEA, al tiempo que exigió a la "dictadura de Cuba" que emprenda reformas inmediatas, calificando a la isla de "estado fallido". Esta postura resalta la política exterior estadounidense en la región, marcando una clara diferencia en su enfoque hacia ambos países.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -334,22 +526,6 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Venezuela se prepara para la reestructuración de deuda más grande de su historia, un proceso financiero masivo esperado tras un cambio político (la caída de Maduro). Esta iniciativa busca reorganizar miles de millones en obligaciones, con el objetivo de estabilizar la economía nacional y reabrir las puertas a la financiación y relaciones financieras internacionales.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T10:02:30.342Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.infobae.com/deportes/2026/06/24/mundial-2026-en-vivo-ultimas-noticias-de-hoy-24-de-junio-partidos-clasificados-y-definiciones-de-grupos/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Partidos, clasificados y definiciones de grupos: otra jornada clave en el Mundial</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Mundial continúa con una jornada decisiva que define clasificados y grupos, manteniendo la emoción en cada encuentro. Se vivieron partidos clave que determinarán qué selecciones avanzarán a las siguientes fases, concentrando la atención de millones de aficionados en todo el mundo.</p>
-</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -398,6 +574,22 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El Banco Santander está evaluando un plan que contempla hasta 3.000 jubilaciones anticipadas en España, según reporta Expansión. Esta medida estratégica busca optimizar la plantilla y la eficiencia operativa de la entidad bancaria, lo que podría tener implicaciones significativas en la estructura laboral del sector financiero español en los próximos meses.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">INFOBAE</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T09:00:11.911Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.infobae.com/colombia/deportes/2026/06/24/suiza-vs-canada-en-vivo-siga-el-minuto-a-minuto-del-partido-en-el-grupo-b-del-mundial-2026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Suiza derrotó a Canadá y se aseguró el liderato del Grupo B</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">Suiza consiguió una importante victoria sobre Canadá en el Mundial 2026, lo que le permitió asegurar el liderato del Grupo B. Este triunfo consolida su posición, demostrando un rendimiento destacado y avanzando con firmeza en el torneo, con miras a las fases eliminatorias del campeonato.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -414,6 +606,22 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El Gobierno busca reducir la tensión con Patricia Bullrich, pese a los cortocircuitos con Adorni, aceptando la coexistencia de diferencias públicas. Simultáneamente, prepara el debut del nuevo vocero, Ravier, para reorientar la agenda hacia la gestión económica, proyectando una imagen de estabilidad gubernamental a pesar de las fricciones internas.</p>
 </article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
+<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
+<div class="flex gap-2">
+<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
+<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
+</div>
+<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-los-cambios-en-la-formacion-a-la-espera-de-jordania-y-el-cumpleanos-39-de-nid24062026/" target="_blank">
+<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
+<span>Mundial 2026Hace 3 min</span>
+<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed">En el Mundial 2026, se reportan cambios de último momento en las formaciones de equipos, con la expectativa puesta en el próximo encuentro contra Jordania. Las decisiones tácticas son clave, mientras un jugador celebra su cumpleaños número 39 en medio de la competencia, añadiendo un toque personal a la cobertura deportiva.</p>
+</article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
@@ -429,22 +637,6 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Un seguimiento en vivo detalla las últimas medidas del gobierno de Javier Milei y los desarrollos políticos recientes. Se destaca la situación judicial de Manuel Adorni y un nuevo conflicto con Patricia Bullrich, reflejando la dinámica interna del oficialismo y los desafíos que enfrenta la administración en un contexto político y judicial complejo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T05:00:00Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-los-cambios-en-la-formacion-a-la-espera-de-jordania-y-el-cumpleanos-39-de-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Mundial 2026Hace 3 min</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los preparativos para el Mundial 2026 se intensifican, con las selecciones ajustando sus formaciones y estrategias de cara a encuentros cruciales, como el próximo partido contra Jordania. El evento también coincide con el 39º cumpleaños de un destacado futbolista, añadiendo un hito personal a la anticipación y emoción del fútbol global.</p>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
@@ -765,196 +957,4 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich anunció la suspensión del informe de gestión de Adorni en el Senado, pero el propio ministro lo contradijo, afirmando su disposición a asistir. Este desacuerdo expone una notoria interna entre la senadora y el jefe de Gabinete, marcando tensiones sobre el "blindaje" político en la Cámara alta.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:23:21.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/reservas-petr%C3%B3leo-gas-colombia-caen-212321320.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Reservas de petróleo y gas de Colombia caen en 2025</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Las reservas de petróleo y gas de Colombia proyectan una caída significativa en 2025, generando preocupación sobre la seguridad energética y las finanzas del país. Esta disminución podría impactar la inversión extranjera, la balanza comercial y la política energética nacional, obligando a replantear estrategias de producción y exploración.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:18:19.681Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/cristiano-ronaldo-se-enojo-con-un-periodista-cuando-escucho-el-nombre-de-lionel-messi-siguiente-pregunta/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Cristiano Ronaldo se enojó con un periodista cuando escuchó el nombre de Messi en una rueda de prensa</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Cristiano Ronaldo reaccionó con visible enojo durante una rueda de prensa al ser consultado sobre Lionel Messi. El incidente subraya la intensa rivalidad entre ambos astros del fútbol y el constante escrutinio mediático al que están sometidos. Esta situación genera repercusión global, alimentando el debate sobre la competitividad y la personalidad de las figuras deportivas.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:15:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/mark-zuckerberg-meta-mercados-predicci%C3%B3n-211500631.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Mark Zuckerberg quiere que Meta entre en los mercados de predicción: ¿Será su camino para convertirse en billonario?</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Mark Zuckerberg, CEO de Meta, busca expandir la compañía hacia los mercados de predicción, explorando nuevas vías de negocio y potenciales fuentes de ingresos masivas. Esta estrategia ambiciosa podría posicionar a Meta en un sector emergente, influyendo significativamente en su valoración y en la fortuna personal de Zuckerberg, generando expectativas sobre su impacto financiero.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T21:07:15.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/om%C3%A1n-anuncia-corredor-mar%C3%ADtimo-temporal-210715057.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Omán anuncia un corredor marítimo temporal para el tráfico por el estrecho de Ormuz</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Omán anunció la creación de un corredor marítimo temporal para gestionar el tráfico en el estratégico estrecho de Ormuz. Esta medida busca garantizar la seguridad y fluidez de la navegación en una de las rutas petroleras más cruciales del mundo, mitigando tensiones regionales y previniendo posibles incidentes en aguas internacionales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T17:53:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/politica/con-la-presencia-ravier-diputados-sesiona-avanzar-el-super-rigi-y-el-pago-fondos-buitre-n6292027" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Este miércoles Con la presencia de Ravier, Diputados sesiona para avanzar con el Súper RIGI y el pago a Fondos Buitre</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La Cámara de Diputados sesionará este miércoles, con la presencia de Ravier, para impulsar el debate y la aprobación del "Súper RIGI" y la cuestión del pago a los Fondos Buitre. Esta jornada legislativa es crucial para la agenda económica del gobierno, buscando atraer inversiones y resolver controversias financieras, delineando el futuro económico del país.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T17:36:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458090-msci-no-mejoro-la-calificacion-de-argentina-que-seguira-siendo-un-pais-no-confiable-que-implica-en-la-practica" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>MSCI ignoró en su reporte a la Argentina, que seguirá siendo un país no confiable: qué implica en la prácticaEl hecho de que no mencione a la Argentina refuerza la idea de que todavía no se encuentra bajo consideración inmediata para una reclasificaciónFinanzas/ RevésPor Mariano Jaimovich</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">MSCI omitió a Argentina en su último reporte, lo que implica que el país seguirá siendo considerado un mercado "no confiable" para inversores globales. Esta decisión refuerza la percepción de que Argentina no está en consideración inmediata para una reclasificación, afectando negativamente las perspectivas de inversión extranjera y el acceso a capitales en los mercados financieros internacionales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T20:10:26.448Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/milei-aparece-en-un-evento-con-los-dos-nuevos-funcionarios-del-gobierno-y-con-el-hijo-de-milton-nid23062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Fundación Faro. Milei se mostró con los dos nuevos funcionarios que buscarán reactivar la comunicación del GobiernoPor Paula Rossi</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El presidente Javier Milei apareció en un evento de la Fundación Faro junto a dos nuevos funcionarios clave. Su objetivo es reactivar y fortalecer la estrategia de comunicación del Gobierno. Esta presentación marca un intento por consolidar el mensaje oficial y mejorar la imagen pública de la administración, en un contexto político donde la narrativa es fundamental.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:53:47.921Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/policiales/2026/06/23/hablo-el-chofer-que-atropello-a-varias-personas-y-mato-a-una-mujer-en-mar-del-plata-se-rompio-la-direccion-y-no-pude-hacer-nada/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Declaró el chofer que atropelló a varias personas y mató a una mujer en Mar del Plata: “Se rompió la dirección y no pude hacer nada”</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El chofer involucrado en el trágico atropello en Mar del Plata, donde una mujer perdió la vida y varias personas resultaron heridas, declaró que "se rompió la dirección" de su vehículo. Su testimonio busca esclarecer las causas del accidente, crucial para la investigación judicial y la determinación de responsabilidades en el lamentable suceso.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:15:50.381Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/tiene-14-anos-es-de-mar-del-plata-y-cuenta-como-hizo-para-salir-a-la-cancha-con-la-seleccion-argentina/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Tiene 14 años, es de Mar del Plata y cuenta cómo hizo para salir a la cancha con la Selección argentina</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Un joven de 14 años oriundo de Mar del Plata compartió su emocionante experiencia de acompañar a la Selección argentina en un partido. Su relato detalla los pasos y vivencias que le permitieron cumplir el sueño de pisar el campo junto a sus ídolos, ofreciendo una perspectiva personal sobre la cercanía a los futbolistas en un evento de gran magnitud.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T16:08:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/economia/los-salarios-registrados-subieron-35-abril-y-le-ganaron-la-inflacion-siete-caidas-al-hilo-n6291996" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>ALERTA Los salarios registrados subieron 3,5% en abril y le ganaron a la inflación, tras siete caídas al hilo</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los salarios registrados experimentaron un aumento del 3,5% en abril, superando por primera vez en siete meses a la inflación. Este dato representa un alivio para los trabajadores y podría indicar un incipiente cambio de tendencia en el poder adquisitivo, tras un prolongado período de deterioro. Sin embargo, analistas advierten que es necesario observar la sostenibilidad de esta recuperación.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T15:57:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/negocios/457946-renuncio-a-multinacionales-aposto-por-su-idea-y-lidera-un-negocio-que-factura-1-millon-de-dolares" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Renunció a las multinacionales para apostar por su idea y hoy factura u$s1 millón con su negocioNegocios / EmprenderPor Laura Andahazi Kasnya</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una emprendedora argentina renunció a su carrera en multinacionales para perseguir su propia idea de negocio. Su decisión audaz resultó en un éxito rotundo, con su empresa alcanzando una facturación anual de un millón de dólares. Este caso destaca el potencial del espíritu emprendedor y la creación de riqueza local.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T18:35:01.967Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/seleccion-argentina-en-vivo-mundial-2026-entrenamiento-en-kansas-posibles-rivales-en-16avos-y-ultimas-noticias/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Minuto a minuto Cuti Romero arrancó su recuperación y Scaloni analiza los cambios para el último partido de Argentina por el Grupo J</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Cuti Romero inició su proceso de recuperación, generando expectativas sobre su retorno al campo. Paralelamente, el director técnico Scaloni está evaluando posibles modificaciones tácticas y de jugadores para el próximo y decisivo encuentro de Argentina en la fase de grupos del Mundial. Estas decisiones serán clave para asegurar una mejor posición y encarar con solidez los dieciseisavos de final.</p>
 </article>
