@@ -1,3 +1,109 @@
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://tn.com.ar/internacional/2026/06/24/terremotos-en-venezuela-en-vivo-reportes-de-victimas-y-destrozos-las-tareas-de-rescate-y-las-ultimas-noticias/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T19:16:58.603Z">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">INFOBAE, LA NACION, TN</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://tn.com.ar/internacional/2026/06/24/terremotos-en-venezuela-en-vivo-reportes-de-victimas-y-destrozos-las-tareas-de-rescate-y-las-ultimas-noticias/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Terremotos en Venezuela: balance de víctimas, réplicas y testimonios</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Los terremotos en <b>Venezuela</b> han dejado un saldo de <b>188 muertos</b>, <b>1.520 heridos</b> y <b>157 desaparecidos</b>, según el gobierno.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Los sismos principales fueron de magnitud <b>7,2</b> y <b>7,5 Richter</b>, seguidos por al menos <b>30 réplicas</b>, con <b>La Guaira</b> declarada "zona de desastre".<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Se reportan <b>saqueos</b> en medio de la devastación y conmovedores testimonios de residentes que perdieron sus hogares.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CRISIS HUMANITARIA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="MERCADOS" data-url="https://www.ambito.com/finanzas/los-bonos-dolares-rebotan-wall-street-pero-el-sp-merval-extiende-su-declive-n6292740">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:53:00-03:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.ambito.com/finanzas/los-bonos-dolares-rebotan-wall-street-pero-el-sp-merval-extiende-su-declive-n6292740" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Bonos en dólares rebotan en Wall Street, influenciados por el FMI</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Los <b>bonos en dólares</b> de Argentina rebotaron en <b>Wall Street</b>, mostrando una mejora en su cotización.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Este repunte se produce luego de que el <b>FMI</b> destacara la baja del <b>riesgo país</b> argentino.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Mientras tanto, las <b>acciones y ADRs</b> mostraron un comportamiento mixto, y el <b>S&amp;P Merval</b> extendió su declive.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BONOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FMI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#WALL STREET</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.iprofesional.com/legales/458323-corte-suprema-dejo-firme-la-cautelar-que-obliga-a-aplicar-ley-de-financiamiento-universitario">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:24:00-03:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">IPROFESIONAL, ÁMBITO, TN</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/legales/458323-corte-suprema-dejo-firme-la-cautelar-que-obliga-a-aplicar-ley-de-financiamiento-universitario" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">La Corte Suprema dejó firme la cautelar sobre la Ley de Financiamiento Universitario</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ La <b>Corte Suprema de Justicia</b> confirmó una <b>medida cautelar</b> que obliga al <b>Estado</b> a aplicar la <b>Ley de Financiamiento Universitario</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> La decisión implica un revés para el <b>Gobierno</b> en su política de ajuste y control del gasto público.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Esta determinación podría reabrir el debate sobre el presupuesto destinado a las <b>universidades públicas</b>.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CORTE SUPREMA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#UNIVERSIDADES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GASTO PÚBLICO</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.ambito.com/finanzas/seguira-picante-el-dolar-julio-las-claves-tener-cuenta-que-definiran-que-su-precio-n6292759">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T14:26:00-03:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.ambito.com/finanzas/seguira-picante-el-dolar-julio-las-claves-tener-cuenta-que-definiran-que-su-precio-n6292759" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Expertos analizan la posible evolución del dólar en julio</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Expertos del mercado debaten sobre la "picante" evolución del <b>dólar</b> durante el mes de <b>julio</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Se analizan factores clave que podrían influir en el precio de la divisa, como la política monetaria y fiscal.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> La incertidumbre sobre el futuro del tipo de cambio es un foco de atención para inversores y ahorristas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA CAMBIARIA</span>
+</div>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.iprofesional.com/impuestos/458215-compras-por-amazon-aduana-argentina-prepara-nuevo-esquema-de-control-y-cobro-de-impuestos/">
 <div class="flex justify-between items-start mb-3 shrink-0">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -130,6 +236,33 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.iprofesional.com/politica/458301-por-que-se-cayo-la-sesion-del-senado-por-adorni-la-jugada-de-bullrich-y-lla">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T11:40:00-03:00">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO, IPROFESIONAL, TN</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.iprofesional.com/politica/458301-por-que-se-cayo-la-sesion-del-senado-por-adorni-la-jugada-de-bullrich-y-lla" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Tensión política: Fracaso de sesión en el Senado por el caso Adorni y novedades judiciales</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Fracasó la sesión del <b>Senado</b> para debatir sobre el caso de <b>Manuel Adorni</b>, debido a la falta de <b>quórum</b> y el "autoboicot" de legisladores libertarios y <b>Patricia Bullrich</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> La tensión entre el <b>PRO</b> y sectores libertarios se intensifica, con el <b>PRO</b> negando proteger a <b>Adorni</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> La <b>Justicia</b> avanza en la causa de <b>Adorni</b>, disponiendo medidas de prueba antes de una posible citación.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#SENADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADORNI</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.lanacion.com.ar/el-mundo/terremotos-en-venezuela-ya-son-164-los-muertos-en-venezuela-nid25062026/">
 <div class="flex justify-between items-start mb-3 shrink-0">
 <div class="flex flex-col gap-2 max-w-[70%]">
@@ -155,6 +288,33 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AYUDA HUMANITARIA</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 4 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="DEPORTES" data-url="https://www.infobae.com/deportes/2026/06/25/mundial-2026-en-vivo-ultimas-noticias-de-hoy-25-de-junio-partidos-resultados-y-la-definicion-de-los-grupos/">
+<div class="flex justify-between items-start mb-3 shrink-0">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T09:54:46.348Z">Reciente</span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+</div>
+</div>
+<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">INFOBAE, TN, LA NACION</span>
+<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.infobae.com/deportes/2026/06/25/mundial-2026-en-vivo-ultimas-noticias-de-hoy-25-de-junio-partidos-resultados-y-la-definicion-de-los-grupos/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Mundial 2026: Novedades, partidos clave y la formación de Argentina</h2>
+</a>
+<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
+<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Se definen grupos del <b>Mundial 2026</b> con partidos importantes como <b>Paraguay-Australia</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> La <b>Selección Argentina</b>, dirigida por <b>Scaloni</b>, prueba cambios en su formación para el encuentro contra <b>Jordania</b>.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> <b>Brasil</b> ha asegurado su clasificación a <b>octavos de final</b>.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ARGENTINA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="DEPORTES" data-url="https://www.infobae.com/deportes/2026/06/25/paraguay-australia-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber-clone-clone/">
@@ -1019,103 +1179,4 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado cambiario argentino sigue de cerca la cotización del dólar, tanto oficial como el "dólar blue", en tiempo real. La fluctuación de estas divisas es un indicador crucial para la economía y los inversores, reflejando la incertidumbre y las expectativas sobre la estabilidad financiera del país a lo largo de la jornada.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T10:37:40.435097+00:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/negocios/457746-renuncio-a-multinacionales-aposto-por-su-idea-y-lidera-un-negocio-que-factura-1-millon-de-dolares" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Renunció a las multinacionales para apostar por su idea y hoy factura u$s1 millón con su negocioNegocios / EmprenderPor Laura Andahazi Kasnya</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una historia inspiradora de emprendimiento destaca a una persona que dejó su carrera en multinacionales para desarrollar su propia idea de negocio. Esta arriesgada apuesta ha rendido frutos, con su empresa alcanzando una facturación anual de un millón de dólares, demostrando el éxito potencial de la visión y determinación empresarial.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T10:17:01.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/venezuela-prepara-reestructuraci%C3%B3n-deuda-historia-094346495.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Venezuela prepara la mayor reestructuración de deuda de la historia tras la caída de Maduro</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Venezuela se prepara para la reestructuración de deuda más grande de su historia, un proceso financiero masivo esperado tras un cambio político (la caída de Maduro). Esta iniciativa busca reorganizar miles de millones en obligaciones, con el objetivo de estabilizar la economía nacional y reabrir las puertas a la financiación y relaciones financieras internacionales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T07:00:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458121-que-pasara-con-acciones-tras-decision-de-msci-de-mantener-a-argentina-en-la-peor-categoria" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Qué pasará con acciones locales tras decisión de MSCI de dejar a la Argentina en la categoría más bajaFinanzas / MSCI castiga a ArgentinaPor José Carmona</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">La decisión de MSCI de mantener a Argentina en la categoría de "mercado independiente" o "más baja" tendrá un impacto significativo en las acciones locales. Expertos analizan las consecuencias, previendo una posible desvalorización y salida de capitales, afectando negativamente la inversión en el país.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T07:00:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/management/458072-se-debate-en-diputados-puede-el-nuevo-super-rigi-mover-la-aguja-del-empleo-registrado" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Se debatirá en Diputados: ¿puede el nuevo Super RIGI mover la aguja del empleo registrado?Management / EmpleoPor Paula Krizanovic</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El "Super RIGI", un nuevo Régimen de Incentivo a Grandes Inversiones, se someterá a debate en la Cámara de Diputados. La discusión central gira en torno a su capacidad real para estimular el empleo registrado y reactivar la economía, siendo un instrumento clave en la agenda del gobierno para atraer capitales y fomentar el desarrollo productivo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T09:25:51.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/santander-baraja-3-000-jubilaciones-092551270.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Santander baraja hasta 3.000 jubilaciones anticipadas en España, según Expansión</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Banco Santander está evaluando un plan que contempla hasta 3.000 jubilaciones anticipadas en España, según reporta Expansión. Esta medida estratégica busca optimizar la plantilla y la eficiencia operativa de la entidad bancaria, lo que podría tener implicaciones significativas en la estructura laboral del sector financiero español en los próximos meses.</p>
-</article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="DEPORTES">
-<div class="flex justify-between items-start mb-4">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
-</div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">INFOBAE</span>
-</div>
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded shrink-0" data-timestamp="2026-06-24T09:17:41.3Z">Reciente</span>
-</div>
-<a class="group block mb-3 overflow-hidden" href="https://www.infobae.com/deportes/2026/06/24/escocia-brasil-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber/" target="_blank">
-<h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 break-words">Brasil le ganó a Escocia y clasifica primero en el Grupo C del Mundial 2026</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1 break-words">• <br/>• <b>Brasil</b> derrotó a <b>Escocia</b> en un partido del Mundial 2026.<br/>• Con esta victoria, <b>Brasil</b> aseguró el <b>primer puesto</b> del <b>Grupo C</b>.<br/>• El equipo avanza a la siguiente fase del torneo internacional.</p>
-<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BRASIL</span>
-</div>
 </article>
