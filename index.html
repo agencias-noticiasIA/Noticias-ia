@@ -16,13 +16,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #020617; font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #f8fafc; }
-        /* Animación del Ticker TV */
         @keyframes ticker { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
         .animate-ticker { display: inline-flex; white-space: nowrap; animation: ticker 35s linear infinite; }
         .animate-ticker:hover { animation-play-state: paused; }
-        /* Resaltado IA (Lectura Activa) */
         article b { color: #38bdf8; font-weight: 800; background: rgba(56, 189, 248, 0.15); padding: 0 4px; border-radius: 4px; border: 1px solid rgba(56,189,248,0.2);}
-        /* Scrollbar custom */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
@@ -40,21 +37,13 @@
         </div>
         
         <div class="p-6 flex-grow overflow-y-auto">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">6. Categorías</p>
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">Categorías</p>
             <div class="flex flex-col gap-2 mb-10">
-                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition">🏦 Todo el Feed</button>
+                <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
                 <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
                 <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
                 <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
                 <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
-            </div>
-
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-4">11. Filtro Sentimiento</p>
-            <div class="flex flex-col gap-2">
-                <button data-sent="TODOS" class="btn-sent bg-gray-800 text-gray-200 border border-gray-600/50 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">Todos</button>
-                <button data-sent="POSITIVO" class="btn-sent hover:bg-emerald-900/20 text-gray-400 border border-transparent hover:border-emerald-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">🟢 Bullish / Positivo</button>
-                <button data-sent="NEGATIVO" class="btn-sent hover:bg-rose-900/20 text-gray-400 border border-transparent hover:border-rose-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">🔴 Bearish / Negativo</button>
-                <button data-sent="NEUTRAL" class="btn-sent hover:bg-gray-800/40 text-gray-400 border border-transparent hover:border-gray-500/30 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition">⚪ Neutral</button>
             </div>
         </div>
 
@@ -68,11 +57,11 @@
 
     <main class="md:ml-64 flex-1 flex flex-col min-h-screen">
         
-        <header class="sticky top-0 z-30 bg-[#020617]/80 backdrop-blur-2xl border-b border-gray-800/80 shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+        <header class="sticky top-0 z-30 w-full bg-[#020617]/80 backdrop-blur-2xl border-b border-gray-800/80 shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
             
             <div class="w-full bg-[#4c0519]/40 border-b border-rose-900/50 text-rose-200 text-xs py-1.5 overflow-hidden font-mono tracking-wide">
                 <div class="animate-ticker w-full">
-                    <span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> El dólar en Argentina alcanza máximo anual y genera sospechas en la City</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Bolsa argentina se hunde y Riesgo País sube tras decisión del MSCI</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Gobierno optimista sobre la aprobación del Súper RIGI en Diputados</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Argentinos incrementan dólares fuera del sistema en el último año</span>
+                    <span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Victoria legislativa: Diputados aprueba el Súper RIGI y acuerdo con bonistas del default 2001</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> El dólar alcanza el precio más alto del año: la City anticipa nueva tendencia</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> Dólar blue se dispara $100 en junio y supera al oficial y MEP</span><span class="mx-10 flex items-center gap-2"><span class="text-rose-500 animate-pulse">⚡</span> El Gobierno compra GNL de emergencia por ola de frío y cortes de gas</span>
                 </div>
             </div>
             
@@ -84,7 +73,7 @@
                 <button data-filter="DEPORTES" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Deportes</button>
             </div>
 
-            <div class="p-4 md:p-6 flex flex-wrap gap-4 justify-between items-center">
+            <div class="w-full p-4 md:p-6 flex flex-wrap gap-4 justify-between items-center">
                 
                 <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-4 flex-1 min-w-[150px] shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                     <span class="text-gray-400 text-[10px] font-black tracking-wider uppercase">DÓLAR OFICIAL</span>
@@ -132,7 +121,7 @@
                 
             <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-rose-900/40 rounded-xl p-4 flex-1 min-w-[150px] shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
                 <span class="text-rose-400 text-[10px] font-black tracking-wider uppercase">RIESGO PAÍS</span>
-                <div class="text-2xl font-mono font-black text-gray-100 mt-1 flex items-center justify-between">
+                <div class="text-2xl font-mono font-black text-white mt-1 flex items-center justify-between">
                     433 <span class="text-[10px] text-rose-500 flex items-center">▲</span>
                 </div>
                 <div class="mt-2 border-t border-gray-800/50 pt-2">
@@ -143,7 +132,7 @@
             </div>
         </header>
 
-        <div class="p-4 md:p-8 max-w-7xl mx-auto w-full flex-grow">
+        <div class="p-6 md:p-8 w-full flex-grow">
             
             <div id="separador-hoy" class="flex items-center gap-4 mb-8 mt-2">
                 <div class="h-px bg-gray-800 flex-grow"></div>
@@ -151,8 +140,86 @@
                 <div class="h-px bg-gray-800 flex-grow"></div>
             </div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-6" id="contenedor-noticias">
-                <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6" id="contenedor-noticias">
+                <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T00:00:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/mundo/el-nuevo-mapa-politico-america-latina-que-la-region-cambio-rumbo-n6292526" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Consolidación de la nueva derecha: El nuevo mapa político de América Latina</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Análisis sobre el cambio de rumbo político en <b>América Latina</b> hacia la consolidación de la <b>nueva derecha</b>.<br/>• Explora las razones detrás de este fenómeno que está reconfigurando la región.<br/>• El artículo examina el <b>nuevo mapa político</b> resultante de estas tendencias.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GEOPOLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AMÉRICA LATINA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#NUEVA DERECHA</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🟢 POSITIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T00:00:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/energia/tomas-cordoba-ceo-compania-mega-sumaremos-50-mas-exportaciones-una-obra-clave-vaca-muerta-n6286048" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Compañía Mega proyecta un 50% más de exportaciones gracias a obra en Vaca Muerta</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Tomás Córdoba</b>, CEO de <b>Compañía Mega</b>, anunció un aumento del <b>50%</b> en las exportaciones.<br/>• Este crecimiento se atribuye a una <b>obra clave</b> desarrollada en <b>Vaca Muerta</b>.<br/>• La expansión representa un impulso significativo para el sector energético y las divisas del país.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VACA MUERTA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#EXPORTACIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#COMPAÑÍA MEGA</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🟢 POSITIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN, IPROFESIONAL</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T02:39:10.749Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/el-gobierno-logro-una-victoria-clave-en-diputados-avanzo-el-super-rigi-y-aprobo-el-acuerdo-con-los-bonistas/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Victoria legislativa: Diputados aprueba el Súper RIGI y acuerdo con bonistas del default 2001</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El Gobierno logró una victoria clave en Diputados con la aprobación del <b>Super-RIGI</b> para grandes inversiones.<br/>• También se convirtió en ley el acuerdo con los bonistas del default de <b>2001</b>, respaldado por bloques dialoguistas.<br/>• El <b>RIGI</b> busca captar miles de millones de dólares con incentivos para inversiones superiores a <b>u$s1.000 M</b>.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#SUPER RIGI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ACUERDO BONISTAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INVERSIONES</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="DEPORTES">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md">DEPORTES</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN, INFOBAE</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T02:05:27.909Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/deportes/futbol/2026/06/24/escocia-vs-brasil-en-vivo-por-la-fase-de-grupos-del-mundial-2026-hora-donde-ver-y-formaciones/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Mundial 2026: Brasil golea a Escocia y clasifica líder del Grupo C</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Brasil</b>, con el regreso de <b>Neymar</b>, goleó <b>3-0</b> a Escocia.<br/>• Con esta victoria, la selección brasileña se clasificó como <b>líder del Grupo C</b> del Mundial 2026.<br/>• Partido por la fase de grupos del <b>Mundial 2026</b>.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BRASIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
 <div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
 <div class="flex gap-2">
 <span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
@@ -168,23 +235,26 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Dos potentes terremotos azotaron Venezuela, provocando el colapso de edificios y masivas evacuaciones, especialmente en Caracas. La magnitud de la catástrofe subraya la urgencia de la respuesta gubernamental y la necesidad de coordinación para la ayuda humanitaria y la reconstrucción. Las autoridades están evaluando daños.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="MERCADOS">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md">MERCADOS</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
 </div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T20:27:00-03:00">Reciente</span>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T20:27:00-03:00">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://www.ambito.com/finanzas/las-tres-razones-las-que-se-desperto-el-dolar-blue-y-ya-escalo-100-junio-n6292441" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Está arriba del oficial y el MEP Las tres razones por las que se despertó el dólar blue y ya escaló $100 en junio Por Juan Carlos Cáceres</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Dólar blue se dispara $100 en junio y supera al oficial y MEP</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El dólar blue ha experimentado un notable "despertar" en junio, escalando $100 y superando significativamente las cotizaciones del dólar oficial y MEP. Expertos atribuyen este ascenso a tres razones clave, que reflejan la creciente demanda y la incertidumbre en el mercado cambiario paralelo, afectando las expectativas económicas.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El <b>dólar blue</b> ha experimentado un incremento de <b>$100</b> en junio, superando al oficial y el MEP.<br/>• Se señalan <b>tres razones</b> principales para este "despertar" de la cotización paralela.<br/>• Esta escalada genera preocupación en el mercado cambiario argentino.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR BLUE</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MERCADO CAMBIARIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span>
+</div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
 <div class="flex gap-2 text-[11px] font-bold tracking-wide">
@@ -196,11 +266,11 @@
 <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T23:06:44.247Z">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/tras-haber-renunciado-a-su-banca-como-diputado-ravier-confirmo-su-primera-conferencia-como-vocero-presidencial/" target="_blank">
-<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Ravier confirmado como nuevo vocero presidencial para relanzar comunicación</h2>
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Ravier asume como vocero presidencial y dará su primera conferencia</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Ravier</b> confirmó su primera conferencia como <b>vocero presidencial</b> tras renunciar a su banca de diputado.<br/>• Debutará oficialmente este <b>viernes</b> en <b>Casa Rosada</b> y el martes en su nueva función.<br/>• El <b>Gobierno</b> busca relanzar la comunicación con foco en <b>economía, gestión y reformas</b>.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Ravier</b>, tras renunciar a su banca de diputado, asumió como <b>vocero presidencial</b>.<br/>• Confirmó su primera conferencia de prensa en su nuevo rol.<br/>• Este cambio implica una nueva voz en la comunicación oficial del gobierno.</p>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RAVIER</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VOCERO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#COMUNICACIÓN GUBERNAMENTAL</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VOCERO PRESIDENCIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RAVIER</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GOBIERNO</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="POSITIVO">
@@ -222,6 +292,45 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RIGI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INVERSIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GOBIERNO</span>
 </div>
 </article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">IPROFESIONAL, ÁMBITO, LA NACION</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T19:41:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/politica/458236-pro-apoya-interpelacion-de-manuel-adorni-para-2-julio-2026-en-senado-dudan-si-complica-plan-javier-milei" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Tensión entre Bullrich y Adorni: El PRO apoya la interpelación en el Senado</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El <b>PRO</b> respaldó la interpelación de <b>Manuel Adorni</b> en el Senado, fijada para el <b>2 de julio</b>.<br/>• La iniciativa surge en medio de una visible tensión entre el vocero presidencial y la ministra de Seguridad, <b>Patricia Bullrich</b>.<br/>• Este escenario podría complicar el plan del gobierno de <b>Javier Milei</b> en el Congreso.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INTERPELACIÓN ADORNI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TENSIÓN OFICIALISTA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#SENADO</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T22:40:45.588Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/economia/2026/06/24/en-medio-del-frio-y-con-cortes-a-industrias-y-gnc-el-gobierno-salio-a-comprar-mas-gnl-para-que-no-falte-gas/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">El Gobierno compra GNL de emergencia por ola de frío y cortes de gas</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El Gobierno realizó compras de emergencia de <b>GNL</b> (Gas Natural Licuado) para asegurar el suministro.<br/>• La medida busca evitar la escasez de gas en medio de la <b>ola de frío</b> que afecta al país.<br/>• Ya se registraron <b>cortes</b> de gas a industrias y estaciones de <b>GNC</b>, generando preocupación.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GNL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CRISIS ENERGÉTICA</span>
+</div>
+</article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
@@ -240,6 +349,26 @@
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DESASTRE</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">LA NACION, INFOBAE</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T22:34:20.624Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/el-mundo/un-sismo-de-magnitud-71-sacudio-caracas-y-se-sintio-en-otras-ciudades-de-venezuela-nid24062026/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Venezuela: Múltiples terremotos de alta magnitud sacuden el país, declaran estado de emergencia</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Dos fuertes terremotos</b>, de magnitud <b>7,2</b> y <b>7,5</b>, sacudieron Venezuela, con epicentro cerca de Caracas.<br/>• Se sintieron en diversas ciudades y generaron escenas de pánico, con la posterior declaración de <b>estado de emergencia</b>.<br/>• La ministra <b>Delcy Rodríguez</b> se pronunció en cadena nacional ante la situación.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#EMERGENCIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GEOPOLÍTICA</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
@@ -312,11 +441,11 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Anthropic acusó a Alibaba de extraer ilegalmente capacidades de su modelo de inteligencia artificial Claude, lo que constituye una grave disputa sobre propiedad intelectual. Este incidente resalta las crecientes tensiones y desafíos legales en el competitivo sector de la IA, con implicaciones significativas para el desarrollo tecnológico y la protección de innovaciones empresariales.</p>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA" data-sentimiento="POSITIVO">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="MERCADOS">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
 <div class="flex gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md">MERCADOS</span>
 <span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🟢 POSITIVO</span>
 </div>
 <span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">IPROFESIONAL</span>
@@ -324,9 +453,9 @@
 <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T18:39:00-03:00">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458234-del-compra-campeon-al-hay-dolares-para-todos-que-dijo-caputo-sobre-la-mora" target="_blank">
-<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Caputo y sus definiciones sobre crédito, mora y disponibilidad de dólares</h2>
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Caputo sobre el crédito y la mora: "hay dólares para todos"</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Declaraciones de <b>Caputo</b> abordando temas clave como el <b>crédito</b> y la <b>mora</b>.<br/>• El ministro aseguró que "hay <b>dólares para todos</b>".<br/>• Sus dichos buscan dar tranquilidad en un contexto de incertidumbre económica.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El ministro <b>Caputo</b> se refirió a la situación del crédito y la mora en el mercado.<br/>• Sus declaraciones incluyen la frase optimista "<b>hay dólares para todos</b>".<br/>• Estas definiciones buscan dar señales de estabilidad y confianza en la economía argentina.</p>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CAPUTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CRÉDITO</span>
 </div>
@@ -401,24 +530,23 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">La actriz Christina Ricci calificó a Conor McGregor de "basura humana" y criticó a Jimmy Fallon por invitarlo a su show. Este incidente generó controversia en el entretenimiento, suscitando un debate sobre la responsabilidad de figuras públicas y la exposición mediática de personalidades deportivas polémicas.</p>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="MERCADOS" data-sentimiento="NEGATIVO">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="MERCADOS">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
 <div class="flex gap-2 text-[11px] font-bold tracking-wide">
 <span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md">MERCADOS</span>
 <span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
 </div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">IPROFESIONAL, ÁMBITO</span>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">IPROFESIONAL</span>
 </div>
 <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T15:24:00-03:00">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458114-sube-el-dolar-la-city-habla-de-nueva-tendencia-y-estima-hasta-que-precio-llegara" target="_blank">
-<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">El dólar en Argentina alcanza máximo anual y genera sospechas en la City</h2>
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">El dólar alcanza el precio más alto del año: la City anticipa nueva tendencia</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El <b>dólar</b> superó el <b>precio más alto del año</b>, impulsado por menor oferta agrícola y factores estacionales.<br/>• El <b>dólar blue</b> escaló <b>$100 en junio</b>, superando al oficial y MEP.<br/>• Maniobras del <b>BCRA</b> en el mercado de divisas despiertan sospechas sobre intentos de contención de la cotización.</p>
-<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El <b>dólar</b> ha alcanzado su valor más alto en el año, superando la expectativa de inflación.<br/>• Analistas de la <b>City</b> hablan de una nueva tendencia alcista para la divisa.<br/>• Influyen factores como la <b>menor oferta agrícola</b> y el impacto por <b>vacaciones</b> y el <b>Mundial</b>.</p>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BCRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MERCADO CAMBIARIO</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MERCADO CAMBIARIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
@@ -437,7 +565,7 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Una repostera argentina, residente en Kansas desde hace más de dos décadas, tuvo el privilegio de preparar la torta de cumpleaños de Lionel Messi. Describió la experiencia como "increíble" y "emoción pura", destacando el impacto personal y la alegría de contribuir a la celebración de la estrella del fútbol mundial.</p>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
 <div class="flex gap-2 text-[11px] font-bold tracking-wide">
@@ -451,9 +579,9 @@
 <a class="group block mb-3" href="https://www.infobae.com/estados-unidos/2026/06/24/una-jueza-federal-prohibe-a-trump-implementar-el-requisito-de-prueba-de-ciudadania-para-votar/" target="_blank">
 <h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Jueza federal prohíbe a Trump requisito de prueba de ciudadanía para votar</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Una <b>jueza federal</b> dictaminó la prohibición de la medida propuesta por <b>Trump</b>.<br/>• La medida buscaba implementar el requisito de prueba de <b>ciudadanía</b> para votar.<br/>• La decisión afecta las políticas electorales en <b>Estados Unidos</b>.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Una <b>jueza federal</b> en Estados Unidos prohibió a <b>Donald Trump</b> implementar un requisito de prueba de ciudadanía para votar.<br/>• La decisión judicial impacta en las políticas electorales propuestas por el ex-presidente.<br/>• El fallo tiene implicaciones significativas para el proceso democrático en <b>EE.UU.</b></p>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TRUMP</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ELECCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#EE.UU.</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TRUMP</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ELECCIONES EE.UU.</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#JUSTICIA</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
@@ -844,7 +972,7 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BRASIL</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="DEPORTES" data-sentimiento="NEUTRAL">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="DEPORTES">
 <div class="flex justify-between items-start mb-4">
 <div class="flex flex-col gap-2">
 <div class="flex gap-2 text-[11px] font-bold tracking-wide">
@@ -856,11 +984,11 @@
 <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-24T09:11:07.938Z">Reciente</span>
 </div>
 <a class="group block mb-3" href="https://www.infobae.com/deportes/2026/06/24/marruecos-haiti-en-vivo-por-el-mundial-2026-hora-tv-formaciones-y-todo-lo-que-hay-que-saber/" target="_blank">
-<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Mundial 2026: Marruecos derrota a Haití y clasifica segundo del Grupo C</h2>
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Mundial 2026: Marruecos derrota a Haití y asegura el segundo puesto en el Grupo C</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Marruecos</b> superó a <b>Haití</b> en su encuentro por el <b>Mundial 2026</b>.<br/>• Con esta victoria, el equipo africano se aseguró el <b>segundo lugar</b> en el <b>Grupo C</b>.<br/>• El resultado define las posiciones finales del grupo junto a <b>Brasil</b>.</p>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Marruecos</b> se impuso a <b>Haití</b> en un partido del <b>Mundial 2026</b>.<br/>• Con esta victoria, Marruecos aseguró el <b>segundo puesto</b> en el <b>Grupo C</b>.<br/>• El resultado define las posiciones finales del grupo en la fase de clasificación.</p>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MARRUECOS</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MARRUECOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
@@ -1042,125 +1170,13 @@
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">Manuel Adorni contradijo públicamente a Patricia Bullrich respecto a la cancelación de su informe de gestión en el Senado, reafirmando su disposición a presentarse el 2 de julio. Esta tensión expone una interna en el Gobierno, donde Bullrich buscaba evitar un "desgaste sin sentido" para el jefe de Gabinete.</p>
 </article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:53:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/martes-rojo-los-mercados-las-tecnologicas-lideran-las-perdidas-y-wall-street-adelanta-una-fuerte-correccion-n6291724" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El derrumbe de las acciones de chips sacudió a Wall Street y encendió alertas sobre la IA</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El derrumbe de las acciones de chips sacudió a Wall Street, provocando un "martes rojo" y encendiendo alertas sobre el sector de Inteligencia Artificial. Las empresas tecnológicas lideraron las pérdidas, anticipando una posible corrección significativa en el mercado, afectando la confianza de los inversores en las valoraciones actuales de estas empresas de alto crecimiento.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:49:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/politica/javier-milei-hablara-fundacion-faro-junto-adrian-ravier-su-nuevo-vocero-presidencial-n6292091" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>En evento de la Fundación Faro Milei presentó en sociedad al vocero Ravier y celebró mejora del PBI</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El presidente Javier Milei presentó oficialmente a Adrián Ravier como su nuevo vocero presidencial en un evento de la Fundación Faro. Durante su discurso, Milei destacó la mejora del PBI, utilizando el dato económico para respaldar sus políticas de gobierno y fortalecer su imagen, marcando un nuevo capítulo en la comunicación oficial.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T22:43:04.533Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/23/en-un-nuevo-gesto-de-diferenciacion-patricia-bullrich-faltara-a-la-reunion-de-los-senadores-de-lla-con-adorni/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Las últimas noticias de Javier Milei</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Patricia Bullrich se ausentará de la reunión de senadores de La Libertad Avanza (LLA) con Adorni, en un claro gesto de diferenciación política dentro de la coalición gobernante. Esta decisión destaca las crecientes tensiones y divergencias internas, reflejando estrategias individuales y la compleja dinámica de poder en el ámbito político nacional, generando especulaciones.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T22:42:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/oranjebtc-compra-18-bitcoin-aumenta-224200644.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>OranjeBTC compra 18 Bitcoin y aumenta sus reservas a 3.822 BTC</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">OranjeBTC ha incrementado sus tenencias de Bitcoin, adquiriendo 18 unidades adicionales y elevando sus reservas totales a 3.822 BTC. Esta acción refleja una estrategia de acumulación de activos digitales, mostrando confianza en el valor a largo plazo de Bitcoin y su potencial como reserva de valor en el mercado.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T22:40:17.042Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/23/polemica-en-el-mundial-un-jugador-de-inglaterra-se-nego-a-saludar-a-un-rival-procesado-por-abuso-sexual/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Polémica en el Mundial: un jugador de Inglaterra se negó a saludar a un rival procesado por abuso sexual</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Durante el Mundial, se desató una polémica cuando un futbolista de la selección inglesa se negó públicamente a saludar a un jugador rival que enfrenta un proceso judicial por abuso sexual. Este gesto generó un intenso debate sobre ética deportiva y los valores en el fútbol profesional, poniendo en el centro de atención la postura de los atletas frente a situaciones sensibles.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:26:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/golpe-las-expectativas-del-mercado-msci-mantuvo-argentina-standalone-y-la-excluyo-una-revision-categoria-n6292058" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Qué falta para una mejora Golpe para las expectativas del mercado: MSCI mantuvo a Argentina en Standalone y la excluyó de una revisión de categoría Por Tomás Alejandro Giancola</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">MSCI asestó un golpe a las expectativas del mercado al mantener la clasificación de Argentina en la categoría "Standalone" y excluirla de una revisión para una posible mejora. Esta decisión frena el optimismo de los inversores y subraya las continuas preocupaciones sobre el entorno económico y regulatorio del país, afectando el atractivo de sus activos.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-23T19:09:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Fuerte caída en mercados globales Los ADRs sufrieron bajas de hasta 4,4% y el riesgo país anotó la mayor suba diaria en un mes y medio</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Los mercados globales experimentaron una jornada de fuertes bajas, con ADRs argentinos cayendo hasta 4,4%, mientras el riesgo país anotó su mayor suba diaria en mes y medio. Esta contracción refleja la aversión al riesgo de los inversores ante incertidumbres económicas. La situación presiona sobre la valuación de activos y la estabilidad financiera, anticipando un periodo de volatilidad e inestabilidad bursátil.</p>
-</article>
             </div>
 
-            <div id="loading-spinner" class="hidden justify-center my-16">
+            <div id="loading-spinner" class="hidden justify-center my-16 w-full">
                 <div class="w-10 h-10 border-4 border-cyan-900 border-t-cyan-400 rounded-full animate-spin shadow-[0_0_15px_#22d3ee]"></div>
             </div>
             
-            <div class="flex justify-center mt-16 mb-12">
+            <div class="flex justify-center mt-16 mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden bg-[#1e293b] hover:bg-cyan-600 hover:text-black border border-gray-700 hover:border-cyan-400 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-[0_10px_20px_rgba(0,0,0,0.5)] gap-2 items-center tracking-widest uppercase font-bold">
                     ↑ Ocultar leídas y volver al inicio
                 </button>
@@ -1171,21 +1187,16 @@
     <script>
         // LÓGICA DE FILTRADO
         const botonesCat = document.querySelectorAll('.btn-filtro, .btn-filtro-movil');
-        const botonesSent = document.querySelectorAll('.btn-sent');
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
         
         let categoriaActual = 'TODAS';
-        let sentimientoActual = 'TODOS';
 
         function aplicarFiltros() {
             articulos.forEach(art => {
                 const cat = art.getAttribute('data-categoria');
-                const sent = art.getAttribute('data-sentimiento');
-                
                 const matchCat = (categoriaActual === 'TODAS' || cat === categoriaActual);
-                const matchSent = (sentimientoActual === 'TODOS' || sent.includes(sentimientoActual));
                 
-                if (matchCat && matchSent) {
+                if (matchCat) {
                     art.classList.remove('hidden-by-filter');
                 } else {
                     art.classList.add('hidden-by-filter');
@@ -1213,33 +1224,14 @@
             });
         });
 
-        botonesSent.forEach(boton => {
-            boton.addEventListener('click', () => {
-                botonesSent.forEach(b => b.className = b.className.replace('bg-gray-800 text-gray-200 border-gray-600/50', 'text-gray-400 border-transparent').replace(/bg-(emerald|rose)-900\/20 border-(emerald|rose)-500\/30 text-(emerald|rose)-400/, 'text-gray-400 border-transparent'));
-                
-                if(boton.getAttribute('data-sent') === 'TODOS') {
-                    boton.className = 'btn-sent bg-gray-800 text-gray-200 border border-gray-600/50 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition';
-                } else if (boton.getAttribute('data-sent') === 'POSITIVO') {
-                    boton.className = 'btn-sent bg-emerald-900/20 border border-emerald-500/30 text-emerald-400 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition shadow-[0_0_15px_rgba(16,185,129,0.1)]';
-                } else if (boton.getAttribute('data-sent') === 'NEGATIVO') {
-                    boton.className = 'btn-sent bg-rose-900/20 border border-rose-500/30 text-rose-400 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition shadow-[0_0_15px_rgba(244,63,94,0.1)]';
-                } else {
-                    boton.className = 'btn-sent bg-gray-800/80 border border-gray-500/50 text-gray-200 text-left px-4 py-2.5 rounded-xl font-semibold text-xs transition';
-                }
-                
-                sentimientoActual = boton.getAttribute('data-sent');
-                aplicarFiltros();
-            });
-        });
-
         // LÓGICA DE SCROLL AUTOMÁTICO
-        let itemsMostrados = 10;
+        let itemsMostrados = 12;
         let isFetching = false;
         const spinner = document.getElementById('loading-spinner');
         const btnVolver = document.getElementById('btn-volver-arriba');
 
         function reiniciarScroll() {
-            itemsMostrados = 10;
+            itemsMostrados = 12;
             window.scrollTo({ top: 0, behavior: 'smooth' });
             renderizarScroll();
         }
@@ -1266,13 +1258,11 @@
         }
 
         window.addEventListener('scroll', () => {
-            // 12. Barra de progreso
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
             document.getElementById("progressBar").style.width = scrolled + "%";
 
-            // 1. Trigger Infinite Scroll
             if (!isFetching && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 800) {
                 const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
                 if (itemsMostrados < articulosFiltrados.length) {
@@ -1281,12 +1271,12 @@
                     spinner.classList.add('flex');
                     
                     setTimeout(() => {
-                        itemsMostrados += 10;
+                        itemsMostrados += 12;
                         renderizarScroll();
                         spinner.classList.add('hidden');
                         spinner.classList.remove('flex');
                         isFetching = false;
-                    }, 800); // Simulamos carga para UX premium
+                    }, 800); 
                 }
             }
         });
@@ -1295,7 +1285,7 @@
             reiniciarScroll();
         });
 
-        // 9. SEPARADOR "AYER" DINÁMICO Y TIEMPOS
+        // SEPARADOR "AYER" DINÁMICO Y TIEMPOS
         function actualizarTiempos() {
             document.querySelectorAll('.tiempo-noticia').forEach(el => {
                 const timestampStr = el.getAttribute('data-timestamp');
@@ -1335,7 +1325,7 @@
                 if(tagTiempo.includes('AYER') || tagTiempo.includes('DÍAS')) {
                     const div = document.createElement('div');
                     div.id = 'separador-ayer-dinamico';
-                    div.className = 'col-span-1 xl:col-span-2 2xl:col-span-3 flex items-center gap-4 my-8';
+                    div.className = 'col-span-1 lg:col-span-2 xl:col-span-3 2xl:col-span-4 flex items-center gap-4 my-8 w-full';
                     div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#0b0f19] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
                     todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
                     break;
