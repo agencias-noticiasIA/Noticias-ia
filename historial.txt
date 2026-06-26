@@ -1,54 +1,136 @@
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://tn.com.ar/internacional/2026/06/24/terremotos-en-venezuela-en-vivo-reportes-de-victimas-y-destrozos-las-tareas-de-rescate-y-las-ultimas-noticias/">
-<div class="flex justify-between items-start mb-3 shrink-0">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
 </div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN, LA NACION, INFOBAE</span>
 </div>
-<div class="flex flex-col items-end gap-1 shrink-0">
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T19:16:58.603Z">Reciente</span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-26T00:11:08.857Z">Reciente</span>
 </div>
-</div>
-<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">INFOBAE, LA NACION, TN</span>
-<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://tn.com.ar/internacional/2026/06/24/terremotos-en-venezuela-en-vivo-reportes-de-victimas-y-destrozos-las-tareas-de-rescate-y-las-ultimas-noticias/" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Terremotos en Venezuela: balance de víctimas, réplicas y testimonios</h2>
+<a class="group block mb-3" href="https://tn.com.ar/internacional/2026/06/24/terremotos-en-venezuela-en-vivo-reportes-de-victimas-y-destrozos-las-tareas-de-rescate-y-las-ultimas-noticias/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Terremotos en Venezuela: Argentina envía ayuda y se actualiza la cifra de víctimas y desaparecidos</h2>
 </a>
-<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
-<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Los terremotos en <b>Venezuela</b> han dejado un saldo de <b>188 muertos</b>, <b>1.520 heridos</b> y <b>157 desaparecidos</b>, según el gobierno.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Los sismos principales fueron de magnitud <b>7,2</b> y <b>7,5 Richter</b>, seguidos por al menos <b>30 réplicas</b>, con <b>La Guaira</b> declarada "zona de desastre".<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Se reportan <b>saqueos</b> en medio de la devastación y conmovedores testimonios de residentes que perdieron sus hogares.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CRISIS HUMANITARIA</span>
-</div>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Argentina envía <b>médicos</b>, <b>perros de rescate</b> y un avión Hércules a Venezuela para ayudar en las tareas de emergencia.<br/>• Los terremotos, de magnitud <b>7,2</b> y <b>7,5</b>, han dejado <b>188 muertos</b>, <b>1.520 heridos</b> y <b>157 desaparecidos</b>.<br/>• EE.UU. levantó temporalmente las sanciones al chavismo para facilitar las transacciones de ayuda humanitaria.</p>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#VENEZUELA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TERREMOTO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AYUDA HUMANITARIA</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="MERCADOS" data-url="https://www.ambito.com/finanzas/los-bonos-dolares-rebotan-wall-street-pero-el-sp-merval-extiende-su-declive-n6292740">
-<div class="flex justify-between items-start mb-3 shrink-0">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">🟢 POSITIVO</span>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA" data-sentimiento="NEGATIVO">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
 </div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
 </div>
-<div class="flex flex-col items-end gap-1 shrink-0">
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:53:00-03:00">Reciente</span>
-<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T20:13:00-03:00">Reciente</span>
 </div>
-</div>
-<span class="text-sm md:text-base text-cyan-400 font-black font-mono tracking-wide mb-1 uppercase shrink-0">ÁMBITO</span>
-<a class="ln-link group block mb-2 shrink-0 overflow-hidden" href="https://www.ambito.com/finanzas/los-bonos-dolares-rebotan-wall-street-pero-el-sp-merval-extiende-su-declive-n6292740" target="_blank">
-<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 line-clamp-2 break-words">Bonos en dólares rebotan en Wall Street, influenciados por el FMI</h2>
+<a class="group block mb-3" href="https://www.ambito.com/economia/las-pymes-buscan-paliar-la-crisis-came-pidio-incentivos-al-consumo-financiamiento-accesible-y-un-nuevo-consenso-fiscal-n6292905" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">PyMES buscan paliar crisis: CAME pide incentivos al consumo y financiamiento</h2>
 </a>
-<div class="text-gray-400 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words">
-<span class="text-cyan-400 font-bold mr-2">▪</span>▪ Los <b>bonos en dólares</b> de Argentina rebotaron en <b>Wall Street</b>, mostrando una mejora en su cotización.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Este repunte se produce luego de que el <b>FMI</b> destacara la baja del <b>riesgo país</b> argentino.<br/><span class="text-cyan-400 font-bold mr-2">▪</span> Mientras tanto, las <b>acciones y ADRs</b> mostraron un comportamiento mixto, y el <b>S&amp;P Merval</b> extendió su declive.
-                    </div>
-<div class="shrink-0 mt-3 pt-3 border-t border-gray-800/50 flex flex-wrap items-center justify-between gap-2">
-<div class="flex flex-wrap gap-1.5">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BONOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FMI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#WALL STREET</span>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• La <b>CAME</b> solicitó incentivos al consumo, financiamiento accesible y un nuevo consenso fiscal para paliar la crisis de las <b>PyMES</b>.<br/>• Representantes como <b>Jorge Macri</b> y <b>Kicillof</b> estuvieron presentes en el encuentro.<br/>• El sector busca medidas urgentes para reactivar la economía y sostener la actividad productiva.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#PYMES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CAME</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CRISIS ECONÓMICA</span>
 </div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">LA NACION</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T22:21:45.999Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/economia/milei-corta-otra-racha-negativa-y-afirman-que-gana-una-carrera-clave-contra-macri-y-cristina-nid25062026/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Milei "corta racha negativa" y afirman que gana carrera política clave contra Macri y Cristina</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El presidente <b>Milei</b> estaría cortando una racha negativa, consolidando su posición política.<br/>• Afirman que <b>Milei</b> estaría ganando una "carrera clave" frente a figuras como <b>Macri</b> y <b>Cristina</b>.<br/>• La situación es descrita como la "más positiva" para el actual gobierno.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MILEI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GOBIERNO</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEGATIVO">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🔴 NEGATIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T18:53:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/la-cgt-anuncio-un-plan-accion-que-concluira-un-paro-y-una-marcha-nacional-pero-no-fijo-fechas-n6292943" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">CGT anuncia plan de acción con paro y marcha nacional, sin fechas definidas</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• La <b>CGT</b> anunció un plan de acción que incluirá un <b>paro nacional</b> y una marcha.<br/>• Aunque se confirmó la medida, aún <b>no se fijaron fechas</b> para su implementación.<br/>• Esta decisión refleja una creciente tensión sindical frente a las políticas del gobierno.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CGT</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#PARO NACIONAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TENSIÓN SINDICAL</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA" data-sentimiento="POSITIVO">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🟢 POSITIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T18:12:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/dolar-el-bcra-ya-compro-mas-us11000-millones-2026-n6292909" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">El BCRA compró más de U$S11.000 millones en 2026, reservas con leve variación</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El <b>BCRA</b> ha comprado más de <b>U$S11.000 millones</b> en el mercado en lo que va del año <b>2026</b>.<br/>• Las reservas del Banco Central han mostrado una variación leve, indicando una estabilización.<br/>• La acumulación de reservas es un factor clave para la estabilidad macroeconómica.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BCRA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RESERVAS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#DÓLAR</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN, IPROFESIONAL</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T20:15:10.916Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/25/sin-quorum-y-con-acusaciones-cruzadas-como-el-gobierno-freno-la-sesion-en-el-senado-y-evito-el-pedido-de-interpelacion-a-adorni/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Fracasa sesión en el Senado para interpelar a Adorni por falta de quórum y "autoboicot" oficialista</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• La sesión en el Senado para interpelar a <b>Adorni</b> fracasó por falta de quórum y acusaciones cruzadas entre bloques.<br/>• El oficialismo, junto a legisladores de <b>LLA</b> y la intervención de <b>Bullrich</b>, fue señalado por "autoboicot" para evitar la interpelación.<br/>• Esta acción frenó el avance del pedido de explicaciones al vocero presidencial.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#SENADO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADORNI</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="MERCADOS" data-sentimiento="POSITIVO">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md">MERCADOS</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">🟢 POSITIVO</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">ÁMBITO</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T15:53:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.ambito.com/finanzas/los-bonos-dolares-rebotan-wall-street-pero-el-sp-merval-extiende-su-declive-n6292740" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">ADRs registran subas y el riesgo país frena escalada tras comentarios favorables del FMI</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Los <b>ADRs</b> argentinos registraron mayoría de subas en un contexto internacional volátil.<br/>• El <b>riesgo país</b> frenó su escalada, influenciado por comentarios favorables del <b>FMI</b>.<br/>• Este escenario indica una mejora en la percepción de los inversores hacia los activos argentinos.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#ADRS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FMI</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="POLÍTICA" data-url="https://www.iprofesional.com/legales/458323-corte-suprema-dejo-firme-la-cautelar-que-obliga-a-aplicar-ley-de-financiamiento-universitario">
@@ -76,6 +158,44 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CORTE SUPREMA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#UNIVERSIDADES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#GASTO PÚBLICO</span>
 </div>
 <span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="POLÍTICA" data-sentimiento="NEUTRAL">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md">POLÍTICA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">LA NACION</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T18:21:22.867Z">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/juicio-de-los-cuadernos-las-maniobras-de-los-empresarios-investigados-para-extraer-efectivo-de-la-nid25062026/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Juicio Cuadernos: exponen maniobras empresariales y "castigos" a empleados de AFIP</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• El juicio de los <b>Cuadernos</b> expone maniobras de empresarios para extraer efectivo y las represalias del kirchnerismo.<br/>• Supervisores de la <b>AFIP</b> declararon sobre inconsistencias en empresas como <b>Isolux</b>, <b>Iecsa</b> y <b>Esuco</b>.<br/>• Se detallaron "castigos" a los empleados de la <b>AFIP</b> que descubrieron estas irregularidades contables.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CUADERNOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CORRUPCIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#AFIP</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="ECONOMÍA" data-sentimiento="NEUTRAL">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md">ECONOMÍA</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
+</div>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">IPROFESIONAL</span>
+</div>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T14:53:00-03:00">Reciente</span>
+</div>
+<a class="group block mb-3" href="https://www.iprofesional.com/comex/458306-el-contundente-dato-que-confirma-el-fanatismo-de-los-argentinos-por-shein-y-temu" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Compras por Shein y Temu impulsan importaciones vía courier a récord en 6 años</h2>
+</a>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• Las importaciones vía courier alcanzaron un récord mensual de <b>U$S115 millones</b>, el más alto en <b>6 años</b>.<br/>• Este crecimiento se atribuye al boom de compras en plataformas como <b>Shein</b> y <b>Temu</b>, transformando hábitos de consumo.<br/>• El aumento de envíos directos desde China genera un cambio significativo en el comercio minorista argentino.</p>
+<div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#IMPORTACIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CONSUMO</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#E-COMMERCE</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-black/60 border border-gray-800/60 h-[380px] overflow-hidden" data-categoria="ECONOMÍA" data-url="https://www.ambito.com/finanzas/seguira-picante-el-dolar-julio-las-claves-tener-cuenta-que-definiran-que-su-precio-n6292759">
@@ -363,24 +483,24 @@
 <span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MISIÓN ESPACIAL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#TRAGEDIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#HISTORIA</span>
 </div>
 </article>
-<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="DEPORTES">
+<article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60" data-categoria="DEPORTES" data-sentimiento="NEUTRAL">
 <div class="flex justify-between items-start mb-4">
-<div class="flex flex-col gap-2 max-w-[70%]">
-<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
-<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
-<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">⚪ NEUTRAL</span>
+<div class="flex flex-col gap-2">
+<div class="flex gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md">DEPORTES</span>
+<span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700">⚪ NEUTRAL</span>
 </div>
-<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">LA NACION, INFOBAE</span>
+<span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">TN, LA NACION, INFOBAE</span>
 </div>
-<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded shrink-0" data-timestamp="2026-06-25T05:00:00Z">Reciente</span>
+<span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="2026-06-25T05:00:00Z">Reciente</span>
 </div>
-<a class="group block mb-3 overflow-hidden" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-la-clasificacion-de-brasil-a-16vos-y-la-formacion-que-pondria-scaloni-para-nid25062026/" target="_blank">
-<h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 break-words">Mundial 2026: Brasil clasifica a octavos tras golear 3-0 a Escocia</h2>
+<a class="group block mb-3" href="https://www.lanacion.com.ar/deportes/mundial-2026-en-vivo-la-clasificacion-de-brasil-a-16vos-y-la-formacion-que-pondria-scaloni-para-nid25062026/" target="_blank">
+<h2 class="text-xl font-bold text-gray-100 leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200">Actualidad del Mundial 2026: clasificaciones y resultados de la fase de grupos</h2>
 </a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1 break-words">• La selección de <b>Brasil</b> aseguró su clasificación a los octavos de final del <b>Mundial 2026</b> tras una contundente goleada <b>3-0</b> ante Escocia.<br/>• Se revelaron videos de celebridades internacionales reaccionando apasionadamente al partido, tanto de la música como del cine.<br/>• El director técnico <b>Lionel Scaloni</b> ya estaría definiendo la formación que utilizará la selección argentina en sus próximos encuentros.</p>
-<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+<p class="text-gray-400 text-sm flex-grow leading-relaxed mt-2 space-y-1">• <b>Ecuador</b> logró una histórica clasificación al vencer a <b>Alemania</b> en el Mundial 2026, generando festejos eufóricos.<br/>• <b>Brasil</b> también aseguró su pase a octavos de final, con expectativas sobre la formación de <b>Scaloni</b>.<br/>• <b>Costa de Marfil</b> derrotó a <b>Curazao</b>, asegurando el segundo puesto del Grupo E.</p>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
 <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-800/50">
-<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#BRASIL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span>
+<span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-cyan-400 px-2 py-1 rounded border border-gray-700">#CLASIFICACIONES</span>
 </div>
 </article>
 <article class="tarjeta-noticia bg-[#0f172a]/70 backdrop-blur-xl rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-black/60 border border-gray-800/60 break-words overflow-hidden" data-categoria="POLÍTICA">
@@ -1067,116 +1187,4 @@
 </h2>
 </a>
 <p class="text-gray-400 text-sm flex-grow leading-relaxed">El precio del petróleo Brent ha caído por debajo de los 74 dólares el barril, un nivel no visto desde el comienzo de la guerra en Irán. Esta disminución refleja preocupaciones sobre la demanda global y un aumento de la oferta, impactando directamente en los mercados energéticos y generando expectativas de posibles fluctuaciones económicas a nivel internacional.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-orange-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="DEPORTES">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-orange-900/40 text-orange-400 px-2.5 py-1 rounded-md">DEPORTES</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T14:38:06.350Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/deportes/mundial/2026/2026/06/24/buscan-a-un-argentino-de-57-anos-desaparecido-en-dallas-viajo-con-un-amigo-para-ver-a-la-seleccion/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Apareció el hincha argentino de 57 años que era buscado en Dallas: había sido detenido por la policíaPor Daniela Lichinizer - Desde EE.UU.</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El hincha argentino de 57 años que había desaparecido en Dallas, mientras asistía a un partido de la Selección, fue localizado y se confirmó que estuvo detenido por la policía. Su aparición pone fin a la búsqueda y alivia la preocupación de familiares, destacando los imprevistos que pueden ocurrir durante eventos deportivos internacionales.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">ÁMBITO</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T11:31:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.ambito.com/politica/nunca-la-vi-tan-enojada-furia-patricia-bullrich-manuel-adorni-desautorizarla-publicamente-n6292206" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Arde La Libertad Avanza "Nunca la vi tan enojada": furia de Bullrich con Adorni tras desautorizarla públicamente Por Ezequiel Rudman</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Una fuerte interna sacude a La Libertad Avanza, con Patricia Bullrich expresando su furia hacia Manuel Adorni tras ser desautorizada públicamente. Este incidente subraya las tensiones dentro del oficialismo y la dificultad para mantener la cohesión interna, generando interrogantes sobre la estabilidad y coordinación de las figuras clave del gobierno.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">IPROFESIONAL</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T11:30:00-03:00">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.iprofesional.com/finanzas/458094-las-maniobras-con-el-dolar-por-parte-del-bcra-que-despertaron-sospechas-en-la-city" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Maniobras con dólar despiertan sospechas en la City: ¿el BCRA salió a contener la cotización?Hubo un aumento fuerte en el volumen operado, y a los analistas les extraña cómo se "aplastó" la tasa de la cobertura. Sospechas de la mano del BCRAFinanzas / El pulso del mercadoPor Fernando Gutiérrez</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">Maniobras inusuales en el mercado de dólares, con un aumento drástico en el volumen operado y una "tasa de cobertura" aplastada, han despertado fuertes sospechas en la City. Analistas sugieren una posible intervención del Banco Central para contener la cotización del dólar.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-blue-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="ECONOMÍA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">YAHOO FINANZAS</span>
-<span class="bg-blue-900/40 text-blue-400 px-2.5 py-1 rounded-md">ECONOMÍA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T14:29:00.000Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://es.finance.yahoo.com/noticias/euro-digital-avanza-votaci%C3%B3n-parlamento-142900734.html" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>El euro digital avanza tras votación del Parlamento Europeo</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El proyecto del euro digital dio un paso significativo tras recibir la aprobación en una votación clave del Parlamento Europeo. Este avance marca un hito importante en la modernización monetaria de la eurozona, sentando las bases para una potencial implementación que transformaría el sistema de pagos y la política monetaria en la región.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T12:51:44.316Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/politica/la-visita-del-papa-leon-xiv-a-la-argentina-en-noviembre-durara-tres-dias-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Gira. La visita del papa León XIV a la Argentina en noviembre durará tres díasEl viaje del pontífice por la región incluirá 10 días en Perú y uno y medio en Uruguay; resta el anuncio oficial del VaticanoPolíticaPor Elisabetta Piqué</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El Papa León XIV realizará una visita de tres días a Argentina en noviembre, como parte de una gira regional que también incluirá Perú y Uruguay. Aunque aún se espera el anuncio oficial del Vaticano, esta gira papal representa un importante evento diplomático y religioso, con implicaciones políticas y sociales significativas para la nación.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-indigo-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="POLÍTICA">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">TN</span>
-<span class="bg-indigo-900/40 text-indigo-400 px-2.5 py-1 rounded-md">POLÍTICA</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T11:56:56.842Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://tn.com.ar/politica/2026/06/24/bajo-presion-por-el-caso-adorni-el-gobierno-busca-recuperar-la-iniciativa-en-diputados-con-la-sancion-de-dos-leyes-economicas/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Tensión en el CongresoBajo presión por el caso Adorni, el Gobierno busca recuperar la iniciativa en Diputados con la media sanción de dos leyes económicasLa Libertad Avanza busca aprobar en la Cámara Baja el denominado super-RIGI y el acuerdo con los bonistas que no ingresaron al canje de deuda por el default del año 2001. La oposición insistirá con la interpelación al jefe de Gabinete.Por Fernando Fraquelli</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El gobierno enfrenta tensión en el Congreso por el "caso Adorni" y busca recuperar el impulso en Diputados con la aprobación de dos leyes económicas clave, incluyendo el "super-RIGI". Mientras la oposición insiste en la interpelación, La Libertad Avanza presiona para avanzar su agenda legislativa y consolidar su estrategia política en un escenario complejo.</p>
-</article>
-<article class="tarjeta-noticia bg-[#111827] rounded-xl p-6 flex flex-col border-l-4 border-emerald-500 hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-black/50" data-categoria="MERCADOS">
-<div class="flex justify-between items-center mb-4 text-xs font-bold tracking-wide">
-<div class="flex gap-2">
-<span class="bg-[#1f2937] text-gray-300 px-2.5 py-1 rounded-md border border-gray-700">LA NACION</span>
-<span class="bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-md">MERCADOS</span>
-</div>
-<span class="tiempo-noticia text-gray-500 text-right" data-timestamp="2026-06-24T11:36:15.184Z">Reciente</span>
-</div>
-<a class="group block mb-3" href="https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotiza-el-oficial-y-cual-es-el-precio-del-paralelo-este-nid24062026/" target="_blank">
-<h2 class="text-xl font-bold text-white leading-tight group-hover:text-cyan-400 group-hover:underline transition duration-200 flex items-start gap-2">
-<span>Dólar hoyHace 14 min</span>
-<svg class="w-5 h-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</h2>
-</a>
-<p class="text-gray-400 text-sm flex-grow leading-relaxed">El mercado cambiario argentino sigue de cerca la cotización del dólar, tanto oficial como el "dólar blue", en tiempo real. La fluctuación de estas divisas es un indicador crucial para la economía y los inversores, reflejando la incertidumbre y las expectativas sobre la estabilidad financiera del país a lo largo de la jornada.</p>
 </article>
