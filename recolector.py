@@ -124,9 +124,10 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-cyan-400 font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres, tickers).
-4. TAGS: 2 o 3 palabras clave separadas por coma.
-5. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
-6. IMPACTO: Del 1 al 5.
+4. CONTEXTO DE IMPACTO: Explica brevemente al final del resumen el porqué de la calificación asignada (ej. por qué es normal, por qué es negativo para el inversor, etc.).
+5. TAGS: 2 o 3 palabras clave separadas por coma.
+6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
+7. IMPACTO: Del 1 al 5.
 
 Formato de respuesta estricto separado por el símbolo | :
 DIARIOS|CATEGORIA|TÍTULO UNIFICADO|VIÑETAS_HTML|TAGS|SENTIMIENTO|IMPACTO|LINK PRINCIPAL
@@ -222,11 +223,11 @@ if exito:
                                 <span class="{pill} px-2 py-1 rounded-md whitespace-nowrap">{categoria}</span>
                                 <span class="bg-gray-800/80 text-gray-300 px-2 py-1 rounded-md border border-gray-700 whitespace-nowrap">{icono_sent} {sentimiento}</span>
                             </div>
-                            <span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest break-all">{diarios}</span>
+                            <span class="text-[9px] text-cyan-400 font-black font-mono tracking-wide uppercase break-all">{diarios}</span>
                         </div>
                         <div class="flex flex-col items-end gap-1 shrink-0">
                             <span class="tiempo-noticia text-gray-400 text-xs font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded" data-timestamp="{timestamp_iso}">Reciente</span>
-                            <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">Leída</span>
+                            <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
                         </div>
                     </div>
                     
@@ -246,7 +247,7 @@ if exito:
                     </div>
                 </article>
                 """
-
+    
 # --- PURGA DE FANTASMAS ---
 historial_viejo_limpio = ""
 if os.path.exists("historial.txt"):
@@ -307,6 +308,7 @@ print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
 
+# Dólares
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
@@ -347,25 +349,98 @@ try:
 except:
     pass
 
+# Riesgo País (Con comparación respecto a ayer)
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
         datos_rp = req_rp.json()
-        if datos_rp:
+        if datos_rp and len(datos_rp) > 1:
             ultimo_rp = datos_rp[-1]["valor"] 
+            rp_ayer = datos_rp[-2]["valor"]
+            dif_puntos = ultimo_rp - rp_ayer
+            pct_var = (dif_puntos / rp_ayer) * 100 if rp_ayer else 0
+            
+            if dif_puntos < 0:
+                color_rp = "text-[#00E5FF]"
+                simbolo_rp = "▼"
+            elif dif_puntos > 0:
+                color_rp = "text-rose-500"
+                simbolo_rp = "▲"
+            else:
+                color_rp = "text-gray-500"
+                simbolo_rp = ""
+                
             widgets_html += f"""
             <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-rose-900/40 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col justify-between">
                 <span class="text-rose-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">Riesgo País</span>
                 <div class="text-xl md:text-2xl font-mono font-black text-white mt-1 flex items-center justify-between gap-1">
-                    {int(ultimo_rp)} <span class="text-[10px] text-rose-500 flex items-center">▲</span>
+                    {int(ultimo_rp)} <span class="{color_rp} text-[10px] flex items-center font-bold">{simbolo_rp} {abs(dif_puntos)} ({signo if variacion_pct > 0 else ""}{pct_var:.2f}%)</span>
                 </div>
-                <div class="mt-2 border-t border-gray-800/50 pt-2">
+                <div class="mt-2 border-t border-gray-800/50 pt-2 flex justify-between items-center">
                     <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">Puntos (EMBI)</span>
+                    <span class="text-[9px] text-gray-500 font-mono">Ayer: {int(rp_ayer)}</span>
                 </div>
             </div>
             """
 except:
     pass
+
+# Yahoo Finanzas (Acciones e Índices mejorados con porcentaje y bandera)
+headers_yahoo = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+activos = [
+    {"ticker": "YPF", "nombre": "YPF (ADR)", "bandera": "🇦🇷"},
+    {"ticker": "GGAL", "nombre": "GALICIA (ADR)", "bandera": "🇦🇷"},
+    {"ticker": "^GSPC", "nombre": "S&P 500", "bandera": "🇺🇸"}
+]
+for activo in activos:
+    try:
+        url_yahoo = f"https://query1.finance.yahoo.com/v8/finance/chart/{activo['ticker']}?region=US&lang=en-US"
+        req_yahoo = requests.get(url_yahoo, headers=headers_yahoo, timeout=5)
+        if req_yahoo.status_code == 200:
+            data = req_yahoo.json()
+            meta = data['chart']['result'][0]['meta']
+            
+            precio = meta['regularMarketPrice']
+            cierre_previo = meta.get('previousClose', precio)
+            
+            if cierre_previo > 0:
+                variacion_pct = ((precio / cierre_previo) - 1) * 100
+            else:
+                variacion_pct = 0
+                
+            if variacion_pct > 0:
+                color_var = "text-[#00E5FF]" 
+                signo = "+"
+            elif variacion_pct < 0:
+                color_var = "text-rose-500"  
+                signo = ""
+            else:
+                color_var = "text-gray-500"  
+                signo = ""
+                
+            var_html = f'<span class="{color_var} text-[10px] ml-1 font-bold">{signo}{variacion_pct:.2f}%</span>'
+
+            if "^" in activo['ticker']:
+                precio_form = f"{int(precio):,}".replace(",", ".")
+            else:
+                precio_form = f"US$ {precio:.2f}"
+            
+            widgets_html += f"""
+            <div class="bg-[#0f172a]/80 backdrop-blur-xl border border-gray-700/60 rounded-xl p-3 md:p-4 flex-1 min-w-[130px] max-w-[48%] md:max-w-none shadow-[0_8px_30px_rgb(0,0,0,0.5)] hover:border-blue-500/50 transition flex flex-col justify-between">
+                <div class="flex justify-between items-center w-full">
+                    <span class="text-blue-400 text-[9px] md:text-[10px] font-black tracking-wider uppercase truncate">{activo['nombre']}</span>
+                    <span class="text-gray-500 text-xs opacity-80">{activo['bandera']}</span>
+                </div>
+                <div class="text-xl md:text-2xl font-mono font-black text-white mt-1 flex items-center justify-between gap-1">
+                    {precio_form} {var_html}
+                </div>
+                <div class="mt-2 border-t border-gray-800/50 pt-2">
+                    <span class="text-[9px] md:text-[10px] text-gray-500 font-mono">Wall Street</span>
+                </div>
+            </div>
+            """
+    except:
+        pass
 
 if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado opera con cautela a la espera de nuevos datos macroeconómicos.", "Jornada clave en la bolsa porteña."]
@@ -419,31 +494,19 @@ html_completo = f"""<!DOCTYPE html>
         
         <div class="p-6 flex-grow overflow-y-auto flex flex-col gap-6">
             <div class="bg-[#0f172a]/70 border border-gray-800 rounded-xl p-4 text-center">
-                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-1">Hora Oficial ART</p>
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-1">Hora Argentina. Mercado desde 10:30hs a 17hs</p>
                 <div id="reloj-digital" class="text-3xl font-mono font-black text-gray-100 tracking-wider">00:00:00</div>
                 <div id="mercado-estado" class="mt-2 text-xs font-bold px-2.5 py-1 rounded-full inline-block">--</div>
             </div>
 
             <div>
-                <p class="text-[10px] text-gray-500 uppercase tracking-widest font-black mb-3">Categorías</p>
-                <div class="flex flex-col gap-2">
-                    <button data-filter="TODAS" class="btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]">🏦 Todo el Feed</button>
-                    <button data-filter="MERCADOS" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">📈 Mercados</button>
-                    <button data-filter="ECONOMÍA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">💰 Economía</button>
-                    <button data-filter="POLÍTICA" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">🏛️ Política</button>
-                    <button data-filter="DEPORTES" class="btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition">⚽ Deportes</button>
-                </div>
-            </div>
-
-            <div class="mt-auto">
-                <button id="btn-reset-leidas" class="w-full bg-gray-900 hover:bg-gray-800 text-gray-400 border border-gray-800 hover:border-gray-700 rounded-xl py-2.5 text-xs font-mono transition">
-                    🔄 Resetear Leídas
-                </button>
+                <button id="btn-ver-leidas" class="w-full bg-gray-900 hover:bg-gray-800 text-cyan-400 border border-cyan-500/30 rounded-xl py-3 text-xs font-bold transition mb-4 tracking-wider uppercase">👁️ Ver Noticias Leídas</button>
+                <button id="btn-reset-leidas" class="w-full bg-rose-950/20 hover:bg-rose-950/40 text-rose-400 border border-rose-500/30 rounded-xl py-3 text-xs font-bold transition tracking-wider uppercase">🗑️ Resetear Historial</button>
             </div>
         </div>
 
         <div class="p-6 border-t border-gray-800/80 bg-[#0f172a]/30">
-            <a href="TU_LINK_DE_LINKEDIN_AQUI" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
+            <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="w-full bg-[#1e293b] hover:bg-[#334155] border border-gray-700/50 rounded-xl p-3 flex justify-center items-center gap-3 transition shadow-lg">
                 <div class="bg-[#0a66c2] text-white px-1.5 py-0.5 rounded text-sm font-bold">in</div>
                 <span class="text-gray-200 font-semibold text-xs tracking-wide">Conectar en LinkedIn</span>
             </a>
@@ -459,14 +522,6 @@ html_completo = f"""<!DOCTYPE html>
                     {ticker_items}
                 </div>
             </div>
-            
-            <div class="md:hidden p-4 border-b border-gray-800 overflow-x-auto flex gap-2 no-scrollbar w-full">
-                <button data-filter="TODAS" class="btn-filtro-movil bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 px-4 py-2 rounded-lg font-bold text-xs whitespace-nowrap">Todo</button>
-                <button data-filter="MERCADOS" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Mercados</button>
-                <button data-filter="ECONOMÍA" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Economía</button>
-                <button data-filter="POLÍTICA" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Política</button>
-                <button data-filter="DEPORTES" class="btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap">Deportes</button>
-            </div>
 
             <div class="w-full p-4 md:p-6 flex flex-wrap gap-3 justify-around md:justify-between items-center">
                 {widgets_html}
@@ -477,7 +532,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div id="separador-hoy" class="flex items-center gap-4 mb-6 mt-2 w-full">
                 <div class="h-px bg-gray-800 flex-grow"></div>
-                <span class="text-[10px] font-mono text-cyan-500 border border-cyan-500/30 bg-cyan-900/20 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(34,211,238,0.1)] whitespace-nowrap">Últimas Noticias</span>
+                <span id="titulo-seccion" class="text-[10px] font-mono text-cyan-500 border border-cyan-500/30 bg-cyan-900/20 px-4 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap">Últimas Noticias</span>
                 <div class="h-px bg-gray-800 flex-grow"></div>
             </div>
 
@@ -498,216 +553,132 @@ html_completo = f"""<!DOCTYPE html>
     </div>
 
     <script>
-        // LÓGICA DE FILTRADO
-        const botonesCat = document.querySelectorAll('.btn-filtro, .btn-filtro-movil');
         const articulos = Array.from(document.querySelectorAll('.tarjeta-noticia'));
-        
-        let categoriaActual = 'TODAS';
+        let vistaActual = "principales";
 
-        function aplicarFiltros() {{
-            articulos.forEach(art => {{
-                const cat = art.getAttribute('data-categoria');
-                const matchCat = (categoriaActual === 'TODAS' || cat === categoriaActual);
-                
-                if (matchCat) {{
-                    art.classList.remove('hidden-by-filter');
-                }} else {{
-                    art.classList.add('hidden-by-filter');
-                    art.style.display = 'none';
-                }}
-            }});
-            reiniciarScroll();
-        }}
-
-        botonesCat.forEach(boton => {{
-            boton.addEventListener('click', () => {{
-                // Reset visual desktop
-                document.querySelectorAll('.btn-filtro').forEach(b => b.className = 'btn-filtro hover:bg-gray-800/50 text-gray-400 border border-transparent text-left px-4 py-3 rounded-xl font-semibold text-sm transition');
-                // Reset visual movil
-                document.querySelectorAll('.btn-filtro-movil').forEach(b => b.className = 'btn-filtro-movil bg-gray-800 text-gray-400 px-4 py-2 rounded-lg font-semibold text-xs whitespace-nowrap');
-                
-                if(boton.classList.contains('btn-filtro')) {{
-                    boton.className = 'btn-filtro bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 text-left px-4 py-3 rounded-xl font-bold text-sm transition shadow-[0_0_15px_rgba(34,211,238,0.1)]';
-                }} else {{
-                    boton.className = 'btn-filtro-movil bg-cyan-900/30 text-cyan-400 border border-cyan-500/50 px-4 py-2 rounded-lg font-bold text-xs whitespace-nowrap';
-                }}
-                
-                categoriaActual = boton.getAttribute('data-filter');
-                aplicarFiltros();
-            }});
-        }});
-
-        // LÓGICA DE SISTEMA LEÍDO (localStorage)
-        function chequearLeidas() {{
+        function aplicarVistas() {{
             const leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
             articulos.forEach(art => {{
                 const url = art.getAttribute('data-url');
-                if (leidas.includes(url)) {{
-                    art.classList.add('tarjeta-leida');
-                    const badge = art.querySelector('.badge-leida');
-                    if (badge) badge.classList.remove('hidden');
+                const isRead = leidas.includes(url);
+                
+                if (vistaActual === "principales") {{
+                    if (isRead) {{
+                        art.style.display = 'none';
+                    }} else {{
+                        art.style.display = 'flex';
+                        art.classList.remove('tarjeta-leida');
+                    }}
                 }} else {{
-                    art.classList.remove('tarjeta-leida');
-                    const badge = art.querySelector('.badge-leida');
-                    if (badge) badge.classList.add('hidden');
+                    if (isRead) {{
+                        art.style.display = 'flex';
+                        art.classList.add('tarjeta-leida');
+                    }} else {{
+                        art.style.display = 'none';
+                    }}
                 }}
             }});
+            actualizarSeparadorAyer();
         }}
 
+        // Marcar como leída al hacer clic en cualquier parte de la tarjeta
         articulos.forEach(art => {{
-            const linkTag = art.querySelector('.ln-link');
-            if (linkTag) {{
-                linkTag.addEventListener('click', () => {{
-                    const url = art.getAttribute('data-url');
-                    let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
-                    if (!leidas.includes(url)) {{
-                        leidas.push(url);
-                        localStorage.setItem('noticias_leidas', JSON.stringify(leidas));
-                    }}
-                    chequearLeidas();
-                }});
+            art.addEventListener('click', () => {{
+                if (vistaActual !== "principales") return;
+                const url = art.getAttribute('data-url');
+                let leidas = JSON.parse(localStorage.getItem('noticias_leidas') || '[]');
+                if (!leidas.includes(url)) {{
+                    leidas.push(url);
+                    localStorage.setItem('noticias_leidas', JSON.stringify(leidas));
+                }}
+                
+                // Animación suave de desaparición
+                art.style.transition = "all 0.3s ease";
+                art.style.opacity = "0";
+                art.style.transform = "scale(0.95)";
+                setTimeout(() => {{
+                    aplicarVistas();
+                    art.style.opacity = "1";
+                    art.style.transform = "scale(1)";
+                }}, 300);
+            }});
+        }});
+
+        // Control de Vistas
+        const btnVerLeidas = document.getElementById('btn-ver-leidas');
+        const tituloSeccion = document.getElementById('titulo-seccion');
+
+        btnVerLeidas.addEventListener('click', () => {{
+            if (vistaActual === "principales") {{
+                vistaActual = "leidas";
+                btnVerLeidas.innerText = "👁️ Ver Principales";
+                tituloSeccion.innerText = "Historial de Noticias Leídas";
+            }} else {{
+                vistaActual = "principales";
+                btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
+                tituloSeccion.innerText = "Últimas Noticias";
             }}
+            aplicarVistas();
+            window.scrollTo({{ top: 0, behavior: 'smooth' }});
         }});
 
         document.getElementById('btn-reset-leidas').addEventListener('click', () => {{
             localStorage.removeItem('noticias_leidas');
-            chequearLeidas();
-        }});
-
-        // LÓGICA DE SCROLL AUTOMÁTICO
-        let itemsMostrados = 12;
-        let isFetching = false;
-        const spinner = document.getElementById('loading-spinner');
-        const btnVolver = document.getElementById('btn-volver-arriba');
-
-        function reiniciarScroll() {{
-            itemsMostrados = 12;
+            vistaActual = "principales";
+            btnVerLeidas.innerText = "👁️ Ver Noticias Leídas";
+            tituloSeccion.innerText = "Últimas Noticias";
+            aplicarVistas();
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
-            renderScrollConRespeto();
-        }}
-
-        function renderScrollConRespeto() {{
-            const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
-            
-            articulosFiltrados.forEach((art, index) => {{
-                if (index < itemsMostrados) {{
-                    art.style.display = 'flex';
-                }} else {{
-                    art.style.display = 'none';
-                }}
-            }});
-
-            if (itemsMostrados >= articulosFiltrados.length && articulosFiltrados.length > 0) {{
-                btnVolver.classList.remove('hidden');
-                btnVolver.classList.add('flex');
-            }} else {{
-                btnVolver.classList.add('hidden');
-                btnVolver.classList.remove('flex');
-            }}
-            actualizarSeparadorAyer();
-        }}
-
-        window.addEventListener('scroll', () => {{
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-            document.getElementById("progressBar").style.width = scrolled + "%";
-
-            if (!isFetching && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 800) {{
-                const articulosFiltrados = articulos.filter(art => !art.classList.contains('hidden-by-filter'));
-                if (itemsMostrados < articulosFiltrados.length) {{
-                    isFetching = true;
-                    spinner.classList.remove('hidden');
-                    spinner.classList.add('flex');
-                    
-                    setTimeout(() => {{
-                        itemsMostrados += 12;
-                        renderScrollConRespeto();
-                        spinner.classList.add('hidden');
-                        spinner.classList.remove('flex');
-                        isFetching = false;
-                    }}, 800); 
-                }}
-            }}
         }});
 
-        btnVolver.addEventListener('click', () => {{
-            reiniciarScroll();
-        }});
-
-        // RELOJ DIGITAL DE MERCADOS (Idea A)
+        // Reloj Digital
         function actualizarReloj() {{
             const ahora = new Date();
-            // Ajuste a hora oficial Argentina (ART / UTC-3)
             const opciones = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
-            const horaStr = ahora.toLocaleTimeString('es-AR', opciones);
-            document.getElementById('reloj-digital').textContent = horaStr;
+            document.getElementById('reloj-digital').textContent = ahora.toLocaleTimeString('es-AR', opciones);
             
-            // Evaluar estado del mercado (Lunes=1 a Viernes=5, entre las 11 y las 17 hs)
-            const diaSemana = ahora.getDay(); 
-            const horaActual = ahora.getHours();
+            const dia = ahora.getDay(); 
+            const hora = ahora.getHours();
             const estadoEl = document.getElementById('mercado-estado');
             
-            if (diaSemana >= 1 && diaSemana <= 5 && horaActual >= 11 && horaActual < 17) {{
-                estadoEl.textContent = "🟢 OPERANDO";
-                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 shadow-[0_0_10px_rgba(16,185,129,0.1)] animate-pulse";
+            if (dia >= 1 && dia <= 5 && hora >= 10 && hora < 17) {{
+                estadoEl.textContent = "ABIERTO";
+                estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 animate-pulse";
             }} else {{
-                estadoEl.textContent = "🔴 CERRADO";
+                estadoEl.textContent = "CERRADO";
                 estadoEl.className = "mt-2 text-xs font-bold px-3 py-1 rounded-full inline-block bg-rose-950/40 text-rose-400 border border-rose-500/30";
             }}
         }}
 
-        // SEPARADOR "AYER" DINÁMICO Y TIEMPOS
         function actualizarTiempos() {{
             document.querySelectorAll('.tiempo-noticia').forEach(el => {{
-                const timestampStr = el.getAttribute('data-timestamp');
-                if(!timestampStr) return; 
-                
-                const fechaNoticia = new Date(timestampStr);
-                const ahora = new Date();
-                const diffMinutos = Math.floor((ahora - fechaNoticia) / 60000);
-                
-                if (isNaN(diffMinutos)) return;
-
-                if (diffMinutos < 1) {{
-                    el.textContent = "INSTANTES";
-                    el.className = "tiempo-noticia text-cyan-400 text-[10px] font-black font-mono bg-cyan-900/30 border border-cyan-500/50 px-2 py-1 rounded shadow-[0_0_10px_rgba(34,211,238,0.2)]";
-                }} else if (diffMinutos < 60) {{
-                    el.textContent = `HACE ${{diffMinutos}}m`;
-                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-gray-800 border border-gray-600 px-2 py-1 rounded";
-                }} else if (diffMinutos < 1440) {{
-                    const diffHoras = Math.floor(diffMinutos / 60);
-                    el.textContent = `HACE ${{diffHoras}}h`;
-                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-gray-900/80 border border-gray-700 px-2 py-1 rounded";
-                }} else {{
-                    el.textContent = 'AYER';
-                    el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-gray-800 px-2 py-1 rounded";
-                }}
+                const ts = el.getAttribute('data-timestamp');
+                if(!ts) return; 
+                const n = new Date(ts), diff = Math.floor((new Date() - n) / 60000);
+                if (isNaN(diff)) return;
+                el.textContent = diff < 1 ? "INSTANTES" : (diff < 60 ? `HACE ${{diff}}m` : (diff < 1440 ? `HACE ${{Math.floor(diff/60)}}h` : "AYER"));
             }});
             actualizarSeparadorAyer();
         }}
         
         function actualizarSeparadorAyer() {{
-            const separadorExistente = document.getElementById('separador-ayer-dinamico');
-            if(separadorExistente) separadorExistente.remove();
-
-            const todosVisibles = articulos.filter(art => art.style.display !== 'none');
-            for(let i=0; i<todosVisibles.length; i++) {{
-                const tagTiempo = todosVisibles[i].querySelector('.tiempo-noticia').textContent;
-                if(tagTiempo.includes('AYER') || tagTiempo.includes('DÍAS')) {{
-                    const div = document.createElement('div');
-                    div.id = 'separador-ayer-dinamico';
-                    div.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
-                    div.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#020617] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
-                    todosVisibles[i].parentNode.insertBefore(div, todosVisibles[i]);
+            const sep = document.getElementById('separador-ayer-dinamico');
+            if(sep) sep.remove();
+            const vis = articulos.filter(a => a.style.display !== 'none');
+            for(let i=0; i<vis.length; i++) {{
+                const t = vis[i].querySelector('.tiempo-noticia').textContent;
+                if(t.includes('AYER')) {{
+                    const d = document.createElement('div');
+                    d.id = 'separador-ayer-dinamico';
+                    d.className = 'col-span-1 md:col-span-2 xl:col-span-3 flex items-center gap-4 my-8 w-full';
+                    d.innerHTML = '<div class="h-px bg-gray-800/80 flex-grow"></div><span class="text-[10px] font-mono text-gray-500 border border-gray-800 bg-[#020617] px-4 py-1.5 rounded-full uppercase tracking-widest">Jornada Anterior</span><div class="h-px bg-gray-800/80 flex-grow"></div>';
+                    vis[i].parentNode.insertBefore(d, vis[i]);
                     break;
                 }}
             }}
         }}
         
-        // Inicialización
-        chequearLeidas();
-        aplicarFiltros();
+        aplicarVistas();
         actualizarTiempos();
         actualizarReloj();
         setInterval(actualizarTiempos, 60000);
@@ -718,3 +689,4 @@ html_completo = f"""<!DOCTYPE html>
 
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html_completo)
+print("✅ Sitio compilado correctamente.")
