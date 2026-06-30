@@ -327,83 +327,82 @@ oficial_venta = 1.0
 oficial_ayer = 1.0
 timestamp_actual = int(time.time()) # Rompe-caché para forzar actualización
 
-# 4.1 Dólares (Fuentes enormes, anti-desborde y forzado de actualización)
+# 4.1 Dólares y Riesgo País (Cálculo real de variación y fallback de errores)
+widgets_html = ""
+oficial_venta = 1.0
+
 try:
-    req_dolar = requests.get(f"https://dolarapi.com/v1/dolares?v={timestamp_actual}", timeout=10)
-    req_hist = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/oficial?v={timestamp_actual}", timeout=10)
+    req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
+    dolares = req_dolar.json() if req_dolar.status_code == 200 else []
     
-    if req_dolar.status_code == 200:
-        dolares = req_dolar.json()
-        d_oficial = next((d for d in dolares if d["casa"] == "oficial"), None)
-        if d_oficial:
-            oficial_venta = d_oficial["venta"]
+    d_oficial = next((d for d in dolares if d["casa"] == "oficial"), None)
+    if d_oficial:
+        oficial_venta = d_oficial["venta"]
+
+    # Histórico para variación (Llamadas aisladas y seguras)
+    hist_venta = {}
+    for c in ["oficial", "blue", "mep", "ccl"]:
+        try:
+            rh = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/{c}", timeout=5)
+            if rh.status_code == 200 and len(rh.json()) > 1:
+                hist_venta[c] = rh.json()[-2]["venta"]
+        except: pass
+
+    casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
+    for casa, nombre in casas_clave.items():
+        d_info = next((d for d in dolares if d["casa"] == casa), None)
+        if d_info:
+            venta = d_info["venta"]
+            compra = d_info.get("compra", venta)
             
-        if req_hist.status_code == 200:
-            hist_data = req_hist.json()
-            if len(hist_data) > 1:
-                oficial_ayer = hist_data[-2]["venta"]
+            var_pct = 0.00
+            clave_hist = "mep" if casa == "bolsa" else "ccl" if casa == "contadoconliqui" else casa
+            
+            # Solo calcula la variación si el valor de ayer es mayor a 0 (Evita el error del 149900%)
+            if clave_hist in hist_venta and hist_venta[clave_hist] > 0:
+                var_pct = ((venta / hist_venta[clave_hist]) - 1) * 100
 
-        casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
-        for casa, nombre in casas_clave.items():
-            d_info = next((d for d in dolares if d["casa"] == casa), None)
-            if d_info:
-                venta = d_info["venta"]
-                compra = d_info.get("compra", venta)
-                
-                if casa == "oficial" and oficial_ayer > 0:
-                    var_pct = ((venta / oficial_ayer) - 1) * 100
-                elif casa != "oficial":
-                    hist_casa = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/{casa}?v={timestamp_actual}", timeout=5)
-                    if hist_casa.status_code == 200 and len(h_data := hist_casa.json()) > 1:
-                        var_pct = ((venta / h_data[-2]["venta"]) - 1) * 100
-                    else:
-                        var_pct = 0.00
-                else:
-                    var_pct = 0.00
+            simbolo = "▲" if var_pct > 0 else "▼" if var_pct < 0 else ""
+            color_var = "text-rose-500 font-black" if var_pct > 0 else "text-[#00E5FF] font-black" if var_pct < 0 else "text-gray-500 font-semibold"
 
-                if var_pct > 0:
-                    color_var = "text-rose-500 font-black"
-                    simbolo = "▲"
-                elif var_pct < 0:
-                    color_var = "text-[#00E5FF] font-black"
-                    simbolo = "▼"
-                else:
-                    color_var = "text-gray-500 font-semibold"
-                    simbolo = ""
+            brecha_txt = f"Brecha {((venta / oficial_venta) - 1) * 100:.1f}%" if casa != "oficial" else "Oficial Base"
 
-                brecha_txt = f"Brecha {((venta / oficial_venta) - 1) * 100:.1f}%" if casa != "oficial" else "Oficial Base"
-
-                widgets_html += f"""
-                <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-5 flex flex-col justify-center min-w-[220px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)] overflow-hidden">
-                    <div class="flex items-center justify-between mb-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs text-gray-400 font-bold tracking-widest uppercase truncate">DÓLAR {nombre}</span>
-                            <span class="text-gray-500 text-xs">🇦🇷</span>
-                        </div>
-                    </div>
-                    <div class="flex items-baseline justify-between w-full mt-2 gap-2">
-                        <span class="text-4xl md:text-5xl font-mono font-black text-white tracking-tighter">${int(venta) if venta % 1 == 0 else venta}</span>
-                        <span class="{color_var} text-xs md:text-sm font-mono flex items-center gap-0.5">{simbolo}{abs(var_pct):.2f}%</span>
-                    </div>
-                    <div class="mt-4 border-t border-[#232323] pt-2 flex flex-wrap justify-between gap-1 text-[10px] text-gray-500 font-mono uppercase font-bold tracking-wide">
-                        <span class="truncate">C: ${int(compra)}</span>
-                        <span class="whitespace-nowrap">{brecha_txt}</span>
+            widgets_html += f"""
+            <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-5 flex flex-col justify-center min-w-[220px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)] overflow-hidden">
+                <div class="flex items-center justify-between mb-1">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-gray-400 font-bold tracking-widest uppercase truncate">DÓLAR {nombre}</span>
+                        <span class="text-gray-500 text-xs">🇦🇷</span>
                     </div>
                 </div>
-                """
+                <div class="flex items-baseline justify-between w-full mt-2 gap-2">
+                    <span class="text-4xl md:text-5xl font-mono font-black text-white tracking-tighter">${int(venta) if venta % 1 == 0 else venta}</span>
+                    <span class="{color_var} text-xs md:text-sm font-mono flex items-center gap-0.5">{simbolo}{abs(var_pct):.2f}%</span>
+                </div>
+                <div class="mt-4 border-t border-[#232323] pt-2 flex flex-wrap justify-between gap-1 text-[10px] text-gray-500 font-mono uppercase font-bold tracking-wide">
+                    <span class="truncate">C: ${int(compra)}</span>
+                    <span class="whitespace-nowrap">{brecha_txt}</span>
+                </div>
+            </div>
+            """
 except Exception:
     pass
 
-# 4.2 Riesgo País Dinámico (Forzado a actualizar)
+# 4.2 Riesgo País Dinámico
 try:
-    req_rp = requests.get(f"https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais?v={timestamp_actual}", timeout=10)
+    req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
         datos_rp = req_rp.json()
         if datos_rp and len(datos_rp) > 1:
             ultimo_rp = datos_rp[-1]["valor"] 
             rp_ayer = datos_rp[-2]["valor"]
-            dif_puntos = ultimo_rp - rp_ayer
-            pct_var = (dif_puntos / rp_ayer) * 100 if rp_ayer else 0
+            
+            pct_var = 0.00
+            dif_puntos = 0
+            # Evitamos que divida por error si la API de ArgentinaDatos falla
+            if rp_ayer > 0:
+                dif_puntos = ultimo_rp - rp_ayer
+                pct_var = (dif_puntos / rp_ayer) * 100
             
             if dif_puntos < 0:
                 color_var = "text-[#00E5FF] font-black"
@@ -436,7 +435,7 @@ try:
             """
 except Exception:
     pass
-
+    
 # 4.3 Partidos del Mundial 2026 (API ESPN en Español y Filtrada)
 partidos_html = ""
 try:
@@ -899,26 +898,64 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }}
 
-        function actualizarTiempos() {{
-            document.querySelectorAll('.tiempo-noticia').forEach(el => {{
+   function actualizarTiempos() {
+            document.querySelectorAll('.tiempo-noticia').forEach(el => {
                 const ts = el.getAttribute('data-timestamp');
                 if(!ts) return; 
-                const n = new Date(ts), diff = Math.floor((new Date() - n) / 60000);
-                if (isNaN(diff)) return;
                 
-                if (diff < 60) {{
-                    el.textContent = `HACE ${{diff}}m`;
-                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-white/5 px-2 py-1 rounded";
-                }} else if (diff < 1440) {{
+                // Limpieza de formato para evitar el cuadro negro (NaN) en iOS/Safari
+                const safeTs = ts.replace(' ', 'T').split('.')[0] + (ts.includes('Z') || ts.includes('+') ? '' : 'Z');
+                const n = new Date(safeTs);
+                let diff = Math.floor((new Date() - n) / 60000);
+                
+                // Fallback de seguridad
+                if (isNaN(diff) || diff < 0) diff = 1;
+                
+                if (diff < 60) {
+                    el.textContent = `HACE ${diff}m`;
+                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
+                } else if (diff < 1440) {
                     const diffHoras = Math.floor(diff / 60);
-                    el.textContent = `HACE ${{diffHoras}}h`;
-                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#0A0A0A] border border-white/5 px-2 py-1 rounded";
-                }} else {{
+                    el.textContent = `HACE ${diffHoras}h`;
+                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#0A0A0A] border border-[#2A2A2A] px-2 py-1 rounded";
+                } else {
                     el.textContent = 'AYER';
-                    el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-white/5 px-2 py-1 rounded";
-                }}
-            }});
-        }}
+                    el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-[#2A2A2A] px-2 py-1 rounded";
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {
+                const data = cargarAlmacenamiento();
+                const textoBusqueda = document.getElementById('buscador').value.toLowerCase();
+                const universo = articulosBase.filter(art => {
+                    const url = art.getAttribute('data-url');
+                    const isLeida = data.leidas.includes(url);
+                    const isGuardada = data.guardadas.includes(url);
+                    let pasaVista = (vistaActual === "principales" && !isLeida && !isGuardada) || 
+                                    (vistaActual === "leidas" && isLeida && !isGuardada) || 
+                                    (vistaActual === "guardadas" && isGuardada);
+                    return pasaVista && art.textContent.toLowerCase().includes(textoBusqueda);
+                });
+                
+                if (limitNoticias < universo.length) {
+                    const spinner = document.getElementById('loading-spinner');
+                    spinner.classList.remove('hidden'); spinner.classList.add('flex');
+                    setTimeout(() => {
+                        limitNoticias += 12;
+                        aplicarFiltrosYVistas();
+                        actualizarTiempos(); // Se inyecta la actualización al bajar para que no queden negros
+                        spinner.classList.add('hidden'); spinner.classList.remove('flex');
+                    }, 400);
+                }
+            }
+        });
         
         function actualizarSeparadorAyer() {{
             const sep = document.getElementById('separador-ayer-dinamico');
