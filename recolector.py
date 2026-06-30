@@ -898,8 +898,8 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }}
 
-   function actualizarTiempos() {
-            document.querySelectorAll('.tiempo-noticia').forEach(el => {
+   function actualizarTiempos() {{
+            document.querySelectorAll('.tiempo-noticia').forEach(el => {{
                 const ts = el.getAttribute('data-timestamp');
                 if(!ts) return; 
                 
@@ -911,30 +911,30 @@ html_completo = f"""<!DOCTYPE html>
                 // Fallback de seguridad
                 if (isNaN(diff) || diff < 0) diff = 1;
                 
-                if (diff < 60) {
-                    el.textContent = `HACE ${diff}m`;
+                if (diff < 60) {{
+                    el.textContent = `HACE ${{diff}}m`;
                     el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
-                } else if (diff < 1440) {
+                }} else if (diff < 1440) {{
                     const diffHoras = Math.floor(diff / 60);
-                    el.textContent = `HACE ${diffHoras}h`;
+                    el.textContent = `HACE ${{diffHoras}}h`;
                     el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#0A0A0A] border border-[#2A2A2A] px-2 py-1 rounded";
-                } else {
+                }} else {{
                     el.textContent = 'AYER';
                     el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-[#2A2A2A] px-2 py-1 rounded";
-                }
-            });
-        }
+                }}
+            }});
+        }}
 
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {{
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
             document.getElementById("progressBar").style.width = scrolled + "%";
 
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {{
                 const data = cargarAlmacenamiento();
                 const textoBusqueda = document.getElementById('buscador').value.toLowerCase();
-                const universo = articulosBase.filter(art => {
+                const universo = articulosBase.filter(art => {{
                     const url = art.getAttribute('data-url');
                     const isLeida = data.leidas.includes(url);
                     const isGuardada = data.guardadas.includes(url);
@@ -942,20 +942,20 @@ html_completo = f"""<!DOCTYPE html>
                                     (vistaActual === "leidas" && isLeida && !isGuardada) || 
                                     (vistaActual === "guardadas" && isGuardada);
                     return pasaVista && art.textContent.toLowerCase().includes(textoBusqueda);
-                });
+                }});
                 
-                if (limitNoticias < universo.length) {
+                if (limitNoticias < universo.length) {{
                     const spinner = document.getElementById('loading-spinner');
                     spinner.classList.remove('hidden'); spinner.classList.add('flex');
-                    setTimeout(() => {
+                    setTimeout(() => {{
                         limitNoticias += 12;
                         aplicarFiltrosYVistas();
                         actualizarTiempos(); // Se inyecta la actualización al bajar para que no queden negros
                         spinner.classList.add('hidden'); spinner.classList.remove('flex');
-                    }, 400);
-                }
-            }
-        });
+                    }}, 400);
+                }}
+            }}
+        }});
         
         function actualizarSeparadorAyer() {{
             const sep = document.getElementById('separador-ayer-dinamico');
