@@ -62,7 +62,7 @@ for fuente in fuentes:
                         urls_vistas_ronda_actual.add(link)
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 8: 
+                        if contador >= 10: 
                             break
     except Exception:
         pass
@@ -124,7 +124,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -167,7 +167,7 @@ if exito:
                 diarios = partes[0].strip().upper()
                 
                 # ESCUDO ANTI-FANTASMAS
-                if diarios == "DIARIOS" or "DIARIOS|" in linea:
+                if diarios == "DIARIOS" or "DIARIOS|" in linea or "DIARIO" in diarios:
                     continue
                     
                 categoria = partes[1].strip().upper()
@@ -218,8 +218,11 @@ if exito:
 
                 tags_html = "".join([f'<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#{t.strip().upper()}</span>' for t in tags_raw.split(",") if t.strip()])
 
+                # Limpieza de viñetas para evitar doble guion (- ▪)
+                vinetas = vinetas.replace('- <span', '<span').replace('- ▪', '▪').replace('• <span', '<span')
                 if not vinetas.startswith('<span'):
                     vinetas = '<span class="text-[#00E5FF] font-bold mr-2">▪</span>' + vinetas
+                vinetas = vinetas.replace('<br>•', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>').replace('<br>-', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>')
 
                 tarjetas_html += f"""
                 <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden group relative">
@@ -229,7 +232,7 @@ if exito:
                                 <span class="{pill} px-2 py-1 rounded-md whitespace-nowrap">{categoria}</span>
                                 <span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">{icono_sent} {sentimiento}</span>
                             </div>
-                            <span class="text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
+                            <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
                         </div>
                         <div class="flex flex-col items-end gap-2 shrink-0 z-10">
                             <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all" data-url="{link}" title="Guardar noticia">🔖</button>
@@ -239,7 +242,7 @@ if exito:
                     </div>
                     
                     <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer">
-                        <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
+                        <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
                     <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -413,52 +416,52 @@ try:
 except Exception:
     pass
 
-# 4.3 Partidos de Deportes (Scraping a Promiedos)
+# 4.3 Partidos de Deportes en Vivo (Scraping a Promiedos Seguro)
 partidos_html = ""
 try:
     headers_promiedos = {"User-Agent": "Mozilla/5.0"}
     req_promiedos = requests.get("https://www.promiedos.com.ar/", headers=headers_promiedos, timeout=8)
     if req_promiedos.status_code == 200:
         soup_promiedos = BeautifulSoup(req_promiedos.text, 'html.parser')
-        partidos_dia = soup_promiedos.find_all('tr', class_=lambda x: x and 'pt' in x)
-        
-        if not partidos_dia:
-            t1_spans = soup_promiedos.find_all('span', class_='game-t1')
-            partidos_dia = [span.parent.parent for span in t1_spans if span.parent and span.parent.parent]
-            
         partidos_extraidos = []
-        for p in partidos_dia[:8]: # Extraemos un máx de 8 partidos del día
+        
+        filas_partidos = soup_promiedos.find_all('tr')
+        for p in filas_partidos:
             t1 = p.find('span', class_='game-t1')
             t2 = p.find('span', class_='game-t2')
             if not t1 or not t2: continue
             
+            estado = p.find('td', class_='game-time')
+            if not estado: continue
+            
+            txt_estado = estado.text.strip()
+            txt_t1 = t1.text.strip()
+            txt_t2 = t2.text.strip()
+            
             r1 = p.find('td', class_='game-r1')
             r2 = p.find('td', class_='game-r2')
-            tiem = p.find('td', class_='game-time')
+            str_res = f"{r1.text.strip()} - {r2.text.strip()}" if r1 and r2 else "vs"
             
-            estado = tiem.text.strip() if tiem else ""
-            res1 = r1.text.strip() if r1 else "-"
-            res2 = r2.text.strip() if r2 else "-"
-            
-            color_res = "text-[#00E5FF]" if "'" in estado or "PT" in estado or "ST" in estado or "Pen" in estado else "text-white"
+            color_res = "text-[#00E5FF]" if "'" in txt_estado or "PT" in txt_estado or "ST" in txt_estado or "Pen" in txt_estado else "text-white"
             
             partidos_extraidos.append(f"""
                 <div class='flex flex-col text-center border-l border-[#2A2A2A] pl-5 min-w-max'>
-                    <span class='text-[9px] text-gray-500 font-mono tracking-wider uppercase'>{estado}</span>
+                    <span class='text-[9px] text-gray-500 font-mono tracking-wider uppercase'>{txt_estado}</span>
                     <div class='text-sm font-bold text-gray-200 mt-1 flex gap-3 items-center'>
-                        <span>{t1.text.strip()}</span> 
-                        <span class='{color_res} text-lg px-2 bg-[#111] rounded border border-[#222] shadow-inner'>{res1} - {res2}</span> 
-                        <span>{t2.text.strip()}</span>
+                        <span>{txt_t1}</span> 
+                        <span class='{color_res} text-lg px-2 bg-[#111] rounded border border-[#222] shadow-inner'>{str_res}</span> 
+                        <span>{txt_t2}</span>
                     </div>
                 </div>
             """)
+            if len(partidos_extraidos) >= 8: break 
         
         if partidos_extraidos:
             partidos_html = f"""
             <div class='w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-4 mt-6 flex items-center shadow-lg overflow-x-auto no-scrollbar gap-5'>
                 <div class='flex flex-col items-center gap-1 shrink-0 pr-2'>
                     <span class='text-2xl animate-bounce'>⚽</span>
-                    <span class='text-[9px] text-gray-400 font-bold uppercase tracking-widest'>DEPORTES</span>
+                    <span class='text-[9px] text-gray-400 font-bold uppercase tracking-widest'>HOY</span>
                 </div>
                 {''.join(partidos_extraidos)}
             </div>
@@ -470,17 +473,18 @@ if not noticias_urgentes_ticker:
     noticias_urgentes_ticker = ["El mercado financiero opera con normalidad. Monitoreo activado."]
 ticker_items = "".join([f'<span class="mx-10 flex items-center gap-2 text-base md:text-lg"><span class="text-[#00E5FF] animate-pulse">⚡</span> {tit}</span>' for tit in noticias_urgentes_ticker])
 
-# --- 5. PLANTILLA HTML DEFINITIVA ---
+# --- 5. PLANTILLA HTML DEFINITIVA (Sintaxis Blindada) ---
 html_completo = f"""<!DOCTYPE html>
 <html lang="es" class="w-full h-full m-0 p-0 overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal | Mercados & Actualidad</title>
+    <title>Radar Financiero | Mercados & Actualidad</title>
+    <meta name="description" content="Monitor de mercados y actualidad analizada por IA.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
-        body {{ background-color: #020617; font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #f8fafc; overflow-x: hidden; width: 100%; padding-bottom: 80px; }}
+        body {{ background-color: #050505; font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #f8fafc; overflow-x: hidden; width: 100%; padding-bottom: 80px; }}
         @media (min-width: 768px) {{ body {{ padding-bottom: 0; }} }}
         .font-mono {{ font-family: 'JetBrains Mono', monospace; }}
         @keyframes ticker {{ 0% {{ transform: translateX(100vw); }} 100% {{ transform: translateX(-100%); }} }}
@@ -501,7 +505,7 @@ html_completo = f"""<!DOCTYPE html>
 
     <div id="progressBar" class="fixed top-0 left-0 h-1 bg-[#00E5FF] z-[100] transition-all duration-150 shadow-[0_0_10px_#00E5FF]" style="width: 0%;"></div>
 
-    <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="fixed bottom-24 md:bottom-6 right-6 bg-[#00E5FF] text-[#050505] p-3.5 rounded-full shadow-[0_0_15px_rgba(0,229,255,0.4)] hover:scale-110 transition-all z-50 flex items-center justify-center group" title="Conectar en LinkedIn">
+    <a href="https://www.linkedin.com/in/brian-yapura-061522156/" target="_blank" class="fixed bottom-24 md:bottom-6 right-6 bg-[#00E5FF] text-[#050505] p-3.5 rounded-full shadow-[0_0_15px_rgba(0,229,255,0.4)] hover:scale-110 transition-all z-50 flex items-center justify-center group cursor-pointer" title="Conectar en LinkedIn">
         <span class="font-black text-2xl leading-none font-mono">in</span>
     </a>
 
@@ -544,12 +548,12 @@ html_completo = f"""<!DOCTYPE html>
         </button>
         <button id="m-btn-guardadas" class="nav-btn-mobile flex flex-col items-center gap-1 text-gray-500 relative">
             <span class="text-xl">🔖</span>
-            <span id="m-cont-guardadas" class="absolute -top-1 -right-2 bg-[#00E5FF] text-black text-[8px] font-bold px-1.5 rounded-full border border-black font-mono">0</span>
-            <span class="text-[9px] font-bold tracking-wider">GUARDADO</span>
+            <span id="m-cont-guardadas" class="absolute -top-1 -right-2 bg-rose-500 text-white text-[8px] font-bold px-1.5 rounded-full">0</span>
+            <span class="text-[9px] font-bold tracking-wider">SAVED</span>
         </button>
         <button id="m-btn-leidas" class="nav-btn-mobile flex flex-col items-center gap-1 text-gray-500 relative">
             <span class="text-xl">👁️</span>
-            <span id="m-cont-leidas" class="absolute -top-1 -right-2 bg-gray-700 text-white text-[8px] font-bold px-1.5 rounded-full border border-black font-mono">0</span>
+            <span id="m-cont-leidas" class="absolute -top-1 -right-2 bg-gray-700 text-white text-[8px] font-bold px-1.5 rounded-full">0</span>
             <span class="text-[9px] font-bold tracking-wider">LEÍDAS</span>
         </button>
     </nav>
@@ -578,7 +582,7 @@ html_completo = f"""<!DOCTYPE html>
                 </div>
                 <div class="flex w-full md:w-auto items-center justify-between gap-4">
                     <span id="titulo-seccion" class="text-[10px] md:text-xs font-mono text-[#00E5FF] border border-[#00E5FF]/30 bg-[#00E5FF]/10 px-4 py-1.5 rounded-full uppercase tracking-widest shadow-[0_0_10px_rgba(0,229,255,0.1)]">ÚLTIMAS NOTICIAS</span>
-                    <button id="btn-sort" class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold font-mono hover:bg-indigo-500/40 transition flex items-center gap-1.5 uppercase tracking-widest">
+                    <button id="btn-sort" class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold font-mono hover:bg-indigo-500/40 transition flex items-center gap-1.5 uppercase tracking-widest cursor-pointer">
                         ↕️ Por Impacto
                     </button>
                 </div>
@@ -587,9 +591,9 @@ html_completo = f"""<!DOCTYPE html>
 
         <div class="p-4 md:p-8 w-full flex-grow max-w-7xl mx-auto box-border">
             
-            <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-8 text-xs text-cyan-400 font-medium flex items-center gap-3 shadow-md">
-                <span class="text-xl">💡</span>
-                <p><b>Info:</b> Al entrar al link de una noticia, ésta pasará automáticamente al historial de "Leídas" para mantener tu feed principal limpio.</p>
+            <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-6 text-xs text-cyan-400 font-medium flex items-center gap-2.5 shadow-md">
+                <span>💡</span>
+                <p><b>Info:</b> Las noticias que abras desaparecerán automáticamente de este feed principal. Podrás recuperarlas en cualquier momento usando la sección "Leídas".</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full animate-fadeIn" id="contenedor-noticias">
@@ -602,7 +606,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div class="flex justify-center mt-16 mb-20 md:mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden glass-panel hover:bg-[#00E5FF] hover:text-black border border-white/10 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-xl gap-2 items-center tracking-widest uppercase font-bold text-center cursor-pointer">
-                    ↑ Ocultar noticias extras y volver
+                    ↑ Ocultar extras y volver
                 </button>
             </div>
         </div>
@@ -639,21 +643,28 @@ html_completo = f"""<!DOCTYPE html>
                 const isLeida = data.leidas.includes(url);
                 const isGuardada = data.guardadas.includes(url);
                 
+                // Filtro de Vista
                 let pasaVista = false;
                 if (vistaActual === "principales") pasaVista = !isLeida && !isGuardada;
                 else if (vistaActual === "leidas") pasaVista = isLeida && !isGuardada;
                 else if (vistaActual === "guardadas") pasaVista = isGuardada;
 
+                // Filtro Buscador
                 const textContent = art.textContent.toLowerCase();
-                return pasaVista && textContent.includes(textoBusqueda);
+                const pasaBuscador = textContent.includes(textoBusqueda);
+
+                return pasaVista && pasaBuscador;
             }});
 
+            // Ordenamiento por impacto
             if (sortByImpacto) {{
                 universo.sort((a, b) => parseInt(b.dataset.impacto || 0) - parseInt(a.dataset.impacto || 0));
             }} else {{
+                // Restaurar orden cronológico
                 universo.sort((a, b) => articulosBase.indexOf(a) - articulosBase.indexOf(b));
             }}
 
+            // Volcar elementos
             contenedor.innerHTML = "";
             universo.forEach((art, index) => {{
                 if (index < limitNoticias) {{
@@ -662,6 +673,7 @@ html_completo = f"""<!DOCTYPE html>
                 }}
             }});
 
+            // Manejo del botón Mostrar Más/Volver
             const btnVolver = document.getElementById('btn-volver-arriba');
             if (limitNoticias >= universo.length && universo.length > 12) {{
                 btnVolver.classList.remove('hidden'); btnVolver.classList.add('flex');
@@ -669,6 +681,7 @@ html_completo = f"""<!DOCTYPE html>
                 btnVolver.classList.add('hidden'); btnVolver.classList.remove('flex');
             }}
 
+            // Estados visuales de tarjetas (Iconos)
             articulosBase.forEach(art => {{
                 const url = art.getAttribute('data-url');
                 const btnG = art.querySelector('.btn-guardar');
@@ -732,13 +745,18 @@ html_completo = f"""<!DOCTYPE html>
                         art.style.opacity = "0";
                         art.style.transform = "scale(0.95)";
                         setTimeout(() => {{ aplicarFiltrosYVistas(); art.style.opacity="1"; art.style.transform="scale(1)"; }}, 300);
-                    }}, 500); // 500ms para abrir la pestaña
+                    }}, 300);
                 }});
             }}
         }});
 
-        // Buscador y Sort
-        document.getElementById('buscador').addEventListener('input', () => {{ limitNoticias = 12; aplicarFiltrosYVistas(); }});
+        // Buscador
+        document.getElementById('buscador').addEventListener('input', () => {{
+            limitNoticias = 12;
+            aplicarFiltrosYVistas();
+        }});
+
+        // Botón Sort
         document.getElementById('btn-sort').addEventListener('click', (e) => {{
             sortByImpacto = !sortByImpacto;
             e.currentTarget.classList.toggle('bg-indigo-500/40');
@@ -756,13 +774,15 @@ html_completo = f"""<!DOCTYPE html>
 
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600) {{
                 const data = cargarAlmacenamiento();
-                const text = document.getElementById('buscador').value.toLowerCase();
+                const textoBusqueda = document.getElementById('buscador').value.toLowerCase();
                 const universo = articulosBase.filter(art => {{
                     const url = art.getAttribute('data-url');
-                    const iL = data.leidas.includes(url);
-                    const iG = data.guardadas.includes(url);
-                    let pasaVista = (vistaActual === "principales" && !iL && !iG) || (vistaActual === "leidas" && iL && !iG) || (vistaActual === "guardadas" && iG);
-                    return pasaVista && art.textContent.toLowerCase().includes(text);
+                    const isLeida = data.leidas.includes(url);
+                    const isGuardada = data.guardadas.includes(url);
+                    let pasaVista = (vistaActual === "principales" && !isLeida && !isGuardada) || 
+                                    (vistaActual === "leidas" && isLeida && !isGuardada) || 
+                                    (vistaActual === "guardadas" && isGuardada);
+                    return pasaVista && art.textContent.toLowerCase().includes(textoBusqueda);
                 }});
                 
                 if (limitNoticias < universo.length) {{
@@ -777,6 +797,7 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }});
 
+        // Botón Ocultar
         document.getElementById('btn-volver-arriba').addEventListener('click', () => {{
             limitNoticias = 12;
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
@@ -788,7 +809,7 @@ html_completo = f"""<!DOCTYPE html>
             vistaActual = vista;
             document.getElementById('titulo-seccion').innerText = titulo;
             limitNoticias = 12;
-            document.getElementById('buscador').value = ""; 
+            document.getElementById('buscador').value = ""; // Limpiar buscador
             
             document.querySelectorAll('.nav-btn').forEach(b => {{
                 b.classList.remove('ring-1', 'ring-[#00E5FF]/50', 'text-[#00E5FF]');
@@ -809,11 +830,11 @@ html_completo = f"""<!DOCTYPE html>
         }}
 
         document.getElementById('btn-ver-principales').addEventListener('click', () => cambiarVista('principales', 'ÚLTIMAS NOTICIAS'));
-        document.getElementById('btn-ver-leidas').addEventListener('click', () => cambiarVista('leidas', 'HISTORIAL DE LEÍDAS'));
+        document.getElementById('btn-ver-leidas').addEventListener('click', () => cambiarVista('leidas', 'HISTORIAL LEÍDAS'));
         document.getElementById('btn-ver-guardadas').addEventListener('click', () => cambiarVista('guardadas', 'NOTICIAS GUARDADAS'));
         
         document.getElementById('m-btn-feed').addEventListener('click', () => cambiarVista('principales', 'ÚLTIMAS NOTICIAS'));
-        document.getElementById('m-btn-leidas').addEventListener('click', () => cambiarVista('leidas', 'HISTORIAL DE LEÍDAS'));
+        document.getElementById('m-btn-leidas').addEventListener('click', () => cambiarVista('leidas', 'HISTORIAL LEÍDAS'));
         document.getElementById('m-btn-guardadas').addEventListener('click', () => cambiarVista('guardadas', 'NOTICIAS GUARDADAS'));
 
         document.getElementById('btn-reset-leidas').addEventListener('click', () => {{
@@ -824,7 +845,7 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }});
 
-        // Reloj y Fechas
+        // Reloj y Tiempos
         function actualizarReloj() {{
             const ahora = new Date();
             const opcionesHora = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
@@ -843,10 +864,10 @@ html_completo = f"""<!DOCTYPE html>
 
             if (abierto) {{
                 estadoEl.textContent = "MERCADO ABIERTO";
-                estadoEl.className = "mt-2 text-[10px] font-bold px-3 py-1 rounded-full inline-block bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 animate-pulse tracking-widest";
+                estadoEl.className = "mt-1 text-[10px] font-bold px-3 py-1 rounded-full inline-block bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 animate-pulse tracking-widest";
             }} else {{
                 estadoEl.textContent = "MERCADO CERRADO";
-                estadoEl.className = "mt-2 text-[10px] font-bold px-3 py-1 rounded-full inline-block bg-rose-500/10 text-rose-500 border border-rose-500/20 tracking-widest";
+                estadoEl.className = "mt-1 text-[10px] font-bold px-3 py-1 rounded-full inline-block bg-rose-500/10 text-rose-500 border border-rose-500/20 tracking-widest";
             }}
         }}
 
@@ -859,14 +880,14 @@ html_completo = f"""<!DOCTYPE html>
                 
                 if (diff < 60) {{
                     el.textContent = `HACE ${{diff}}m`;
-                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-300 text-[10px] font-mono bg-[#1A1A1A] border border-white/5 px-2 py-1 rounded";
                 }} else if (diff < 1440) {{
                     const diffHoras = Math.floor(diff / 60);
                     el.textContent = `HACE ${{diffHoras}}h`;
-                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#0A0A0A] border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#0A0A0A] border border-white/5 px-2 py-1 rounded";
                 }} else {{
                     el.textContent = 'AYER';
-                    el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-[#2A2A2A] px-2 py-1 rounded";
+                    el.className = "tiempo-noticia text-gray-600 text-[10px] font-mono bg-transparent border border-white/5 px-2 py-1 rounded";
                 }}
             }});
         }}
@@ -874,6 +895,8 @@ html_completo = f"""<!DOCTYPE html>
         function actualizarSeparadorAyer() {{
             const sep = document.getElementById('separador-ayer-dinamico');
             if(sep) sep.remove();
+
+            if (vistaActual !== "principales") return; // Solo en feed principal
 
             const vis = articulos.filter(a => a.style.display !== 'none');
             for(let i=0; i<vis.length; i++) {{
