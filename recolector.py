@@ -52,7 +52,7 @@ for fuente in fuentes:
                     if any(prohibido in link.lower() for prohibido in palabras_prohibidas):
                         continue
 
-                    # Corrección robusta de URLs relativas
+                    # Blindaje de URLs relativas
                     if not link.startswith('http'):
                         if not link.startswith('/'):
                             link = '/' + link
@@ -62,7 +62,7 @@ for fuente in fuentes:
                         urls_vistas_ronda_actual.add(link)
                         noticias_extraidas.append({"fuente": fuente["nombre"], "titulo": texto_limpio, "link": link})
                         contador += 1
-                        if contador >= 10: 
+                        if contador >= 8: 
                             break
     except Exception:
         pass
@@ -124,7 +124,7 @@ TAREAS ESTRICTAS:
 1. ELIMINAR CLONES: Si varias noticias hablan de exactamente lo mismo, agrúpalas en una sola. En el campo 'DIARIOS', pon el nombre de todos los medios separados por coma (Ej: INFOBAE, TN).
 2. CATEGORÍA: Solo DEPORTES, POLÍTICA, ECONOMÍA o MERCADOS.
 3. VIÑETAS & LECTURA ACTIVA: Escribe el resumen en exactamente 3 viñetas cortas, separadas por la etiqueta <br><span class="text-[#00E5FF] font-bold mr-2">▪</span>. Usa la etiqueta HTML <b>texto</b> para resaltar los datos duros más importantes (cifras, nombres).
-4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada (ej. "Impacto negativo porque afecta la inflación local...").
+4. CONTEXTO DE IMPACTO: En la tercera y última viñeta, argumenta de forma obligatoria el porqué de la calificación de impacto asignada.
 5. TAGS: 2 o 3 palabras clave separadas por coma.
 6. SENTIMIENTO: Evalúa la noticia para el inversor argentino. Responde solo con: POSITIVO, NEGATIVO o NEUTRAL.
 7. IMPACTO: Del 1 al 5.
@@ -225,7 +225,7 @@ if exito:
                 vinetas = vinetas.replace('<br>•', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>').replace('<br>-', '<br><span class="text-[#00E5FF] font-bold mr-2">▪</span>')
 
                 tarjetas_html += f"""
-                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden group relative">
+                <article data-categoria="{categoria}" data-impacto="{impacto}" data-url="{link}" class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col {borde_sent} h-[380px] overflow-hidden relative">
                     <div class="flex justify-between items-start mb-3 shrink-0 select-none">
                         <div class="flex flex-col gap-2 max-w-[70%]">
                             <div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
@@ -235,14 +235,14 @@ if exito:
                             <span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">{diarios}</span>
                         </div>
                         <div class="flex flex-col items-end gap-2 shrink-0 z-10">
-                            <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all" data-url="{link}" title="Guardar noticia">🔖</button>
+                            <button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="{link}" title="Guardar noticia">🔖</button>
                             <span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="{timestamp_iso}"></span>
                             <span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
                         </div>
                     </div>
                     
-                    <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer">
-                        <h2 class="text-lg md:text-xl font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
+                    <a href="{link}" target="_blank" class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group">
+                        <h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">{titulo}</h2>
                     </a>
                     
                     <div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
@@ -328,7 +328,6 @@ print("Obteniendo cotizaciones del mercado...")
 widgets_html = ""
 oficial_venta = 1 
 
-# 4.1 Dólares
 try:
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     if req_dolar.status_code == 200:
@@ -373,7 +372,6 @@ try:
 except Exception:
     pass
 
-# 4.2 Riesgo País Dinámico
 try:
     req_rp = requests.get("https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais", timeout=10)
     if req_rp.status_code == 200:
@@ -416,7 +414,7 @@ try:
 except Exception:
     pass
 
-# 4.3 Partidos de Deportes en Vivo (Scraping a Promiedos Seguro)
+# Promiedos
 partidos_html = ""
 try:
     headers_promiedos = {"User-Agent": "Mozilla/5.0"}
@@ -591,9 +589,9 @@ html_completo = f"""<!DOCTYPE html>
 
         <div class="p-4 md:p-8 w-full flex-grow max-w-7xl mx-auto box-border">
             
-            <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-6 text-xs text-cyan-400 font-medium flex items-center gap-2.5 shadow-md">
-                <span>💡</span>
-                <p><b>Info:</b> Las noticias que abras desaparecerán automáticamente de este feed principal. Podrás recuperarlas en cualquier momento usando la sección "Leídas".</p>
+            <div class="w-full bg-cyan-950/20 border border-cyan-500/20 rounded-xl p-4 mb-8 text-xs text-cyan-400 font-medium flex items-center gap-3 shadow-md">
+                <span class="text-xl">💡</span>
+                <p><b>Info:</b> Al hacer clic en el enlace de una noticia, ésta pasará automáticamente al historial de "Leídas" para mantener tu feed limpio.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full animate-fadeIn" id="contenedor-noticias">
@@ -606,7 +604,7 @@ html_completo = f"""<!DOCTYPE html>
             
             <div class="flex justify-center mt-16 mb-20 md:mb-12 w-full">
                 <button id="btn-volver-arriba" class="hidden glass-panel hover:bg-[#00E5FF] hover:text-black border border-white/10 text-gray-300 font-mono text-xs px-8 py-4 rounded-full transition-all duration-300 shadow-xl gap-2 items-center tracking-widest uppercase font-bold text-center cursor-pointer">
-                    ↑ Ocultar extras y volver
+                    ↑ Ocultar extras y volver al inicio
                 </button>
             </div>
         </div>
@@ -643,28 +641,21 @@ html_completo = f"""<!DOCTYPE html>
                 const isLeida = data.leidas.includes(url);
                 const isGuardada = data.guardadas.includes(url);
                 
-                // Filtro de Vista
                 let pasaVista = false;
                 if (vistaActual === "principales") pasaVista = !isLeida && !isGuardada;
                 else if (vistaActual === "leidas") pasaVista = isLeida && !isGuardada;
                 else if (vistaActual === "guardadas") pasaVista = isGuardada;
 
-                // Filtro Buscador
                 const textContent = art.textContent.toLowerCase();
-                const pasaBuscador = textContent.includes(textoBusqueda);
-
-                return pasaVista && pasaBuscador;
+                return pasaVista && textContent.includes(textoBusqueda);
             }});
 
-            // Ordenamiento por impacto
             if (sortByImpacto) {{
                 universo.sort((a, b) => parseInt(b.dataset.impacto || 0) - parseInt(a.dataset.impacto || 0));
             }} else {{
-                // Restaurar orden cronológico
                 universo.sort((a, b) => articulosBase.indexOf(a) - articulosBase.indexOf(b));
             }}
 
-            // Volcar elementos
             contenedor.innerHTML = "";
             universo.forEach((art, index) => {{
                 if (index < limitNoticias) {{
@@ -673,7 +664,6 @@ html_completo = f"""<!DOCTYPE html>
                 }}
             }});
 
-            // Manejo del botón Mostrar Más/Volver
             const btnVolver = document.getElementById('btn-volver-arriba');
             if (limitNoticias >= universo.length && universo.length > 12) {{
                 btnVolver.classList.remove('hidden'); btnVolver.classList.add('flex');
@@ -681,7 +671,6 @@ html_completo = f"""<!DOCTYPE html>
                 btnVolver.classList.add('hidden'); btnVolver.classList.remove('flex');
             }}
 
-            // Estados visuales de tarjetas (Iconos)
             articulosBase.forEach(art => {{
                 const url = art.getAttribute('data-url');
                 const btnG = art.querySelector('.btn-guardar');
@@ -700,7 +689,7 @@ html_completo = f"""<!DOCTYPE html>
             actualizarSeparadorAyer();
         }}
 
-        // Interacciones: Clic solo en ENLACE marca como leída
+        // Interacciones exclusivas en Botón Guardar y Enlace Principal
         articulosBase.forEach(art => {{
             
             // Botón Guardar
@@ -745,18 +734,16 @@ html_completo = f"""<!DOCTYPE html>
                         art.style.opacity = "0";
                         art.style.transform = "scale(0.95)";
                         setTimeout(() => {{ aplicarFiltrosYVistas(); art.style.opacity="1"; art.style.transform="scale(1)"; }}, 300);
-                    }}, 300);
+                    }}, 500); 
                 }});
             }}
         }});
 
-        // Buscador
+        // Buscador y Sort
         document.getElementById('buscador').addEventListener('input', () => {{
             limitNoticias = 12;
             aplicarFiltrosYVistas();
         }});
-
-        // Botón Sort
         document.getElementById('btn-sort').addEventListener('click', (e) => {{
             sortByImpacto = !sortByImpacto;
             e.currentTarget.classList.toggle('bg-indigo-500/40');
@@ -797,19 +784,18 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }});
 
-        // Botón Ocultar
         document.getElementById('btn-volver-arriba').addEventListener('click', () => {{
             limitNoticias = 12;
             window.scrollTo({{ top: 0, behavior: 'smooth' }});
             setTimeout(() => aplicarFiltrosYVistas(), 400);
         }});
 
-        // Navegación (Desktop y Mobile)
+        // Navegación
         function cambiarVista(vista, titulo) {{
             vistaActual = vista;
             document.getElementById('titulo-seccion').innerText = titulo;
             limitNoticias = 12;
-            document.getElementById('buscador').value = ""; // Limpiar buscador
+            document.getElementById('buscador').value = ""; 
             
             document.querySelectorAll('.nav-btn').forEach(b => {{
                 b.classList.remove('ring-1', 'ring-[#00E5FF]/50', 'text-[#00E5FF]');
@@ -845,7 +831,7 @@ html_completo = f"""<!DOCTYPE html>
             }}
         }});
 
-        // Reloj y Tiempos
+        // Reloj y Fechas
         function actualizarReloj() {{
             const ahora = new Date();
             const opcionesHora = {{ timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
@@ -896,7 +882,7 @@ html_completo = f"""<!DOCTYPE html>
             const sep = document.getElementById('separador-ayer-dinamico');
             if(sep) sep.remove();
 
-            if (vistaActual !== "principales") return; // Solo en feed principal
+            if (vistaActual !== "principales") return; 
 
             const vis = articulos.filter(a => a.style.display !== 'none');
             for(let i=0; i<vis.length; i++) {{
