@@ -1,1 +1,384 @@
-
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://tn.com.ar/politica/2026/06/30/piccirillo-pedio-el-cese-de-la-prision-preventiva-y-que-se-destrabe-la-inhibicion-sobre-sus-bienes/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN, IPROFESIONAL, ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/06/30/piccirillo-pedio-el-cese-de-la-prision-preventiva-y-que-se-destrabe-la-inhibicion-sobre-sus-bienes/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-07-01T00:15:32.997596+00:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/06/30/piccirillo-pedio-el-cese-de-la-prision-preventiva-y-que-se-destrabe-la-inhibicion-sobre-sus-bienes/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Se complica la situación judicial de Manuel Adorni por el uso de tarjetas y compras rechazadas.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Manuel Adorni</b> enfrenta nuevas complicaciones judiciales tras revelaciones sobre el uso de tarjetas ajenas y <b>compras rechazadas</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La funcionaria que le prestó la tarjeta, <b>María Piccirillo</b>, pidió el cese de su prisión preventiva y la liberación de sus bienes.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral a negativo, ya que la continuidad de escándalos de corrupción en la esfera política genera incertidumbre y erosiona la confianza institucional, aunque directamente no afecta variables macroeconómicas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ADORNI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CORRUPCIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUDICIAL</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA, MERCADOS" data-impacto="4" data-url="https://www.ambito.com/finanzas/el-dolar-oficial-acelera-y-el-mercado-mira-julio-menor-oferta-mas-pesos-y-un-complejo-escenario-global-n6294584">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-teal-900/40 text-teal-400 border border-teal-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA, MERCADOS</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, TN, IPROFESIONAL</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/finanzas/el-dolar-oficial-acelera-y-el-mercado-mira-julio-menor-oferta-mas-pesos-y-un-complejo-escenario-global-n6294584" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T20:45:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/finanzas/el-dolar-oficial-acelera-y-el-mercado-mira-julio-menor-oferta-mas-pesos-y-un-complejo-escenario-global-n6294584" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Fuerte rally alcista del dólar en junio, alcanzando su valor más alto en ocho meses, con el mercado atento a julio.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El <b>dólar oficial</b> y el <b>dólar blue</b> experimentaron un fuerte rally alcista en <b>junio</b>, tocando su valor más alto en <b>ocho meses</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Los factores que impulsan esta suba incluyen menor oferta de divisas, más pesos en el mercado y un complejo escenario global, con la City mirando con cautela el mes de <b>julio</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es negativo, ya que la aceleración del dólar genera presión inflacionaria, incertidumbre en los costos de importación y erosiona el valor de los activos en pesos, afectando la estabilidad económica y la confianza de los inversores.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DÓLAR</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEVALUACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MERCADOS</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://tn.com.ar/politica/2026/06/30/causa-por-los-fajos-de-los-dolares-los-videos-de-los-allanamientos-en-la-casa-de-jesica-cirio-en-nordelta/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://tn.com.ar/politica/2026/06/30/causa-por-los-fajos-de-los-dolares-los-videos-de-los-allanamientos-en-la-casa-de-jesica-cirio-en-nordelta/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T23:27:42.550Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://tn.com.ar/politica/2026/06/30/causa-por-los-fajos-de-los-dolares-los-videos-de-los-allanamientos-en-la-casa-de-jesica-cirio-en-nordelta/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Allanamientos en la casa de Jesica Cirio por la causa de los "fajos de dólares".</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Se difundieron videos de los allanamientos realizados en la casa de <b>Jesica Cirio</b> en <b>Nordelta</b>, en el marco de la causa judicial por los "fajos de dólares".<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La investigación continúa avanzando sobre presuntas irregularidades financieras y lavado de dinero.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral a negativo. Aunque es un caso mediático, la exposición de causas por presunto lavado de dinero y corrupción contribuye a la percepción de riesgo institucional en el país, lo que puede afectar el clima de inversión.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JESICA CIRIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#LAVADO DE DINERO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#JUDICIAL</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/economia/inflacion-junio-las-principales-consultoras-coinciden-que-el-ipc-perforara-el-2-linea-el-gobierno-n6294583">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/economia/inflacion-junio-las-principales-consultoras-coinciden-que-el-ipc-perforara-el-2-linea-el-gobierno-n6294583" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T20:25:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/inflacion-junio-las-principales-consultoras-coinciden-que-el-ipc-perforara-el-2-linea-el-gobierno-n6294583" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Consultoras y Gobierno coinciden en que la inflación de junio perforará el 2%.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Las principales consultoras económicas concuerdan con el <b>Gobierno</b> en que el <b>IPC</b> de junio se situará por debajo del <b>2%</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta proyección se alinea con las expectativas oficiales y marca una tendencia a la baja en el ritmo inflacionario.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es positivo, ya que una desaceleración sostenida de la inflación por debajo del 2% es una señal favorable para la estabilidad macroeconómica y el poder adquisitivo, lo que puede mejorar el clima de inversión.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#IPC</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ECONOMÍA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="DEPORTES" data-impacto="1" data-url="https://www.lanacion.com.ar/deportes/futbol/marcelo-bielsa-revelo-los-cambios-que-acepto-por-pedido-de-los-jugadores-y-asumio-el-fracaso-de-nid30062026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-orange-900/40 text-orange-400 border border-orange-500/30 px-2 py-1 rounded-md whitespace-nowrap">DEPORTES</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION, INFOBAE, TN</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/deportes/futbol/marcelo-bielsa-revelo-los-cambios-que-acepto-por-pedido-de-los-jugadores-y-asumio-el-fracaso-de-nid30062026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T22:47:15.103Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/deportes/futbol/marcelo-bielsa-revelo-los-cambios-que-acepto-por-pedido-de-los-jugadores-y-asumio-el-fracaso-de-nid30062026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Mundial 2026: Francia avanza con Mbappé; Uruguay y Países Bajos eliminados, mientras Alemania genera polémica.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Francia</b> clasificó a octavos de final con un triunfo <b>3-0</b> sobre <b>Suecia</b>, con dos goles de <b>Mbappé</b>, y se enfrentará a <b>Paraguay</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> <b>Marcelo Bielsa</b> asumió el fracaso de <b>Uruguay</b> en el Mundial, mientras que <b>Países Bajos</b> fue eliminado por penales ante <b>Marruecos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral para el inversor argentino, ya que los resultados deportivos del Mundial, aunque generan interés público, no tienen una correlación directa con el desempeño económico o financiero del país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#MUNDIAL 2026</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#FÚTBOL</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DEPORTES</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-rose-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/autos/los-patentamientos-cayeron-128-interanual-junio-y-cerraron-un-semestre-baja-n6294625">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🔴 NEGATIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/autos/los-patentamientos-cayeron-128-interanual-junio-y-cerraron-un-semestre-baja-n6294625" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T19:34:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/autos/los-patentamientos-cayeron-128-interanual-junio-y-cerraron-un-semestre-baja-n6294625" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Patentamientos de autos caen 12,8% interanual en junio, cerrando un semestre negativo.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los patentamientos de automóviles sufrieron una caída del <b>12,8%</b> interanual en <b>junio</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este dato marca un semestre en baja para el mercado automotor, reflejando una contracción en la demanda.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es negativo, ya que la caída sostenida en los patentamientos de vehículos es un indicador de la debilidad del consumo interno y la contracción económica, afectando a una industria clave y sus cadenas de valor asociadas.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AUTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PATENTAMIENTOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSUMO</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="MERCADOS" data-impacto="3" data-url="https://www.iprofesional.com/finanzas/458718-bonos-que-arrasaron-en-junio-y-la-nueva-estrategia-de-grandes-jugadores-de-la-city">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-emerald-900/40 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md whitespace-nowrap">MERCADOS</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/finanzas/458718-bonos-que-arrasaron-en-junio-y-la-nueva-estrategia-de-grandes-jugadores-de-la-city" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T19:20:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/finanzas/458718-bonos-que-arrasaron-en-junio-y-la-nueva-estrategia-de-grandes-jugadores-de-la-city" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Junio cierra con bonos al alza, fuerte caída de ADRs como YPF, y un Merval neutro, con perspectivas para julio.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Los <b>bonos en dólares</b> y la deuda argentina mostraron una fuerte mejora en <b>junio</b>, mientras que el <b>riesgo país</b> retrocedió <b>más del 13%</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> En contraste, los <b>ADRs</b> en Wall Street registraron pérdidas significativas, con <b>YPF</b> liderando la caída con un <b>15,6%</b>, y el <b>Merval</b> cerró el mes neutro.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es mixto. La mejora en bonos y riesgo país es positiva para la percepción de solvencia del país, pero la caída de ADRs y la neutralidad del Merval reflejan cautela sobre el desempeño de las empresas y la economía real, generando un escenario de oportunidades selectivas y riesgos.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#BONOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ACCIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ADRS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RIESGO PAÍS</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 2 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="5" data-url="https://www.lanacion.com.ar/economia/de-la-mano-de-vaca-muerta-la-argentina-marco-un-nuevo-hito-en-la-produccion-de-petroleo-nid30062026/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.lanacion.com.ar/economia/de-la-mano-de-vaca-muerta-la-argentina-marco-un-nuevo-hito-en-la-produccion-de-petroleo-nid30062026/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T21:45:41.378Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.lanacion.com.ar/economia/de-la-mano-de-vaca-muerta-la-argentina-marco-un-nuevo-hito-en-la-produccion-de-petroleo-nid30062026/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Argentina alcanza un nuevo hito en producción de petróleo impulsada por Vaca Muerta.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Argentina marcó un nuevo récord en la producción de petróleo, alcanzando los <b>900.000 barriles diarios</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Este hito se atribuye principalmente al desarrollo y la explotación de la formación de <b>Vaca Muerta</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es positivo, ya que el aumento de la producción petrolera representa un incremento en las exportaciones potenciales, una mejora en la balanza comercial y una mayor autonomía energética, beneficiando la economía nacional.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VACA MUERTA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PETRÓLEO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ENERGÍA</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-emerald-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="4" data-url="https://www.ambito.com/economia/las-exportaciones-agroindustriales-alcanzaron-53-millones-toneladas-y-us22383-millones-enero-y-mayo-n6294489">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">🟢 POSITIVO</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/economia/las-exportaciones-agroindustriales-alcanzaron-53-millones-toneladas-y-us22383-millones-enero-y-mayo-n6294489" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T17:54:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/economia/las-exportaciones-agroindustriales-alcanzaron-53-millones-toneladas-y-us22383-millones-enero-y-mayo-n6294489" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Exportaciones agroindustriales superan los U$S22.383 millones entre enero y mayo.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Las exportaciones agroindustriales de Argentina alcanzaron <b>53 millones de toneladas</b> y un valor de <b>U$S22.383 millones</b> entre enero y mayo.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Estos números consolidan la relevancia del sector agroexportador como pilar de la economía nacional.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es positivo, ya que el robusto desempeño de las exportaciones agroindustriales contribuye significativamente al ingreso de divisas, fortalece la balanza comercial y apoya la estabilidad económica del país.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#AGROEXPORTACIONES</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CAMPO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#DIVISAS</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="2" data-url="https://www.iprofesional.com/politica/458764-diego-santilli-asume-con-demostracion-de-poder-karina-milei-lo-suma-a-cumbre-clave">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL, ÁMBITO, TN, LA NACION</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/politica/458764-diego-santilli-asume-con-demostracion-de-poder-karina-milei-lo-suma-a-cumbre-clave" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T17:45:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/politica/458764-diego-santilli-asume-con-demostracion-de-poder-karina-milei-lo-suma-a-cumbre-clave" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Diego Santilli asume como Jefe de Gabinete en medio de un acto con fuerte respaldo político y el "caso Adorni" en segundo plano.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Diego Santilli</b> juró como nuevo Jefe de Gabinete, reemplazando a <b>Manuel Adorni</b>, en un acto con <b>14 gobernadores</b> presentes.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La ceremonia estuvo marcada por una demostración de fuerza política, con la asistencia de <b>Karina Milei</b> y un posterior brindis con <b>Milei</b> y <b>Adorni</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral ya que, si bien hay un cambio en la cúpula política, no se anunciaron medidas económicas concretas que alteren las expectativas del mercado de forma inmediata, aunque podría señalar una fase de mayor pragmatismo político.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#GOBIERNO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#SANTILLI</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLÍTICA</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 4 medios</span>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="3" data-url="https://www.iprofesional.com/negocios/458771-pollo-consumo-record-jaque-carne-vacuna-sorprendio-argentinos-junio-2026">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">IPROFESIONAL</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.iprofesional.com/negocios/458771-pollo-consumo-record-jaque-carne-vacuna-sorprendio-argentinos-junio-2026" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T17:26:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.iprofesional.com/negocios/458771-pollo-consumo-record-jaque-carne-vacuna-sorprendio-argentinos-junio-2026" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Histórico: Argentina consume más pollo que carne vacuna.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ Por primera vez en la historia, el consumo de <b>pollo</b> en Argentina superó al de <b>carne vacuna</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> Esta tendencia se atribuye a factores económicos, donde el pollo ofrece una alternativa más accesible a los consumidores.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral a negativo. Si bien refleja un ajuste de los consumidores a la realidad económica, la caída en el consumo de carne vacuna, un producto emblemático y de alto valor, puede indicar una contracción del poder adquisitivo y un cambio en los patrones de gasto de las familias, con impacto sectorial negativo para la industria cárnica.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CONSUMO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#POLLO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CARNE</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#PRECIOS</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/06/30/nueva-york-lanza-la-matricula-america-250-por-el-aniversario-de-estados-unidos-cuanto-cuesta-y-como-pedirla/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/06/30/nueva-york-lanza-la-matricula-america-250-por-el-aniversario-de-estados-unidos-cuanto-cuesta-y-como-pedirla/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T20:22:14.82Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/06/30/nueva-york-lanza-la-matricula-america-250-por-el-aniversario-de-estados-unidos-cuanto-cuesta-y-como-pedirla/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Nueva York lanza matrícula especial "América 250" por aniversario de EE.UU.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Nueva York</b> lanzó una matrícula conmemorativa "<b>América 250</b>" en ocasión del <b>250° aniversario</b> de la independencia de <b>Estados Unidos</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La iniciativa busca celebrar la historia del país y ofrece detalles sobre su costo y proceso de adquisición.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral para el inversor argentino, ya que se trata de un evento conmemorativo en Estados Unidos sin relevancia para el panorama económico o de mercados de Argentina.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#NUEVA YORK</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ANIVERSARIO</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#EE.UU.</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="ECONOMÍA" data-impacto="1" data-url="https://www.infobae.com/estados-unidos/2026/06/30/california-exige-que-restaurantes-informen-alergenos-en-todos-sus-menus-que-cambia-desde-julio-para-clientes-y-empleados/">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-blue-900/40 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md whitespace-nowrap">ECONOMÍA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">INFOBAE</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.infobae.com/estados-unidos/2026/06/30/california-exige-que-restaurantes-informen-alergenos-en-todos-sus-menus-que-cambia-desde-julio-para-clientes-y-empleados/" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T19:56:12.837Z"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.infobae.com/estados-unidos/2026/06/30/california-exige-que-restaurantes-informen-alergenos-en-todos-sus-menus-que-cambia-desde-julio-para-clientes-y-empleados/" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">California exige a restaurantes informar alérgenos en menús a partir de julio.</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ El estado de <b>California</b> implementará una nueva normativa que exige a los restaurantes informar sobre <b>alérgenos</b> en todos sus menús desde <b>julio</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> La medida busca proteger a clientes con alergias alimentarias y establece nuevas pautas para el personal.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral para el inversor argentino, ya que se trata de una regulación local en Estados Unidos que no tiene repercusiones directas en el mercado financiero o económico de Argentina.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#CALIFORNIA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ALÉRGENOS</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#REGULACIÓN</span>
+</div>
+</div>
+</article>
+<article class="tarjeta-noticia bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 hover:border-[#00E5FF]/50 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.3)] rounded-xl p-6 flex flex-col border-t-4 border-t-gray-500 h-[380px] overflow-hidden relative" data-categoria="POLÍTICA" data-impacto="3" data-url="https://www.ambito.com/politica/entre-filminas-y-coordinacion-santiago-caputo-asi-se-gesto-el-debut-adrian-ravier-n6294448">
+<div class="flex justify-between items-start mb-3 shrink-0 select-none">
+<div class="flex flex-col gap-2 max-w-[70%]">
+<div class="flex flex-wrap gap-2 text-[11px] font-bold tracking-wide">
+<span class="bg-indigo-900/40 text-indigo-400 border border-indigo-500/30 px-2 py-1 rounded-md whitespace-nowrap">POLÍTICA</span>
+<span class="bg-[#1A1A1A]/80 text-gray-300 px-2 py-1 rounded-md border border-[#2A2A2A] whitespace-nowrap">⚪ NEUTRAL</span>
+</div>
+<span class="text-xs md:text-sm text-[#00E5FF] font-black font-mono tracking-wide uppercase break-words">ÁMBITO, LA NACION, IPROFESIONAL</span>
+</div>
+<div class="flex flex-col items-end gap-2 shrink-0 z-10">
+<button class="btn-guardar text-xl opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer" data-url="https://www.ambito.com/politica/entre-filminas-y-coordinacion-santiago-caputo-asi-se-gesto-el-debut-adrian-ravier-n6294448" title="Guardar noticia">🔖</button>
+<span class="tiempo-noticia text-gray-400 text-[10px] font-mono bg-[#1A1A1A]/80 border border-[#2A2A2A] px-2 py-1 rounded" data-timestamp="2026-06-30T13:56:00-03:00"></span>
+<span class="badge-leida hidden text-[9px] font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 px-1.5 py-0.5 rounded tracking-widest uppercase">LEÍDA</span>
+</div>
+</div>
+<a class="ln-link block mb-2 shrink-0 overflow-hidden mt-1 z-0 cursor-pointer group" href="https://www.ambito.com/politica/entre-filminas-y-coordinacion-santiago-caputo-asi-se-gesto-el-debut-adrian-ravier-n6294448" target="_blank">
+<h2 class="text-lg font-bold text-gray-100 leading-tight group-hover:text-[#00E5FF] transition duration-200 line-clamp-3 break-words">Adrián Ravier asume como Vocero Presidencial y proyecta inflación bajo el 2%, advirtiendo sobre el "riesgo Kicillof".</h2>
+</a>
+<div class="text-gray-300 text-sm flex-grow overflow-y-auto no-scrollbar pr-1 mt-2 space-y-2 break-words select-text">
+<span class="text-[#00E5FF] font-bold mr-2">▪</span>▪ <b>Adrián Ravier</b> debutó como Vocero Presidencial, destacando una coordinación con <b>Santiago Caputo</b> y respaldando a <b>Santilli</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El nuevo vocero adelantó que la inflación de junio podría "romper el umbral del <b>2%</b>" y que el equipo económico se "blinda" para <b>2027</b>.<br/><span class="text-[#00E5FF] font-bold mr-2">▪</span> El impacto es neutral a positivo. Si bien la mención de una inflación por debajo del 2% es positiva, las declaraciones sobre "blindaje" para 2027 y "riesgo Kicillof" introducen una perspectiva de mediano plazo que puede generar cautela en los mercados, pero también una reafirmación de la dirección económica actual.
+                    </div>
+<div class="shrink-0 mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 select-none">
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#RAVIER</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#VOCERÍA</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#INFLACIÓN</span><span class="text-[10px] font-mono bg-gray-800/80 text-[#00E5FF] px-2 py-1 rounded border border-gray-700">#ELECCIONES 2027</span>
+</div>
+<span class="text-[10px] font-bold bg-yellow-500/20 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/30 mt-2 inline-block">🗞️ Cubierto por 3 medios</span>
+</div>
+</article>
