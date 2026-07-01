@@ -327,11 +327,12 @@ oficial_venta = 1.0
 oficial_ayer = 1.0
 timestamp_actual = int(time.time()) # Rompe-caché para forzar actualización
 
-# 4.1 Dólares y Riesgo País (Cálculo real de variación y fallback de errores)
+# 4.1 Dólares y Riesgo País (Variación vs Cierre Anterior estilo FinanzasArgy)
 widgets_html = ""
 oficial_venta = 1.0
 
 try:
+    # Solicitamos los datos en tiempo real
     req_dolar = requests.get("https://dolarapi.com/v1/dolares", timeout=10)
     dolares = req_dolar.json() if req_dolar.status_code == 200 else []
     
@@ -339,13 +340,13 @@ try:
     if d_oficial:
         oficial_venta = d_oficial["venta"]
 
-    # Histórico para variación (Llamadas aisladas y seguras)
+    # Solicitamos los datos del CIERRE ANTERIOR para calcular la variación exacta
     hist_venta = {}
     for c in ["oficial", "blue", "mep", "ccl"]:
         try:
             rh = requests.get(f"https://api.argentinadatos.com/v1/finanzas/dolares/{c}", timeout=5)
             if rh.status_code == 200 and len(rh.json()) > 1:
-                hist_venta[c] = rh.json()[-2]["venta"]
+                hist_venta[c] = rh.json()[-2]["venta"] # -2 es el cierre del día hábil anterior
         except: pass
 
     casas_clave = {"oficial": "OFICIAL", "blue": "BLUE", "bolsa": "MEP", "contadoconliqui": "CCL"}
@@ -358,7 +359,7 @@ try:
             var_pct = 0.00
             clave_hist = "mep" if casa == "bolsa" else "ccl" if casa == "contadoconliqui" else casa
             
-            # Solo calcula la variación si el valor de ayer es mayor a 0 (Evita el error del 149900%)
+            # Cálculo de variación contra el cierre anterior
             if clave_hist in hist_venta and hist_venta[clave_hist] > 0:
                 var_pct = ((venta / hist_venta[clave_hist]) - 1) * 100
 
@@ -399,7 +400,6 @@ try:
             
             pct_var = 0.00
             dif_puntos = 0
-            # Evitamos que divida por error si la API de ArgentinaDatos falla
             if rp_ayer > 0:
                 dif_puntos = ultimo_rp - rp_ayer
                 pct_var = (dif_puntos / rp_ayer) * 100
@@ -407,15 +407,12 @@ try:
             if dif_puntos < 0:
                 color_var = "text-[#00E5FF] font-black"
                 simbolo = "▼"
-                signo = ""
             elif dif_puntos > 0:
                 color_var = "text-rose-500 font-black"
                 simbolo = "▲"
-                signo = "+"
             else:
                 color_var = "text-gray-500 font-semibold"
                 simbolo = ""
-                signo = ""
                 
             widgets_html += f"""
             <div class="bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl p-5 flex flex-col justify-center min-w-[220px] flex-1 shadow-[0_8px_30px_rgb(0,0,0,0.5)] overflow-hidden">
@@ -425,7 +422,7 @@ try:
                 </div>
                 <div class="flex items-baseline justify-between w-full mt-2 gap-2">
                     <span class="text-4xl md:text-5xl font-mono font-black text-white tracking-tighter">{int(ultimo_rp)}</span>
-                    <span class="{color_var} text-xs md:text-sm font-mono flex items-center gap-0.5">{simbolo}{abs(dif_puntos)} ({signo}{pct_var:.2f}%)</span>
+                    <span class="{color_var} text-xs md:text-sm font-mono flex items-center gap-0.5">{simbolo}{abs(dif_puntos)} ({pct_var:+.2f}%)</span>
                 </div>
                 <div class="mt-4 border-t border-[#232323] pt-2 flex flex-wrap justify-between gap-1 text-[10px] text-gray-500 font-mono uppercase font-bold tracking-wide">
                     <span class="truncate">ANTERIOR</span>
